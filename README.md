@@ -39,7 +39,10 @@ pendientes al cerrar Godot 4.7.2, ya observado antes de este cambio.
 La mezcla y el carácter musical requieren evaluación auditiva manual.
 
 Abrir project.godot y pulsar F5. El Home ofrece ¡CORRER!, Selección de personaje,
-Cómo jugar y Opciones de audio; Entrenamiento queda pendiente de su escena real.
+Entrenamiento M7.1, Cómo jugar y Opciones de audio. Entrenamiento M7.1 abre una
+sesión de un jugador sin competidores, con cuatro zonas y una duración objetivo de
+60–90 segundos; la implementación y sus pruebas automatizadas existen, pero la
+experiencia completa todavía requiere playtesting humano.
 ¡CORRER! inicia con la elección actual, indicada en el Home. Selección de personaje
 abre las tarjetas de Calaca, Timo, Greta o Lord Pomposo con ratón o flechas/Tab y Enter. Pulsar
 **Comenzar carrera**: tras 3… 2… 1… GO comienza el reloj. La selección es
@@ -149,6 +152,8 @@ reaparecidas, Tormenta y adelantamientos. Revisar podio y Otra carrera.
 
 scenes contiene escenas reutilizables; scripts la lógica; resources los
 parámetros; tests las pruebas sin dependencias y docs el historial.
+La plataforma principal aprobada es PC/Steam. Android e iOS quedan pospuestos,
+conservando compatibilidad futura mediante los presets de exportación existentes.
 .vscode mantiene el perfil de ejecución y configuración del editor externo.
 Godot Tools usa el servidor de lenguaje del editor en 127.0.0.1:6005.
 Conservar los .uid generados por Godot; .godot se ignora en Git.

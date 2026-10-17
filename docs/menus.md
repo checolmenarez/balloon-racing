@@ -25,6 +25,12 @@ Los DNF conservan Sin terminar, sin inventar tiempos. Otra carrera llama al
 reinicio existente. Menú principal y Escape regresan al Home sin perder elección.
 La pausa, el cálculo de resultados y la simulación no fueron modificados.
 
+El botón Entrenamiento del Home abre `scenes/Training.tscn`. El diseño M7.1
+aprobado es una sesión de 60–90 segundos objetivo, con un jugador, cuatro zonas
+y sin competidores. El código y `tests/training_test.gd` verifican la ruta, la
+entrada desde Home y la ausencia de rivales; la duración percibida, claridad de
+las instrucciones y experiencia completa aún requieren playtesting humano.
+
 ## Verificación
 
 Ejecutar con el Godot indicado en README:
@@ -47,7 +53,8 @@ Para revisión manual: F5 → Selección de personaje → elegir con ratón o
 flechas/Tab y Enter → Comenzar carrera. Terminar, comprobar TÚ y estadísticas,
 probar Otra carrera y Menú principal. Cambiar el tamaño de ventana y comprobar
 también el mando físico si se utiliza; no se probó un dispositivo conectado.
-Entrenamiento sigue pendiente de su escena real, como antes de este cambio.
+Entrenamiento ya está integrado desde Home. La revisión manual de su experiencia
+completa permanece pendiente; la prueba automatizada no sustituye el playtesting.
 
 Resultado de esta integración: importación headless correcta y 18 suites PASS,
 incluida competition_test con 12 carreras. menus_redesign_test y home_test
