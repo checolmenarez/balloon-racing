@@ -1,0 +1,40 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/Obstacle.tscn" id="3_obstacle"]
+
+[node name="Obstacles" type="Node2D"]
+
+[node name="FirstMountain" parent="." instance=ExtResource("3_obstacle")]
+position = Vector2(1600, 0)
+lower_tip_y = 430.0
+
+[node name="FirstHangingRock" parent="." instance=ExtResource("3_obstacle")]
+position = Vector2(2900, 0)
+kind = 1
+upper_tip_y = 250.0
+
+[node name="AlternatingMountain" parent="." instance=ExtResource("3_obstacle")]
+position = Vector2(4100, 0)
+width = 300.0
+lower_tip_y = 380.0
+
+[node name="AlternatingHangingRock" parent="." instance=ExtResource("3_obstacle")]
+position = Vector2(5200, 0)
+kind = 1
+width = 300.0
+upper_tip_y = 290.0
+
+[node name="WidePassage" parent="." instance=ExtResource("3_obstacle")]
+position = Vector2(6500, 0)
+kind = 2
+width = 320.0
+upper_tip_y = 180.0
+lower_tip_y = 500.0
+
+[node name="NarrowPassage" parent="." instance=ExtResource("3_obstacle")]
+position = Vector2(7900, 0)
+kind = 2
+width = 340.0
+upper_tip_y = 230.0
+lower_tip_y = 480.0
+

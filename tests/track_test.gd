@@ -1,0 +1,127 @@
+extends SceneTree
+
+var failures: int = 0
+
+
+func _initialize() -> void:
+	_run.call_deferred()
+
+
+func _check(condition: bool, message: String) -> void:
+	if not condition:
+		failures += 1
+		push_error(message)
+
+
+func _target_height(x: float, upper_route: bool) -> float:
+	# Input driver used only by this test, never by the playable scene.
+	if x < 2250.0:
+		return 300.0
+	if x < 3350.0:
+		return 440.0
+	if x < 4250.0:
+		return 280.0
+	if x < 5150.0:
+		return 460.0
+	if x < 6050.0:
+		return 260.0
+	if x < 7000.0:
+		return 470.0
+	if x < 7950.0:
+		return 250.0
+	if x < 9150.0:
+		return 350.0
+	if x < 13200.0:
+		return 178.0 if upper_route else 490.0
+	if x < 14400.0:
+		return 335.0
+	if x < 15400.0:
+		return 410.0
+	if x < 16400.0:
+		return 305.0
+	if x < 17550.0:
+		return 440.0
+	return 320.0
+
+
+func _test_course(mode: int) -> void:
+	Input.action_release("burner")
+	var main: Node2D = load("res://scenes/Main.tscn").instantiate()
+	main.get_node("ItemCombat").enabled = false # Isolate pre-M5 regression.
+	main.get_node("RaceFlow").enabled = false # Isolate flight/items from lifecycle.
+	root.add_child(main)
+	var balloon: Balloon = main.get_node("Balloon")
+	var track: BalloonTrack = main.get_node("Track01")
+	var visited: Array[int] = []
+	var previous_progress: float = 0.0
+	var elapsed: float = 0.0
+	var crossed_divider: bool = false
+	_check(track.get_progress(track.start.global_position.x - 500.0) == 0.0, "Progress clamps before start")
+	_check(track.get_progress(track.finish.global_position.x + 500.0) == 1.0, "Progress clamps after finish")
+	_check(track.start.global_position.x < track.fork.global_position.x and
+		track.fork.global_position.x < track.merge.global_position.x and
+		track.merge.global_position.x < track.finish.global_position.x, "Ordered reference markers")
+	var estimate: float = (track.finish.global_position.x - track.start.global_position.x) / balloon.physics.horizontal_speed
+	_check(estimate >= 75.0 and estimate <= 90.0, "Track duration estimate")
+	for frame in Engine.physics_ticks_per_second * 100:
+		var x: float = balloon.global_position.x
+		var target_y: float = _target_height(x, mode == 0) if mode < 2 else 350.0
+		if mode == 3 or (mode != 2 and balloon.position.y + balloon.velocity.y * 0.5 > target_y):
+			Input.action_press("burner")
+		else:
+			Input.action_release("burner")
+		await physics_frame
+		await process_frame
+		elapsed = float(frame + 1) / Engine.physics_ticks_per_second
+		var progress: float = track.get_progress(balloon.global_position.x)
+		_check(progress >= previous_progress, "Progress never regresses with default physics")
+		previous_progress = progress
+		_check(balloon.position.y >= 32.0 + Balloon.TOP_EXTENT - 0.001 and balloon.position.y <= 640.0 - Balloon.BOTTOM_EXTENT + 0.001, "Vertical limits")
+		_check(absf(balloon.velocity.y) <= 250.01, "Vertical speed limit")
+		var zone: int = track.get_zone_index(balloon.global_position.x)
+		if zone not in visited:
+			visited.append(zone)
+		if balloon.position.x > 10600.0 and balloon.position.x < 12700.0 and mode < 2:
+			_check(balloon.position.y + Balloon.BOTTOM_EXTENT < 260.0 if mode == 0
+				else balloon.position.y - Balloon.TOP_EXTENT > 340.0, "Chosen route stays on its side of divider")
+		if balloon.get_collision_exceptions().has(track.get_node("Obstacles/RouteDivider")):
+			crossed_divider = true
+		if progress >= 1.0:
+			break
+	_check(previous_progress == 1.0, "Reached finish, mode %d" % mode)
+	_check(visited == [0, 1, 2, 3, 4, 5], "Traversed all six zones in order")
+	if mode < 2:
+		_check(balloon.collision_count == 0, "Route %d traversable without collisions" % mode)
+		_check(elapsed >= 75.0 and elapsed <= estimate + 0.1, "Wind-assisted route remains within target duration")
+	else:
+		_check(balloon.collision_count > 0, "Crash flight still reaches finish")
+	if mode == 4:
+		_check(crossed_divider, "Long divider collision exercised")
+		_check(balloon.get_collision_exceptions().is_empty(), "Long divider exception removed after clearance")
+	balloon.set_physics_process(false)
+	var key := InputEventKey.new()
+	key.physical_keycode = KEY_F2
+	key.pressed = true
+	Input.parse_input_event(key)
+	await process_frame
+	await process_frame
+	_check(main.get_node("HUD/TrackProgress").value == 100.0, "HUD reaches 100 percent")
+	_check(main.get_node("HUD/DebugPanel").visible, "F2 remains functional")
+	var debug: String = main.get_node("HUD/DebugPanel/Margin/DebugLabel").text
+	_check(debug.contains("Progreso: 100.0%") and debug.contains("Zona: 6/6"), "Debug progress and final zone")
+	_check(is_equal_approx(main.get_node("Camera2D").position.x, balloon.position.x + 280.0), "Camera reaches finish")
+	print("Track mode %d: %.2f s, %d collisions, zones=%s" % [mode, elapsed, balloon.collision_count, visited])
+	Input.action_release("burner")
+	main.queue_free()
+	await process_frame
+	await physics_frame
+
+
+func _run() -> void:
+	if not OS.get_cmdline_user_args().is_empty():
+		Engine.physics_ticks_per_second = int(OS.get_cmdline_user_args()[0])
+	for mode in 5:
+		await _test_course(mode)
+	print("TRACK TEST at %d Hz: %s (%d failures)" % [Engine.physics_ticks_per_second,
+		"PASS" if failures == 0 else "FAIL", failures])
+	quit(0 if failures == 0 else 1)

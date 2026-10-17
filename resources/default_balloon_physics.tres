@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BalloonPhysics" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/balloon_physics.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+gravity = 350.0
+burner_force = 650.0
+horizontal_speed = 220.0
+max_vertical_speed = 250.0
+impact_speed_multiplier = 0.6
+impact_recovery_time = 0.8
+impact_rebound_force = 90.0
+impact_protection_time = 0.75

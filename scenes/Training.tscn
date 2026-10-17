@@ -1,0 +1,125 @@
+[gd_scene load_steps=12 format=3]
+[ext_resource type="Script" path="res://scripts/training.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scenes/Balloon.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://scenes/Obstacle.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://scenes/ItemBox.tscn" id="4"]
+[ext_resource type="PackedScene" path="res://scenes/WindZone.tscn" id="5"]
+[ext_resource type="PackedScene" path="res://scenes/WorldVisual.tscn" id="6"]
+[ext_resource type="PackedScene" path="res://scenes/RaceOverlay.tscn" id="7"]
+[ext_resource type="Script" path="res://scripts/item_combat.gd" id="8"]
+[ext_resource type="Script" path="res://scripts/training_target.gd" id="9"]
+[sub_resource type="RectangleShape2D" id="target_shape"]
+size = Vector2(40, 490)
+[sub_resource type="StyleBoxFlat" id="hud"]
+bg_color = Color(0.06, 0.13, 0.22, 0.94)
+content_margin_left = 22.0
+content_margin_right = 22.0
+content_margin_top = 12.0
+content_margin_bottom = 12.0
+[node name="Training" type="Node2D"]
+script = ExtResource("1")
+[node name="PlayerBalloon" parent="." instance=ExtResource("2")]
+position = Vector2(240, 350)
+is_local_player = true
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(520, 360)
+[node name="ItemCombat" type="Node2D" parent="."]
+script = ExtResource("8")
+[node name="TrainingTrack" type="Node2D" parent="."]
+[node name="References" type="Node2D" parent="TrainingTrack"]
+[node name="Start" type="Marker2D" parent="TrainingTrack/References"]
+position = Vector2(240, 350)
+[node name="Merge" type="Marker2D" parent="TrainingTrack/References"]
+position = Vector2(10800, 350)
+[node name="Finish" type="Marker2D" parent="TrainingTrack/References"]
+position = Vector2(15800, 350)
+[node name="Checkpoints" type="Node2D" parent="."]
+[node name="Zone1" type="Marker2D" parent="Checkpoints"]
+position = Vector2(240, 350)
+[node name="Zone2" type="Marker2D" parent="Checkpoints"]
+position = Vector2(3800, 350)
+[node name="Zone3" type="Marker2D" parent="Checkpoints"]
+position = Vector2(7600, 350)
+[node name="Zone4" type="Marker2D" parent="Checkpoints"]
+position = Vector2(10800, 350)
+[node name="Obstacles" type="Node2D" parent="TrainingTrack"]
+[node name="Opening" parent="TrainingTrack/Obstacles" instance=ExtResource("3")]
+position = Vector2(2600, 0)
+kind = 2
+width = 300.0
+lower_tip_y = 500.0
+upper_tip_y = 170.0
+[node name="Lower" parent="TrainingTrack/Obstacles" instance=ExtResource("3")]
+position = Vector2(4800, 0)
+kind = 0
+width = 300.0
+lower_tip_y = 420.0
+upper_tip_y = 220.0
+[node name="Upper" parent="TrainingTrack/Obstacles" instance=ExtResource("3")]
+position = Vector2(6300, 0)
+kind = 1
+width = 300.0
+lower_tip_y = 440.0
+upper_tip_y = 280.0
+[node name="Box" parent="TrainingTrack" instance=ExtResource("4")]
+position = Vector2(8200, 540)
+guaranteed_item = 1
+[node name="Target" type="StaticBody2D" parent="TrainingTrack"]
+position = Vector2(10000, 340)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("9")
+[node name="Shape" type="CollisionShape2D" parent="TrainingTrack/Target"]
+shape = SubResource("target_shape")
+[node name="Wind" parent="TrainingTrack" instance=ExtResource("5")]
+position = Vector2(13700, 370)
+size = Vector2(1200, 430)
+[node name="WorldVisual" parent="TrainingTrack" instance=ExtResource("6")]
+[node name="HUD" type="CanvasLayer" parent="."]
+[node name="Info" type="PanelContainer" parent="HUD"]
+anchor_left = 0.18
+anchor_right = 0.82
+offset_top = 12.0
+offset_bottom = 116.0
+theme_override_styles/panel = SubResource("hud")
+[node name="Rows" type="VBoxContainer" parent="HUD/Info"]
+[node name="Progress" type="Label" parent="HUD/Info/Rows"]
+horizontal_alignment = 1
+[node name="Instruction" type="Label" parent="HUD/Info/Rows"]
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 24
+[node name="Feedback" type="Label" parent="HUD/Info/Rows"]
+horizontal_alignment = 1
+theme_override_colors/font_color = Color(0.5, 1, 0.65, 1)
+[node name="Retry" type="Button" parent="HUD/Info/Rows"]
+text = "Repetir etapa"
+[node name="Overlay" parent="HUD" instance=ExtResource("7")]
+[node name="Complete" type="PanelContainer" parent="HUD"]
+visible = false
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -330.0
+offset_right = 330.0
+offset_top = -140.0
+offset_bottom = 140.0
+theme_override_styles/panel = SubResource("hud")
+[node name="Rows" type="VBoxContainer" parent="HUD/Complete"]
+theme_override_constants/separation = 20
+[node name="Title" type="Label" parent="HUD/Complete/Rows"]
+theme_type_variation = &"ArcadeTitle"
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 28
+[node name="Message" type="Label" parent="HUD/Complete/Rows"]
+horizontal_alignment = 1
+[node name="Race" type="Button" parent="HUD/Complete/Rows"]
+text = "Correr"
+[node name="Home" type="Button" parent="HUD/Complete/Rows"]
+text = "Volver al menu"
+[node name="Debug" type="Label" parent="HUD"]
+visible = false
+offset_left = 15.0
+offset_top = 210.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6

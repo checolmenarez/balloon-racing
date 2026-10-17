@@ -1,0 +1,650 @@
+[
+  {
+    "path": "terrain/base/plataforma_recta",
+    "rect": [
+      20,
+      190,
+      225,
+      108
+    ],
+    "source": "kit",
+    "cutout": true,
+    "fade": false
+  },
+  {
+    "path": "terrain/base/plataforma_corta",
+    "rect": [
+      251,
+      192,
+      124,
+      111
+    ],
+    "source": "kit",
+    "cutout": true,
+    "fade": false
+  },
+  {
+    "path": "terrain/base/borde_izquierdo",
+    "rect": [
+      381,
+      176,
+      116,
+      130
+    ],
+    "source": "kit",
+    "cutout": true,
+    "fade": false
+  },
+  {
+    "path": "terrain/base/borde_derecho",
+    "rect": [
+      509,
+      178,
+      110,
+      128
+    ],
+    "source": "kit",
+    "cutout": true,
+    "fade": false
+  },
+  {
+    "path": "terrain/base/esquina_interior",
+    "rect": [
+      631,
+      178,
+      104,
+      128
+    ],
+    "source": "kit",
+    "cutout": true,
+    "fade": false
+  },
+  {
+    "path": "terrain/base/esquina_exterior",
+    "rect": [
+      751,
+      180,
+      103,
+      126
+    ],
+    "source": "kit",
+    "cutout": true,
+    "fade": false
+  },
+  {
+    "path": "terrain/base/isla_pequena",
+    "rect": [
+      866,
+      191,
+      100,
+      109
+    ],
+    "source": "kit",
+    "cutout": true,
+    "fade": false
+  },
+  {
+    "path": "terrain/base/isla_mediana",
+    "rect": [
+      980,
+      171,
+      119,
+      129
+    ],
+    "source": "kit",
+    "cutout": true,
+    "fade": false
+  },
+  {
+    "path": "terrain/base/isla_grande",
+    "rect": [
+      1104,
+      157,
+      188,
+      150
+    ],
+    "source": "kit",
+    "cutout": true,
+    "fade": false
+  },
+  {
+    "path": "terrain/base/base_rocosa",
+    "rect": [
+      1300,
+      180,
+      128,
+      126
+    ],
+    "source": "kit",
+    "cutout": true,
+    "fade": false
+  },
+  {
+    "path": "terrain/vertical/boca_cascada",
+    "rect": [
+      19,
+      390,
+      155,
+      194
+    ],
+    "source": "kit",
+    "cutout": true,
+    "fade": false
+  },
+  {
+    "path": "terrain/vertical/cascada_estrecha",
+    "rect": [
+      180,
+      404,
+      67,
+      178
+    ],
+    "source": "kit",
+    "cutout": true,
+    "fade": false
+  },
+  {
+    "path": "terrain/vertical/cascada_ancha",
+    "rect": [
+      252,
+      391,
+      166,
+      194
+    ],
+    "source": "kit",
+    "cutout": true,
+    "fade": false
+  },
+  {
+    "path": "terrain/vertical/vegetacion_colgante",
+    "rect": [
+      420,
+      388,
+      105,
+      187
+    ],
+    "source": "kit",
+    "cutout": true,
+    "fade": false
+  },
+  {
+    "path": "terrain/vertical/pilar_roca",
+    "rect": [
+      529,
+      380,
+      98,
+      207
+    ],
+    "source": "kit",
+    "cutout": true,
+    "fade": false
+  },
+  {
+    "path": "terrain/connectors/puente_colgante_corto",
+    "rect": [
+      668,
+      403,
+      149,
+      69
+    ],
+    "source": "kit",
+    "cutout": true,
+    "fade": false
+  },
+  {
+    "path": "terrain/connectors/puente_colgante_mediano",
+    "rect": [
+      830,
+      398,
+      218,
+      76
+    ],
+    "source": "kit",
+    "cutout": true,
+    "fade": false
+  },
+  {
+    "path": "terrain/connectors/valla_corta",
+    "rect": [
+      673,
+      521,
+      113,
+      63
+    ],
+    "source": "kit",
+    "cutout": true,
+    "fade": false
+  },
+  {
+    "path": "terrain/connectors/valla_larga",
+    "rect": [
+      804,
+      522,
+      211,
+      64
+    ],
+    "source": "kit",
+    "cutout": true,
+    "fade": false
+  },
+  {
+    "path": "terrain/connectors/plataforma_checkpoint",
+    "rect": [
+      1046,
+      414,
+      162,
+      178
+    ],
+    "source": "kit",
+    "cutout": true,
+    "fade": false
+  },
+  {
+    "path": "terrain/connectors/plataforma_inicio",
+    "rect": [
+      1216,
+      396,
+      214,
+      194
+    ],
+    "source": "kit",
+    "cutout": true,
+    "fade": false
+  },
+  {
+    "path": "props/decor/molino_viento",
+    "rect": [
+      29,
+      670,
+      165,
+      163
+    ],
+    "source": "kit",
+    "cutout": true,
+    "fade": false
+  },
+  {
+    "path": "props/decor/casita_torre",
+    "rect": [
+      207,
+      668,
+      165,
+      165
+    ],
+    "source": "kit",
+    "cutout": true,
+    "fade": false
+  },
+  {
+    "path": "props/decor/arbol_redondo",
+    "rect": [
+      375,
+      669,
+      174,
+      164
+    ],
+    "source": "kit",
+    "cutout": true,
+    "fade": false
+  },
+  {
+    "path": "props/decor/flores_arbustos",
+    "rect": [
+      550,
+      714,
+      190,
+      119
+    ],
+    "source": "kit",
+    "cutout": true,
+    "fade": false
+  },
+  {
+    "path": "props/decor/rocas_decorativas",
+    "rect": [
+      752,
+      721,
+      178,
+      112
+    ],
+    "source": "kit",
+    "cutout": true,
+    "fade": false
+  },
+  {
+    "path": "props/decor/poste_farol",
+    "rect": [
+      937,
+      669,
+      138,
+      164
+    ],
+    "source": "kit",
+    "cutout": true,
+    "fade": false
+  },
+  {
+    "path": "props/decor/cartel_madera",
+    "rect": [
+      1086,
+      689,
+      151,
+      144
+    ],
+    "source": "kit",
+    "cutout": true,
+    "fade": false
+  },
+  {
+    "path": "props/decor/bandera_ondeante",
+    "rect": [
+      1253,
+      650,
+      174,
+      183
+    ],
+    "source": "kit",
+    "cutout": true,
+    "fade": false
+  },
+  {
+    "path": "gameplay/hazards/roca_flotante",
+    "rect": [
+      32,
+      919,
+      104,
+      112
+    ],
+    "source": "kit",
+    "cutout": true,
+    "fade": false
+  },
+  {
+    "path": "gameplay/hazards/aspas_molino",
+    "rect": [
+      143,
+      912,
+      147,
+      122
+    ],
+    "source": "kit",
+    "cutout": true,
+    "fade": false
+  },
+  {
+    "path": "gameplay/hazards/nube_tormentosa",
+    "rect": [
+      299,
+      912,
+      151,
+      122
+    ],
+    "source": "kit",
+    "cutout": true,
+    "fade": false
+  },
+  {
+    "path": "props/decor/nube_decorativa",
+    "rect": [
+      456,
+      917,
+      144,
+      115
+    ],
+    "source": "kit",
+    "cutout": false,
+    "fade": false
+  },
+  {
+    "path": "gameplay/signage/indicador_direccion",
+    "rect": [
+      618,
+      932,
+      77,
+      92
+    ],
+    "source": "kit",
+    "cutout": true,
+    "fade": false
+  },
+  {
+    "path": "gameplay/signage/meta_visual",
+    "rect": [
+      741,
+      916,
+      222,
+      125
+    ],
+    "source": "kit",
+    "cutout": true,
+    "fade": false
+  },
+  {
+    "path": "props/decor/isla_castillo",
+    "rect": [
+      982,
+      882,
+      233,
+      161
+    ],
+    "source": "kit",
+    "cutout": true,
+    "fade": false
+  },
+  {
+    "path": "props/decor/isla_fondo",
+    "rect": [
+      1225,
+      924,
+      196,
+      118
+    ],
+    "source": "kit",
+    "cutout": true,
+    "fade": false
+  },
+  {
+    "path": "gameplay/signage/checkpoint_visual",
+    "rect": [
+      1166,
+      766,
+      58,
+      66
+    ],
+    "source": "guide",
+    "cutout": true,
+    "fade": false
+  },
+  {
+    "path": "gameplay/signage/item_box_universal",
+    "rect": [
+      1348,
+      764,
+      58,
+      63
+    ],
+    "source": "guide",
+    "cutout": true,
+    "fade": false
+  },
+  {
+    "path": "gameplay/hazards/barril_explosivo",
+    "rect": [
+      692,
+      841,
+      52,
+      46
+    ],
+    "source": "guide",
+    "cutout": true,
+    "fade": false
+  },
+  {
+    "path": "gameplay/hazards/mina_aerea",
+    "rect": [
+      774,
+      838,
+      56,
+      48
+    ],
+    "source": "guide",
+    "cutout": true,
+    "fade": false
+  },
+  {
+    "path": "gameplay/hazards/turbina",
+    "rect": [
+      863,
+      833,
+      60,
+      56
+    ],
+    "source": "guide",
+    "cutout": true,
+    "fade": false
+  },
+  {
+    "path": "gameplay/hazards/nube_electrica",
+    "rect": [
+      953,
+      839,
+      89,
+      47
+    ],
+    "source": "guide",
+    "cutout": true,
+    "fade": false
+  },
+  {
+    "path": "gameplay/wind/ascendente",
+    "rect": [
+      1065,
+      679,
+      88,
+      52
+    ],
+    "source": "guide",
+    "cutout": true,
+    "fade": false
+  },
+  {
+    "path": "gameplay/wind/lateral",
+    "rect": [
+      1158,
+      681,
+      78,
+      48
+    ],
+    "source": "guide",
+    "cutout": true,
+    "fade": false
+  },
+  {
+    "path": "gameplay/wind/descendente",
+    "rect": [
+      1254,
+      679,
+      61,
+      51
+    ],
+    "source": "guide",
+    "cutout": true,
+    "fade": false
+  },
+  {
+    "path": "gameplay/wind/remolino",
+    "rect": [
+      1333,
+      679,
+      75,
+      52
+    ],
+    "source": "guide",
+    "cutout": true,
+    "fade": false
+  },
+  {
+    "path": "parallax/layer_01_sky",
+    "rect": [
+      400,
+      20,
+      1250,
+      122
+    ],
+    "source": "landscape",
+    "cutout": false,
+    "fade": false
+  },
+  {
+    "path": "parallax/layer_02_far_clouds",
+    "rect": [
+      400,
+      155,
+      1250,
+      135
+    ],
+    "source": "landscape",
+    "cutout": false,
+    "fade": true
+  },
+  {
+    "path": "parallax/layer_03_distant_islands",
+    "rect": [
+      400,
+      302,
+      1250,
+      154
+    ],
+    "source": "landscape",
+    "cutout": false,
+    "fade": true
+  },
+  {
+    "path": "parallax/layer_04_mid_islands",
+    "rect": [
+      400,
+      469,
+      1250,
+      153
+    ],
+    "source": "landscape",
+    "cutout": false,
+    "fade": true
+  },
+  {
+    "path": "parallax/layer_05_playable_backdrop",
+    "rect": [
+      400,
+      635,
+      1250,
+      162
+    ],
+    "source": "landscape",
+    "cutout": false,
+    "fade": true
+  },
+  {
+    "path": "parallax/layer_06_front_clouds",
+    "rect": [
+      400,
+      808,
+      1250,
+      113
+    ],
+    "source": "landscape",
+    "cutout": false,
+    "fade": true
+  },
+  {
+    "path": "terrain/base/rock_fill",
+    "rect": [
+      1340,
+      206,
+      44,
+      42
+    ],
+    "source": "kit",
+    "cutout": false,
+    "fade": false
+  }
+]

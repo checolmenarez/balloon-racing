@@ -1,0 +1,410 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://scripts/home.gd" id="1"]
+
+[ext_resource type="Texture2D" path="res://assets/ui/home/background/home_bg.png" id="2"]
+
+[ext_resource type="Texture2D" path="res://assets/ui/home/logo/logo_main.png" id="3"]
+
+[ext_resource type="Texture2D" path="res://assets/ui/home/characters/calaca_home.png" id="4"]
+
+[ext_resource type="Texture2D" path="res://assets/ui/home/characters/timo_home.png" id="5"]
+
+[ext_resource type="Texture2D" path="res://assets/ui/home/characters/greta_home.png" id="6"]
+
+[ext_resource type="Texture2D" path="res://assets/ui/home/characters/pomposo_home.png" id="7"]
+
+[node name="StartMenu" type="Control"]
+
+layout_mode = 3
+
+anchors_preset = 15
+
+anchor_right = 1.0
+
+anchor_bottom = 1.0
+
+grow_horizontal = 2
+
+grow_vertical = 2
+
+script = ExtResource("1")
+
+[node name="Background" type="TextureRect" parent="."]
+
+layout_mode = 3
+
+anchors_preset = 15
+
+anchor_right = 1.0
+
+anchor_bottom = 1.0
+
+grow_horizontal = 2
+
+grow_vertical = 2
+
+mouse_filter = 2
+
+texture = ExtResource("2")
+
+expand_mode = 1
+
+stretch_mode = 6
+
+[node name="Shade" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.025, 0.09, 0.19, 0.20)
+
+[node name="Characters" type="Control" parent="."]
+
+layout_mode = 3
+
+anchors_preset = 15
+
+anchor_right = 1.0
+
+anchor_bottom = 1.0
+
+grow_horizontal = 2
+
+grow_vertical = 2
+
+mouse_filter = 2
+
+[node name="Calaca" type="TextureRect" parent="Characters"]
+
+anchor_left = 0.13
+
+anchor_right = 0.13
+
+anchor_top = 0.3
+
+anchor_bottom = 0.3
+
+offset_left = -182.0
+
+offset_right = 182.0
+
+offset_top = -195.0
+
+offset_bottom = 195.0
+
+mouse_filter = 2
+
+texture = ExtResource("4")
+
+expand_mode = 1
+
+stretch_mode = 5
+
+[node name="Timo" type="TextureRect" parent="Characters"]
+
+anchor_left = 0.185
+
+anchor_right = 0.185
+
+anchor_top = 0.755
+
+anchor_bottom = 0.755
+
+offset_left = -149.5
+
+offset_right = 149.5
+
+offset_top = -162.5
+
+offset_bottom = 162.5
+
+mouse_filter = 2
+
+texture = ExtResource("5")
+
+expand_mode = 1
+
+stretch_mode = 5
+
+[node name="Greta" type="TextureRect" parent="Characters"]
+
+anchor_left = 0.875
+
+anchor_right = 0.875
+
+anchor_top = 0.32
+
+anchor_bottom = 0.32
+
+offset_left = -182.0
+
+offset_right = 182.0
+
+offset_top = -195.0
+
+offset_bottom = 195.0
+
+mouse_filter = 2
+
+texture = ExtResource("6")
+
+expand_mode = 1
+
+stretch_mode = 5
+
+[node name="Pomposo" type="TextureRect" parent="Characters"]
+
+anchor_left = 0.845
+
+anchor_right = 0.845
+
+anchor_top = 0.76
+
+anchor_bottom = 0.76
+
+offset_left = -149.5
+
+offset_right = 149.5
+
+offset_top = -162.5
+
+offset_bottom = 162.5
+
+mouse_filter = 2
+
+texture = ExtResource("7")
+
+expand_mode = 1
+
+stretch_mode = 5
+
+[node name="Layout" type="CenterContainer" parent="."]
+
+layout_mode = 3
+
+anchors_preset = 15
+
+anchor_right = 1.0
+
+anchor_bottom = 1.0
+
+grow_horizontal = 2
+
+grow_vertical = 2
+
+mouse_filter = 2
+
+[node name="Rows" type="VBoxContainer" parent="Layout"]
+
+layout_mode = 2
+
+theme_override_constants/separation = 8
+
+[node name="Logo" type="TextureRect" parent="Layout/Rows"]
+
+layout_mode = 2
+
+custom_minimum_size = Vector2(460, 250)
+
+mouse_filter = 2
+
+texture = ExtResource("3")
+
+expand_mode = 1
+
+stretch_mode = 5
+
+[node name="Buttons" type="VBoxContainer" parent="Layout/Rows"]
+
+layout_mode = 2
+
+theme_override_constants/separation = 8
+
+[node name="Race" type="Button" parent="Layout/Rows/Buttons"]
+theme_type_variation = &"ArcadePrimary"
+
+layout_mode = 2
+
+custom_minimum_size = Vector2(460, 86)
+
+text = "¡CORRER!"
+
+[node name="Selection" type="Button" parent="Layout/Rows/Buttons"]
+layout_mode = 2
+custom_minimum_size = Vector2(460, 64)
+text = "Selección de personaje"
+
+[node name="Training" type="Button" parent="Layout/Rows/Buttons"]
+
+layout_mode = 2
+
+custom_minimum_size = Vector2(460, 64)
+
+text = "Entrenamiento"
+
+[node name="Help" type="Button" parent="Layout/Rows/Buttons"]
+
+layout_mode = 2
+
+custom_minimum_size = Vector2(460, 64)
+
+text = "Cómo jugar"
+
+[node name="Options" type="Button" parent="Layout/Rows/Buttons"]
+
+layout_mode = 2
+
+custom_minimum_size = Vector2(460, 64)
+
+text = "Opciones"
+
+[node name="Hint" type="Label" parent="Layout/Rows"]
+theme_override_font_sizes/font_size = 16
+
+layout_mode = 2
+
+text = "Mouse o flechas / Tab + Enter"
+
+horizontal_alignment = 1
+
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+
+theme_override_colors/font_outline_color = Color(0.1, 0.2, 0.3, 1)
+
+theme_override_constants/outline_size = 4
+
+[node name="Help" type="CenterContainer" parent="."]
+
+layout_mode = 3
+
+anchors_preset = 15
+
+anchor_right = 1.0
+
+anchor_bottom = 1.0
+
+grow_horizontal = 2
+
+grow_vertical = 2
+
+visible = false
+
+[node name="Panel" type="PanelContainer" parent="Help"]
+
+layout_mode = 2
+
+custom_minimum_size = Vector2(650, 0)
+
+[node name="Rows" type="VBoxContainer" parent="Help/Panel"]
+
+layout_mode = 2
+
+theme_override_constants/separation = 22
+
+[node name="Title" type="Label" parent="Help/Panel/Rows"]
+theme_type_variation = &"ArcadeTitle"
+
+layout_mode = 2
+
+text = "Cómo jugar"
+
+horizontal_alignment = 1
+
+theme_override_font_sizes/font_size = 30
+
+[node name="Instructions" type="Label" parent="Help/Panel/Rows"]
+
+layout_mode = 2
+
+text = "Controles"
+
+theme_override_font_sizes/font_size = 21
+
+[node name="Back" type="Button" parent="Help/Panel/Rows"]
+
+layout_mode = 2
+
+text = "Volver"
+
+custom_minimum_size = Vector2(0, 48)
+
+[node name="Options" type="CenterContainer" parent="."]
+
+layout_mode = 3
+
+anchors_preset = 15
+
+anchor_right = 1.0
+
+anchor_bottom = 1.0
+
+grow_horizontal = 2
+
+grow_vertical = 2
+
+visible = false
+
+[node name="Panel" type="PanelContainer" parent="Options"]
+
+layout_mode = 2
+
+custom_minimum_size = Vector2(650, 0)
+
+[node name="Rows" type="VBoxContainer" parent="Options/Panel"]
+
+layout_mode = 2
+
+theme_override_constants/separation = 22
+
+[node name="Title" type="Label" parent="Options/Panel/Rows"]
+theme_type_variation = &"ArcadeTitle"
+
+layout_mode = 2
+
+text = "Audio"
+
+horizontal_alignment = 1
+
+theme_override_font_sizes/font_size = 30
+
+[node name="MusicLabel" type="Label" parent="Options/Panel/Rows"]
+
+layout_mode = 2
+
+text = "Music"
+
+[node name="Music" type="HSlider" parent="Options/Panel/Rows"]
+
+layout_mode = 2
+
+custom_minimum_size = Vector2(0, 34)
+
+max_value = 100.0
+
+step = 1.0
+
+[node name="EffectsLabel" type="Label" parent="Options/Panel/Rows"]
+
+layout_mode = 2
+
+text = "Effects"
+
+[node name="Effects" type="HSlider" parent="Options/Panel/Rows"]
+
+layout_mode = 2
+
+custom_minimum_size = Vector2(0, 34)
+
+max_value = 100.0
+
+step = 1.0
+
+[node name="Back" type="Button" parent="Options/Panel/Rows"]
+
+layout_mode = 2
+
+text = "Volver"
+
+custom_minimum_size = Vector2(0, 48)

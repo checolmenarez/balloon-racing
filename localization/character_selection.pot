@@ -1,0 +1,104 @@
+# Character selection UI source strings. Artwork and character IDs are not translated.
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Calaca Bonifacia"
+msgstr ""
+
+msgid "La pirata del cielo"
+msgstr ""
+
+msgid "Caos y teatralidad"
+msgstr ""
+
+msgid "Una capitana pirata-esqueleto tan intensa como divertida. Le encanta intimidar, presumir y atacar a sus rivales, aunque en el fondo disfruta el caos más que la victoria."
+msgstr ""
+
+msgid "Timo Chispa"
+msgstr ""
+
+msgid "El piloto novato"
+msgstr ""
+
+msgid "Energía y entusiasmo"
+msgstr ""
+
+msgid "Un joven aviador lleno de energía que sueña con ser el más rápido del cielo. Optimista, impulsivo y un poco torpe, siempre se lanza a la aventura con una gran sonrisa."
+msgstr ""
+
+msgid "Greta Tuerca"
+msgstr ""
+
+msgid "La inventora del caos"
+msgstr ""
+
+msgid "Ingenio y riesgo"
+msgstr ""
+
+msgid "Una brillante e ingeniosa inventora que convierte cualquier problema en un experimento divertido. Vive para crear, ajustar y explotar cosas, y rara vez juega sobre seguro."
+msgstr ""
+
+msgid "Lord Pomposo IV"
+msgstr ""
+
+msgid "El aristócrata del aire"
+msgstr ""
+
+msgid "Clase y arrogancia"
+msgstr ""
+
+msgid "Un noble corredor que compite como si cada carrera fuera un evento de gala. Arrogante, dramático y elegantemente exigente, convierte los cielos en su escenario personal."
+msgstr ""
+
+msgid "TEATRAL"
+msgstr ""
+
+msgid "TRAVIESA"
+msgstr ""
+
+msgid "COMPETITIVA"
+msgstr ""
+
+msgid "OPTIMISTA"
+msgstr ""
+
+msgid "IMPULSIVO"
+msgstr ""
+
+msgid "COMPETITIVO"
+msgstr ""
+
+msgid "INGENIOSA"
+msgstr ""
+
+msgid "CAÓTICA"
+msgstr ""
+
+msgid "INTENSA"
+msgstr ""
+
+msgid "ARROGANTE"
+msgstr ""
+
+msgid "ELEGANTE"
+msgstr ""
+
+msgid "DRAMÁTICO"
+msgstr ""
+
+msgid "ELIGE TU CORREDOR"
+msgstr ""
+
+msgid "Elige tu globo para Valle Ventoso"
+msgstr ""
+
+msgid "Comenzar carrera"
+msgstr ""
+
+msgid "Volver"
+msgstr ""
+
+msgid "Mouse / Flechas / Cruceta: elegir   |   Tab: navegar   |   Enter / A: aceptar   |   Esc / B: volver"
+msgstr ""

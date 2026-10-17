@@ -1,0 +1,507 @@
+{
+	"baseline": "Human holds no keys; compare bots only",
+	"fastest_bot": {
+		"Competitivo": 2,
+		"Equilibrado": 4,
+		"Novato": 6
+	},
+	"races": [
+		{
+			"results": [
+				{
+					"collected": 8,
+					"collisions": 0,
+					"items": 7,
+					"name": "Novato",
+					"place": 1,
+					"route": "lower",
+					"time": 78.3442994139553
+				},
+				{
+					"collected": 3,
+					"collisions": 1,
+					"items": 3,
+					"name": "Competitivo",
+					"place": 2,
+					"route": "upper",
+					"time": 81.6595369639535
+				},
+				{
+					"collected": 4,
+					"collisions": 1,
+					"items": 3,
+					"name": "Equilibrado",
+					"place": 3,
+					"route": "upper",
+					"time": 81.8179097851147
+				},
+				{
+					"collected": 1,
+					"collisions": 10,
+					"items": 0,
+					"name": "Jugador",
+					"place": 4,
+					"route": "passive human",
+					"time": 85.7764695435944
+				}
+			],
+			"seed": 1
+		},
+		{
+			"results": [
+				{
+					"collected": 2,
+					"collisions": 0,
+					"items": 1,
+					"name": "Equilibrado",
+					"place": 1,
+					"route": "lower",
+					"time": 82.6313443438076
+				},
+				{
+					"collected": 8,
+					"collisions": 1,
+					"items": 8,
+					"name": "Competitivo",
+					"place": 2,
+					"route": "upper",
+					"time": 82.8271770586654
+				},
+				{
+					"collected": 7,
+					"collisions": 2,
+					"items": 7,
+					"name": "Novato",
+					"place": 3,
+					"route": "upper",
+					"time": 83.0708760852373
+				},
+				{
+					"collected": 1,
+					"collisions": 10,
+					"items": 0,
+					"name": "Jugador",
+					"place": 4,
+					"route": "passive human",
+					"time": 86.5598028769276
+				}
+			],
+			"seed": 2
+		},
+		{
+			"results": [
+				{
+					"collected": 3,
+					"collisions": 0,
+					"items": 2,
+					"name": "Novato",
+					"place": 1,
+					"route": "lower",
+					"time": 81.8444326052177
+				},
+				{
+					"collected": 5,
+					"collisions": 1,
+					"items": 4,
+					"name": "Equilibrado",
+					"place": 2,
+					"route": "lower",
+					"time": 81.902894690105
+				},
+				{
+					"collected": 4,
+					"collisions": 1,
+					"items": 3,
+					"name": "Competitivo",
+					"place": 3,
+					"route": "lower",
+					"time": 82.0012875155356
+				},
+				{
+					"collected": 1,
+					"collisions": 10,
+					"items": 0,
+					"name": "Jugador",
+					"place": 4,
+					"route": "passive human",
+					"time": 86.1764873024294
+				}
+			],
+			"seed": 3
+		},
+		{
+			"results": [
+				{
+					"collected": 6,
+					"collisions": 0,
+					"items": 5,
+					"name": "Equilibrado",
+					"place": 1,
+					"route": "lower",
+					"time": 80.3477979044542
+				},
+				{
+					"collected": 5,
+					"collisions": 1,
+					"items": 4,
+					"name": "Competitivo",
+					"place": 2,
+					"route": "lower",
+					"time": 80.6857307760578
+				},
+				{
+					"collected": 4,
+					"collisions": 0,
+					"items": 3,
+					"name": "Novato",
+					"place": 3,
+					"route": "lower",
+					"time": 81.8444326052177
+				},
+				{
+					"collected": 0,
+					"collisions": 10,
+					"items": 0,
+					"name": "Jugador",
+					"place": 4,
+					"route": "passive human",
+					"time": 85.7764695435944
+				}
+			],
+			"seed": 4
+		},
+		{
+			"results": [
+				{
+					"collected": 5,
+					"collisions": 0,
+					"items": 4,
+					"name": "Competitivo",
+					"place": 1,
+					"route": "lower",
+					"time": 80.1383058071358
+				},
+				{
+					"collected": 6,
+					"collisions": 1,
+					"items": 6,
+					"name": "Novato",
+					"place": 2,
+					"route": "upper",
+					"time": 81.6591489081787
+				},
+				{
+					"collected": 5,
+					"collisions": 1,
+					"items": 4,
+					"name": "Equilibrado",
+					"place": 3,
+					"route": "lower",
+					"time": 82.08775528325
+				},
+				{
+					"collected": 0,
+					"collisions": 10,
+					"items": 0,
+					"name": "Jugador",
+					"place": 4,
+					"route": "passive human",
+					"time": 86.1764873024294
+				}
+			],
+			"seed": 5
+		},
+		{
+			"results": [
+				{
+					"collected": 7,
+					"collisions": 1,
+					"items": 6,
+					"name": "Novato",
+					"place": 1,
+					"route": "lower",
+					"time": 81.4725625998901
+				},
+				{
+					"collected": 6,
+					"collisions": 0,
+					"items": 5,
+					"name": "Equilibrado",
+					"place": 2,
+					"route": "lower",
+					"time": 81.5379239921828
+				},
+				{
+					"collected": 1,
+					"collisions": 1,
+					"items": 0,
+					"name": "Competitivo",
+					"place": 3,
+					"route": "upper",
+					"time": 82.7007458710675
+				},
+				{
+					"collected": 1,
+					"collisions": 10,
+					"items": 0,
+					"name": "Jugador",
+					"place": 4,
+					"route": "passive human",
+					"time": 86.5764784230118
+				}
+			],
+			"seed": 6
+		},
+		{
+			"results": [
+				{
+					"collected": 7,
+					"collisions": 0,
+					"items": 6,
+					"name": "Novato",
+					"place": 1,
+					"route": "lower",
+					"time": 81.8445746758979
+				},
+				{
+					"collected": 3,
+					"collisions": 1,
+					"items": 2,
+					"name": "Equilibrado",
+					"place": 2,
+					"route": "lower",
+					"time": 82.086432250041
+				},
+				{
+					"collected": 2,
+					"collisions": 0,
+					"items": 1,
+					"name": "Competitivo",
+					"place": 3,
+					"route": "lower",
+					"time": 82.937773042085
+				},
+				{
+					"collected": 1,
+					"collisions": 10,
+					"items": 0,
+					"name": "Jugador",
+					"place": 4,
+					"route": "passive human",
+					"time": 86.1764873024294
+				}
+			],
+			"seed": 7
+		},
+		{
+			"results": [
+				{
+					"collected": 5,
+					"collisions": 0,
+					"items": 4,
+					"name": "Competitivo",
+					"place": 1,
+					"route": "lower",
+					"time": 81.8445746758979
+				},
+				{
+					"collected": 4,
+					"collisions": 1,
+					"items": 3,
+					"name": "Novato",
+					"place": 2,
+					"route": "upper",
+					"time": 82.0012963949531
+				},
+				{
+					"collected": 5,
+					"collisions": 0,
+					"items": 4,
+					"name": "Equilibrado",
+					"place": 3,
+					"route": "lower",
+					"time": 82.0546172971019
+				},
+				{
+					"collected": 0,
+					"collisions": 10,
+					"items": 0,
+					"name": "Jugador",
+					"place": 4,
+					"route": "passive human",
+					"time": 86.1764873024294
+				}
+			],
+			"seed": 8
+		},
+		{
+			"results": [
+				{
+					"collected": 6,
+					"collisions": 1,
+					"items": 5,
+					"name": "Novato",
+					"place": 1,
+					"route": "lower",
+					"time": 81.1339815308083
+				},
+				{
+					"collected": 8,
+					"collisions": 0,
+					"items": 7,
+					"name": "Competitivo",
+					"place": 2,
+					"route": "lower",
+					"time": 81.1447078671606
+				},
+				{
+					"collected": 3,
+					"collisions": 1,
+					"items": 2,
+					"name": "Equilibrado",
+					"place": 3,
+					"route": "upper",
+					"time": 82.3938998401671
+				},
+				{
+					"collected": 1,
+					"collisions": 10,
+					"items": 0,
+					"name": "Jugador",
+					"place": 4,
+					"route": "passive human",
+					"time": 86.343136210261
+				}
+			],
+			"seed": 9
+		},
+		{
+			"results": [
+				{
+					"collected": 5,
+					"collisions": 1,
+					"items": 4,
+					"name": "Novato",
+					"place": 1,
+					"route": "lower",
+					"time": 82.0852246492596
+				},
+				{
+					"collected": 3,
+					"collisions": 0,
+					"items": 2,
+					"name": "Competitivo",
+					"place": 2,
+					"route": "lower",
+					"time": 82.1920085242374
+				},
+				{
+					"collected": 4,
+					"collisions": 0,
+					"items": 3,
+					"name": "Equilibrado",
+					"place": 3,
+					"route": "lower",
+					"time": 82.3616409163525
+				},
+				{
+					"collected": 0,
+					"collisions": 10,
+					"items": 0,
+					"name": "Jugador",
+					"place": 4,
+					"route": "passive human",
+					"time": 86.1764873024294
+				}
+			],
+			"seed": 10
+		},
+		{
+			"results": [
+				{
+					"collected": 3,
+					"collisions": 0,
+					"items": 2,
+					"name": "Equilibrado",
+					"place": 1,
+					"route": "lower",
+					"time": 81.8445746758979
+				},
+				{
+					"collected": 3,
+					"collisions": 1,
+					"items": 2,
+					"name": "Competitivo",
+					"place": 2,
+					"route": "lower",
+					"time": 81.9024507192294
+				},
+				{
+					"collected": 3,
+					"collisions": 2,
+					"items": 2,
+					"name": "Novato",
+					"place": 3,
+					"route": "upper",
+					"time": 83.3388829692738
+				},
+				{
+					"collected": 0,
+					"collisions": 10,
+					"items": 0,
+					"name": "Jugador",
+					"place": 4,
+					"route": "passive human",
+					"time": 86.1764873024294
+				}
+			],
+			"seed": 11
+		},
+		{
+			"results": [
+				{
+					"collected": 5,
+					"collisions": 1,
+					"items": 4,
+					"name": "Equilibrado",
+					"place": 1,
+					"route": "upper",
+					"time": 82.4666577872458
+				},
+				{
+					"collected": 7,
+					"collisions": 1,
+					"items": 6,
+					"name": "Competitivo",
+					"place": 2,
+					"route": "upper",
+					"time": 82.7287693127297
+				},
+				{
+					"collected": 5,
+					"collisions": 2,
+					"items": 5,
+					"name": "Novato",
+					"place": 3,
+					"route": "upper",
+					"time": 82.9702450719199
+				},
+				{
+					"collected": 1,
+					"collisions": 10,
+					"items": 0,
+					"name": "Jugador",
+					"place": 4,
+					"route": "passive human",
+					"time": 86.5764784230118
+				}
+			],
+			"seed": 12
+		}
+	],
+	"wins": {
+		"Competitivo": 2,
+		"Equilibrado": 4,
+		"Novato": 6
+	}
+}

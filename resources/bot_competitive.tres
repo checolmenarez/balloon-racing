@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BotProfile" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/bot_profile.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+profile_name = "Competitivo"
+look_ahead = 580
+reaction_time = 0.24
+height_precision = 12
+error_margin = 32
+upper_route_probability = 0.55
+preferred_route = 1
+error_phase = 4
