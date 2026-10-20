@@ -1,0 +1,159 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: en\n"
+
+msgid "¡YA!"
+msgstr "GO!"
+
+msgid " · Esperando llegadas…"
+msgstr " · Waiting for finishers…"
+
+msgid "Listo"
+msgstr "Ready"
+
+msgid "En espera"
+msgstr "Stand by"
+
+msgid "Busca una caja"
+msgstr "Find a box"
+
+msgid "En uso"
+msgstr "Active"
+
+msgid "Sin objetivo"
+msgstr "No target"
+
+msgid "[A] %s · %s"
+msgstr "[A] %s · %s"
+
+msgid "[D] Turbo: %d"
+msgstr "[D] Turbo: %d"
+
+msgid "Espera %.0f s"
+msgstr "Wait %.0f s"
+
+msgid "%d / 4"
+msgstr "%d / 4"
+
+msgid "Vacío"
+msgstr "Empty"
+
+msgid "Cohete"
+msgstr "Rocket"
+
+msgid "Bomba"
+msgstr "Bomb"
+
+msgid "Turbo"
+msgstr "Turbo"
+
+msgid "Tormenta"
+msgstr "Storm"
+
+msgid "↑ Subir · A Objeto · D Turbo · SPACE Pausa"
+msgstr "↑ Rise · A Item · D Turbo · SPACE Pause"
+
+msgid "¡TORMENTA EN CAMINO!"
+msgstr "STORM INCOMING!"
+
+msgid "¡IMPACTO DE TORMENTA!"
+msgstr "STORM HIT!"
+
+msgid "Reiniciar entrenamiento"
+msgstr "Restart training"
+
+msgid "PAUSA"
+msgstr "PAUSED"
+
+msgid "Continuar"
+msgstr "Resume"
+
+msgid "Reiniciar carrera"
+msgstr "Restart race"
+
+msgid "SPACE: continuar"
+msgstr "SPACE: resume"
+
+msgid "Volver al menú principal"
+msgstr "Back to Home"
+
+msgid "Volver al menú"
+msgstr "Back to Home"
+
+msgid "¡ENTRENAMIENTO COMPLETADO!"
+msgstr "TRAINING COMPLETE!"
+
+msgid "¡Ya estás listo para competir!"
+msgstr "You're ready to race!"
+
+msgid "Repetir etapa"
+msgstr "Retry stage"
+
+msgid "Correr"
+msgstr "Race"
+
+msgid "ACADEMIA DE VUELO · %d/4 · SPACE: pausa"
+msgstr "FLIGHT ACADEMY · %d/4 · SPACE: pause"
+
+msgid "Mantén ↑ para subir"
+msgstr "Hold ↑ to rise"
+
+msgid "¡Bien! Suelta ↑ para descender"
+msgstr "Great! Release ↑ to descend"
+
+msgid "El globo tiene inercia. Anticipa tus movimientos"
+msgstr "Your balloon has momentum. Plan ahead"
+
+msgid "Esquiva los obstáculos controlando tu altura"
+msgstr "Control your altitude to dodge obstacles"
+
+msgid "¡Recuerda! El globo tarda en cambiar de dirección"
+msgstr "Remember: changing direction takes time"
+
+msgid "Recoge la caja para conseguir un objeto"
+msgstr "Collect the box to get an item"
+
+msgid "Pulsa A para utilizar tu cohete"
+msgstr "Press A to fire your rocket"
+
+msgid "¡Diana alcanzada! Continúa"
+msgstr "Target hit! Keep going"
+
+msgid "El cohete va hacia delante; puedes repetir la etapa"
+msgstr "Rockets fly forward. You can retry this stage"
+
+msgid "Pulsa D para activar tu turbo"
+msgstr "Press D to activate turbo"
+
+msgid "¡Atraviesa la corriente de viento para acelerar!"
+msgstr "Fly through the wind current to speed up!"
+
+msgid "¡Muy bien! Cruza la meta del entrenamiento"
+msgstr "Great! Cross the training finish line"
+
+msgid "¡Diana! Sigue adelante"
+msgstr "Bullseye! Keep going"
+
+msgid "¡Etapa completada!"
+msgstr "Stage complete!"
+
+msgid "Probemos de nuevo desde esta etapa"
+msgstr "Let's try this stage again"
+
+
+#: HUD V1
+msgid "%s\nTramo %d/%d"
+msgstr "%s\nSector %d/%d"
+
+#: HUD V1
+msgid "[%s] Turbo: %d"
+msgstr "[%s] Turbo: %d"
+
+#: HUD V1
+msgid "Sin cargas"
+msgstr "No charges"
+
+#: HUD V1
+msgid "Pausa"
+msgstr "Pause"

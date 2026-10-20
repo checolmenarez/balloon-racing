@@ -1,0 +1,159 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: es\n"
+
+msgid "¡YA!"
+msgstr "¡YA!"
+
+msgid " · Esperando llegadas…"
+msgstr " · Esperando llegadas…"
+
+msgid "Listo"
+msgstr "Listo"
+
+msgid "En espera"
+msgstr "En espera"
+
+msgid "Busca una caja"
+msgstr "Busca una caja"
+
+msgid "En uso"
+msgstr "En uso"
+
+msgid "Sin objetivo"
+msgstr "Sin objetivo"
+
+msgid "[A] %s · %s"
+msgstr "[A] %s · %s"
+
+msgid "[D] Turbo: %d"
+msgstr "[D] Turbo: %d"
+
+msgid "Espera %.0f s"
+msgstr "Espera %.0f s"
+
+msgid "%d / 4"
+msgstr "%d / 4"
+
+msgid "Vacío"
+msgstr "Vacío"
+
+msgid "Cohete"
+msgstr "Cohete"
+
+msgid "Bomba"
+msgstr "Bomba"
+
+msgid "Turbo"
+msgstr "Turbo"
+
+msgid "Tormenta"
+msgstr "Tormenta"
+
+msgid "↑ Subir · A Objeto · D Turbo · SPACE Pausa"
+msgstr "↑ Subir · A Objeto · D Turbo · SPACE Pausa"
+
+msgid "¡TORMENTA EN CAMINO!"
+msgstr "¡TORMENTA EN CAMINO!"
+
+msgid "¡IMPACTO DE TORMENTA!"
+msgstr "¡IMPACTO DE TORMENTA!"
+
+msgid "Reiniciar entrenamiento"
+msgstr "Reiniciar entrenamiento"
+
+msgid "PAUSA"
+msgstr "PAUSA"
+
+msgid "Continuar"
+msgstr "Continuar"
+
+msgid "Reiniciar carrera"
+msgstr "Reiniciar carrera"
+
+msgid "SPACE: continuar"
+msgstr "SPACE: continuar"
+
+msgid "Volver al menú principal"
+msgstr "Volver al menú principal"
+
+msgid "Volver al menú"
+msgstr "Volver al menú"
+
+msgid "¡ENTRENAMIENTO COMPLETADO!"
+msgstr "¡ENTRENAMIENTO COMPLETADO!"
+
+msgid "¡Ya estás listo para competir!"
+msgstr "¡Ya estás listo para competir!"
+
+msgid "Repetir etapa"
+msgstr "Repetir etapa"
+
+msgid "Correr"
+msgstr "Correr"
+
+msgid "ACADEMIA DE VUELO · %d/4 · SPACE: pausa"
+msgstr "ACADEMIA DE VUELO · %d/4 · SPACE: pausa"
+
+msgid "Mantén ↑ para subir"
+msgstr "Mantén ↑ para subir"
+
+msgid "¡Bien! Suelta ↑ para descender"
+msgstr "¡Bien! Suelta ↑ para descender"
+
+msgid "El globo tiene inercia. Anticipa tus movimientos"
+msgstr "El globo tiene inercia. Anticipa tus movimientos"
+
+msgid "Esquiva los obstáculos controlando tu altura"
+msgstr "Esquiva los obstáculos controlando tu altura"
+
+msgid "¡Recuerda! El globo tarda en cambiar de dirección"
+msgstr "¡Recuerda! El globo tarda en cambiar de dirección"
+
+msgid "Recoge la caja para conseguir un objeto"
+msgstr "Recoge la caja para conseguir un objeto"
+
+msgid "Pulsa A para utilizar tu cohete"
+msgstr "Pulsa A para utilizar tu cohete"
+
+msgid "¡Diana alcanzada! Continúa"
+msgstr "¡Diana alcanzada! Continúa"
+
+msgid "El cohete va hacia delante; puedes repetir la etapa"
+msgstr "El cohete va hacia delante; puedes repetir la etapa"
+
+msgid "Pulsa D para activar tu turbo"
+msgstr "Pulsa D para activar tu turbo"
+
+msgid "¡Atraviesa la corriente de viento para acelerar!"
+msgstr "¡Atraviesa la corriente de viento para acelerar!"
+
+msgid "¡Muy bien! Cruza la meta del entrenamiento"
+msgstr "¡Muy bien! Cruza la meta del entrenamiento"
+
+msgid "¡Diana! Sigue adelante"
+msgstr "¡Diana! Sigue adelante"
+
+msgid "¡Etapa completada!"
+msgstr "¡Etapa completada!"
+
+msgid "Probemos de nuevo desde esta etapa"
+msgstr "Probemos de nuevo desde esta etapa"
+
+
+#: HUD V1
+msgid "%s\nTramo %d/%d"
+msgstr "%s\nTramo %d/%d"
+
+#: HUD V1
+msgid "[%s] Turbo: %d"
+msgstr "[%s] Turbo: %d"
+
+#: HUD V1
+msgid "Sin cargas"
+msgstr "Sin cargas"
+
+#: HUD V1
+msgid "Pausa"
+msgstr "Pausa"

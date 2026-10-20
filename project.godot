@@ -60,6 +60,11 @@ toggle_debug={
 ]
 }
 
+[internationalization]
+
+locale/translations=PackedStringArray("res://localization/es.po", "res://localization/en.po")
+locale/fallback="es"
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"

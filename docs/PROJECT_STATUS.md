@@ -1,6 +1,6 @@
 # Estado del proyecto
 
-Fecha de actualización: 2026-10-17  
+Fecha de actualización: 2026-10-18
 Commit de referencia: `448d2023d4f657f46b73d2ae00d9fe9ded44569c` — `MVP commit 1` (2026-10-16)
 
 ## Resumen del MVP
@@ -44,7 +44,7 @@ La documentación existente solicita revisar manualmente F5, controles UP/A/D, p
 - Completar la revisión humana reproducible descrita en `docs/milestone-6.3-verification.md`, `docs/controls-pause.md`, `docs/menus.md` y `docs/music-v2.md`.
 - Completar el playtesting humano de M7.1 y registrar sus resultados sin confundirlo con la cobertura automatizada existente.
 - Mantener la decisión aprobada de dos cargas para carreras M6.3 separada de la carga de entrenamiento; la fase experimental histórica de M6.2 debe conservarse como historial.
-- Confirmar traducciones reales: `localization/character_selection.pot` prepara cadenas, pero `docs/character-selection.md` indica que aún deben crearse y registrarse archivos PO por idioma.
+- M7.2 registra catálogos ES/EN para sus textos y entrenamiento, ampliando el POT existente. La traducción integral de menús históricos sigue pendiente.
 - Mantener bajo observación el aviso de referencias de audio pendiente al cerrar Godot 4.7.2, registrado en README.
 
 PC/Steam es la plataforma principal aprobada. Android/iOS están pospuestos, aunque se conserva compatibilidad futura en los presets. Las prioridades anteriores son decisiones o pendientes explícitamente documentados, no una planificación técnica nueva.
@@ -68,3 +68,35 @@ PC/Steam es la plataforma principal aprobada. Android/iOS están pospuestos, aun
 5. Mantener Android/iOS como compatibilidad futura pospuesta, no como objetivo de publicación actual.
 
 Estas prioridades se derivan de pendientes explícitos de la documentación existente. Requieren confirmación del responsable del proyecto antes de convertirse en trabajo técnico.
+
+## M7.2 — implementación y evidencia del 2026-10-18
+
+Implementadas mejoras acotadas de salida, HUD, poses y reacciones visuales,
+cajas, proyectiles, tormenta, pausa e instrucciones/localización. No cambian
+las cargas, velocidades, física ni balance de tormenta. Se conservan sistemas
+existentes y no hay commits, push ni merges.
+
+Las 12 suites headless ejecutadas pasan; `polish_test.gd` también pasa con
+renderizado ANGLE. La importación con acceso normal al perfil de Godot no
+reporta errores de scripts ni recursos. Persisten avisos intermitentes de
+recursos/ObjectDB al cerrar algunas suites; no se declara resuelto el problema
+histórico de audio. La ejecución verbose de characters y chaos no los reprodujo.
+
+Pendientes: audio adecuado de cuenta atrás y fanfarria, aceptación visual de
+las diferencias internas entre ilustraciones, y playtesting humano completo.
+**M7.2 no está validado mediante playtesting humano.** Inventario de archivos,
+pruebas y pasos manuales en [verificación M7.2](milestone-7.2-verification.md).
+
+## HUD V1 — integración del 2026-10-18
+
+Sustituida la presentación provisional de carrera por los PNG suministrados,
+con cuatro filas de clasificación real, contador de cargas, iconos dinámicos,
+reloj/tramo, avance y botón de pausa existente. Se preservan cambios locales
+M7.2, gameplay y entrenamiento. No se añadieron Settings, objetos ni táctil.
+
+10 suites headless PASS y prueba gráfica en 1280×720/1280×800; importación
+sin errores de scripts/recursos. Se inspeccionaron capturas controladas, sin
+playtesting humano. Continúan avisos intermitentes al cerrar Godot y queda
+pendiente revisión en movimiento/ocultación periférica de peligros. El kit
+tiene los nombres de iconos bomba/cohete invertidos; el mapeo está corregido.
+Ver [integración HUD V1](hud-v1.md) para fuentes de datos, archivos y límites.

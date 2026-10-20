@@ -37,16 +37,22 @@ func setup(racers: Array[Balloon], course: BalloonTrack, ranking: RaceStandings,
 		racer.items.initialize_turbo(charges, combat.turbo_config.initial_delay)
 		racer.racing = false
 		_previous_x[racer] = racer.global_position.x
+		racer.visual.present(minf(0.65, countdown_duration * 0.8))
+	get_node("/root/Music").play_effect("countdown", track.start.global_position)
 
 
 func _physics_process(delta: float) -> void:
 	if not enabled or state == State.RESULTS:
 		return
 	if state == State.COUNTDOWN:
+		var previous_tick: int = ceili(countdown_left)
 		countdown_left = maxf(0.0, countdown_left - delta)
+		if ceili(countdown_left) != previous_tick and countdown_left > 0.00001:
+			get_node("/root/Music").play_effect("countdown", track.start.global_position)
 		if countdown_left <= 0.00001:
 			state = State.RUNNING
 			get_node("/root/Music").set_theme("race")
+			get_node("/root/Music").play_effect("race_start", track.start.global_position)
 			combat.enabled = true
 			for racer in competitors:
 				racer.racing = true

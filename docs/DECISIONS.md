@@ -11,6 +11,16 @@ Registro mantenido en GitHub mediante este archivo. Las fechas exactas de decisi
 | D-005 | Fecha exacta pendiente; aprobada previamente para M6.3 | Dos cargas de turbo por corredor en carreras | Game Owner / Product | Aprobada |
 | D-006 | 2026-10-17 | Plataforma principal PC/Steam y publicación móvil pospuesta | Game Owner / Product | Aprobada |
 | D-007 | 2026-10-17 | Sustitución de restricciones históricas incompatibles con el MVP | Game Owner / Studio Operations | Aprobada |
+| D-008 | 2026-10-18 | M7.2: presentación y UX sin cambio competitivo | Game Owner / Engineering | Aprobada |
+| D-009 | 2026-10-18 | HUD V1 incremental con assets suministrados | Game Owner / Engineering | Aprobada |
+
+## D-008 — M7.2: presentación y UX sin cambio competitivo
+
+- **Fecha:** 2026-10-18.
+- **Estado:** autorizado explícitamente por el Game Owner en la solicitud M7.2.
+- **Alcance:** salida, animaciones visuales, feedback de objetos, HUD, pausa e internacionalización ES/EN; reutilizar sistemas y assets.
+- **Restricciones:** conservar física, velocidades, número de turbos y balance de tormenta; sin arte definitivo, dependencias ni commits.
+- **Evidencia:** implementación y pruebas en `docs/milestone-7.2-verification.md`; aceptación humana pendiente.
 
 ## D-001 — GitHub como fuente oficial de verdad
 
@@ -63,3 +73,15 @@ Registro mantenido en GitHub mediante este archivo. Las fechas exactas de decisi
 - **Impacto sobre otros roles:** Los sistemas existentes quedan dentro del alcance aprobado; no se autorizan nuevas funcionalidades ni ampliaciones de alcance sin aprobación expresa.
 - **Referencias:** `AGENTS.md`, `docs/PROJECT_STATUS.md`, `README.md`, solicitud de aprobación del Game Owner.
 - **Cambio aplicado:** La regla ahora exige mantener los sistemas existentes dentro del alcance aprobado y prohíbe ampliar ese alcance sin autorización.
+
+## D-009 — HUD V1 incremental
+
+- **Autorización:** solicitud explícita del Game Owner de integrar el kit PNG.
+- **Alcance:** presentación informativa de carrera reutilizando Main/RaceOverlay,
+  fuentes de estado, Theme, pausa y retratos existentes; sin modificar gameplay.
+- **Resoluciones:** cuatro corredores totales, turbo por cargas, sin Settings
+  de carrera ni objetos nuevos. Solo Control móvil vacío/oculto, sin lógica táctil.
+- **Contradicción del kit:** los archivos de iconos bomba/cohete contienen el
+  dibujo contrario a su nombre. Mapeo por contenido real, sin editar originales.
+- **Verificación:** `docs/hud-v1.md`; capturas y tests automatizados no constituyen
+  aceptación humana ni aprobación de una segunda fase de diseño.

@@ -1,10 +1,13 @@
 extends Control
 
+var compact_clock: bool = false
 var flow: RaceFlow
 var standalone_restart: Callable
 var pause_allowed: bool = true
 var _results_shown: bool = false
 var _results_background: TextureRect
+var _countdown_key: String = ""
+var _countdown_tween: Tween
 @onready var countdown: Label = $Countdown
 @onready var clock_label: Label = $Clock
 @onready var results: PanelContainer = $Results
@@ -24,13 +27,15 @@ func _ready() -> void:
 	$PausePanel/Rows/Continue.pressed.connect(_resume)
 	$PausePanel/Rows/Restart.pressed.connect(_restart)
 	$PausePanel/Rows/Home.pressed.connect(_home)
+	$PausePanel/Rows/Home.show()
+	countdown.add_theme_font_size_override("font_size", 120)
 
 
 func configure_standalone(restart: Callable) -> void:
 	standalone_restart = restart
 	countdown.hide()
 	clock_label.hide()
-	$PausePanel/Rows/Restart.text = "Reiniciar entrenamiento"
+	$PausePanel/Rows/Restart.text = tr("Reiniciar entrenamiento")
 	$PausePanel/Rows/Home.show()
 
 
@@ -49,6 +54,10 @@ func _input(event: InputEvent) -> void:
 	get_viewport().set_input_as_handled()
 	if event.is_echo() or not event.is_action_pressed("pause"):
 		return
+	toggle_pause()
+
+
+func toggle_pause() -> void:
 	if not pause_allowed or (not standalone_restart.is_valid() and (flow == null or not flow.enabled or flow.state == RaceFlow.State.RESULTS)):
 		return
 	if get_tree().paused:
@@ -68,16 +77,32 @@ func _resume() -> void:
 
 
 func _process(_delta: float) -> void:
+	if get_tree().paused:
+		return
 	if standalone_restart.is_valid():
 		return
 	if flow == null or not flow.enabled:
 		hide()
 		return
 	countdown.visible = flow.state == RaceFlow.State.COUNTDOWN or (flow.state == RaceFlow.State.RUNNING and flow.elapsed < 0.75)
-	countdown.text = str(ceili(flow.countdown_left)) if flow.state == RaceFlow.State.COUNTDOWN else "¡GO!"
-	clock_label.text = "%.2f s" % flow.elapsed
-	if flow.state == RaceFlow.State.WAITING:
-		clock_label.text += " · Esperando llegadas…"
+	var caption: String = str(ceili(flow.countdown_left)) if flow.state == RaceFlow.State.COUNTDOWN else tr("¡YA!")
+	if countdown.visible and caption != _countdown_key:
+		_countdown_key = caption
+		countdown.text = caption
+		countdown.pivot_offset = countdown.size * 0.5
+		if _countdown_tween != null:
+			_countdown_tween.kill()
+		countdown.scale = Vector2.ONE * 0.65
+		countdown.modulate.a = 0.0
+		_countdown_tween = create_tween().set_pause_mode(Tween.TWEEN_PAUSE_STOP)
+		_countdown_tween.set_parallel(true)
+		_countdown_tween.tween_property(countdown, "scale", Vector2.ONE, 0.18).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
+		_countdown_tween.tween_property(countdown, "modulate:a", 1.0, 0.12)
+		_countdown_tween.chain().tween_interval(0.28)
+		_countdown_tween.chain().tween_property(countdown, "modulate:a", 0.0, 0.2)
+	clock_label.text = "%02d:%05.2f" % [int(flow.elapsed) / 60, fmod(flow.elapsed, 60.0)] if compact_clock else "%.2f s" % flow.elapsed
+	if flow.state == RaceFlow.State.WAITING and not compact_clock:
+		clock_label.text += tr(" · Esperando llegadas…")
 	if flow.state == RaceFlow.State.RESULTS and not _results_shown:
 		_show_results()
 
@@ -138,6 +163,7 @@ func _show_results() -> void:
 
 func _home() -> void:
 	get_tree().paused = false
+	get_node("/root/Music").clear_effects()
 	get_tree().change_scene_to_file("res://scenes/StartMenu.tscn")
 
 

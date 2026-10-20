@@ -24,3 +24,15 @@ static func basket_y(id: String, state: String) -> float:
 	if state == "turbo":
 		return {"calaca": 452.0, "timo": 480.0, "greta": 446.0, "pomposo": 446.0}.get(id, 486.0)
 	return 486.0
+
+
+static func basket_anchor(id: String, state: String) -> Vector2:
+	# Individual illustrations are not registered animation frames. In particular,
+	# Greta's burner basket shifts right inside the otherwise identical PNG canvas.
+	var centers: Dictionary = {
+		"calaca": [192, 192, 192, 169, 192],
+		"timo": [192, 192, 192, 171, 192],
+		"greta": [192, 211, 192, 192, 192],
+		"pomposo": [192, 192, 192, 192, 192]}
+	var index: int = STATES.find(state)
+	return Vector2(centers.get(id, [192, 192, 192, 192, 192])[maxi(0, index)], basket_y(id, state))

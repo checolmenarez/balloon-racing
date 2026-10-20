@@ -30,3 +30,11 @@ Pendiente manual: comodidad del esquema UP/A/D, clic físico en ambos botones
 y pausa/reanudación en distintos momentos de una carrera normal. La señal
 de los botones y el foco de teclado se verificaron automáticamente.
 Sin problemas bloqueantes conocidos; sin commits.
+
+## Actualización M7.2 (2026-10-18)
+
+El botón Home existente ahora es visible también en carrera. Su ruta quita
+la pausa, limpia voces de efectos y cambia de escena, liberando la sesión.
+Cuenta atrás, ruleta y movimientos visuales se congelan durante la pausa.
+`pause_test.gd` y `polish_test.gd`: PASS; aceptación con teclado/ratón humano
+pendiente. Detalles en `milestone-7.2-verification.md`.

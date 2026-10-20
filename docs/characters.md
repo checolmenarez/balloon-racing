@@ -23,7 +23,14 @@ entre el techo ilustrado de referencia (Y=28) y la base de canasta (Y=486).
 Las poses turbo necesitan anclajes específicos: Calaca 452, Timo 480, Greta 446,
 Pomposo 446, excluyendo el escape. Se mapean a Y=-74 y Y=61 bajo Visual (escala
 0,88). CollisionShape2D sigue midiendo 77,44×118,8 y no cambia de posición.
-No se añade oscilación ni animación por fotogramas.
+M7.2 añade transición de transformaciones de 0,12 s, inclinación suave y sacudida
+amortiguada únicamente en Visual. No modifica cuerpos ni colisiones.
+`CharacterCatalog.basket_anchor` corrige también X por pose: el PNG de Greta
+quemador tiene la canasta desplazada dentro del lienzo; Calaca/Timo hit están
+inclinados. Las dimensiones del lienzo son iguales, pero su contenido no está
+registrado como una animación continua. La normalización conserva el tramo
+vertical techo–canasta; no garantiza proporciones internas idénticas.
+Ver `milestone-7.2-verification.md` para la evidencia actual y límites.
 
 ## Verificación
 

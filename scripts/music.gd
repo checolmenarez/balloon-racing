@@ -3,6 +3,9 @@ extends AudioStreamPlayer
 ## Optional licensed Home replacement. Empty keeps the original song.
 ## WAV, OGG and MP3 are looped on private copies, leaving imports untouched.
 @export var home_music: AudioStream
+## Optional cues: no placeholder paths or substitute fanfare.
+@export var countdown_sound: AudioStream
+@export var race_start_sound: AudioStream
 @export var race_music: Array[AudioStream] = []
 @export_range(0.05, 1.0, 0.05) var startup_fade_seconds: float = 0.4
 @export_range(-40.0, 0.0, 1.0) var effects_volume_db: float = -12.0
@@ -34,6 +37,10 @@ func _ready() -> void:
 	_themes.race = _race_tracks[0]
 	for effect in ["collision", "turbo", "explosion"]:
 		_effects[effect] = load("res://assets/audio/%s.wav" % effect)
+	if countdown_sound != null:
+		_effects["countdown"] = countdown_sound
+	if race_start_sound != null:
+		_effects["race_start"] = race_start_sound
 	for index in 8:
 		var voice := AudioStreamPlayer2D.new()
 		voice.max_distance = effects_distance

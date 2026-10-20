@@ -1,4 +1,4 @@
-# Balloon Racing — M6.3: Comeback & Chaos
+# Balloon Racing — M7.2: presentación y UX
 
 Home V2.1: personajes +30 %, logo +25 %, flotación subpíxel y Theme global
 Fredoka/Lilita One. Music usa los nuevos MP3 de Home y carreras, con fade-in
@@ -45,7 +45,7 @@ sesión de un jugador sin competidores, con cuatro zonas y una duración objetiv
 experiencia completa todavía requiere playtesting humano.
 ¡CORRER! inicia con la elección actual, indicada en el Home. Selección de personaje
 abre las tarjetas de Calaca, Timo, Greta o Lord Pomposo con ratón o flechas/Tab y Enter. Pulsar
-**Comenzar carrera**: tras 3… 2… 1… GO comienza el reloj. La selección es
+**Comenzar carrera**: tras 3… 2… 1… ¡YA! comienza el reloj. La selección es
 visual, todos conservan la misma física; los bots usan los personajes restantes.
 La elección se conserva al reiniciar durante esta sesión.
 
@@ -59,7 +59,7 @@ o Escape vuelven al Home. Detalles y pruebas: `docs/menus.md`.
 - D: turbo personal. Todos comienzan con **2 cargas**, independientes del inventario.
 - A: usar el objeto equipado. Sólo se almacena uno.
 - SPACE: pausar/reanudar, también durante la cuenta atrás. No pausa en resultados.
-  El panel PAUSA permite Continuar o Reiniciar carrera; Enter activa el botón enfocado.
+  El panel PAUSA permite Continuar, Reiniciar carrera o Volver al menú principal; Enter activa el botón enfocado.
   La pausa congela cuerpos, IA, proyectiles, efectos, cajas y reloj de carrera.
 - F2: progreso, posición, velocidad, cargas, objetos usados, tormentas y viento.
 - Otra carrera: reiniciar desde el podio, restaurando todos los estados.
@@ -173,3 +173,47 @@ Las im?genes son poses independientes, no fotogramas consecutivos. Escala
 uniforme y anclaje visual conservan la colisi?n y el movimiento. El contorno
 local sigue la silueta; T?, prioridad y transparencia siguen activos.
 Ver docs/characters.md para arquitectura, comprobaciones y l?mites visuales.
+
+## M7.2 — presentación y UX
+
+Cuenta atrás animada, entrada solo visual, línea de salida, anclajes por pose,
+inclinación y reacción amortiguada, halo de cajas y explosiones expansivas.
+El HUD coloca inventario/turbo a la izquierda y posición/progreso con retratos a
+la derecha. La ruleta dura 0,55 s: el nombre siempre muestra el objeto real,
+que puede usarse inmediatamente. Se cancela al consumirlo.
+
+Pausa permite volver al Home y limpia los efectos. Entrenamiento reutiliza el
+mismo componente de inventario y la tipografía global. Los textos M7.2 y las
+instrucciones M7.1 tienen catálogos `localization/es.po` y `en.po`, registrados
+en Godot y basados en el POT existente. No se añade selector de idioma: se usa
+el locale del sistema, con fallback español; para comprobar inglés ejecutar
+Godot con `--language en`. Los menús históricos aún tienen cadenas sin traducir.
+
+`Music.countdown_sound` y `race_start_sound` son puntos de integración opcionales:
+faltan sonidos apropiados de cuenta atrás y fanfarria/vitoreo. Tormenta reutiliza
+el impacto `collision.wav`. No se han creado assets definitivos.
+
+Ver [verificación M7.2](docs/milestone-7.2-verification.md) para pruebas,
+archivos, limitaciones y revisión humana pendiente. Ejecutar además:
+
+```powershell
+& $godot --headless --path . --fixed-fps 60 --script res://tests/polish_test.gd
+```
+
+## HUD V1 — PNG integrados
+
+La carrera usa los marcos de `assets/ui/hud/`: objeto y cargas a la izquierda,
+reloj y tramo arriba al centro, puesto y cuatro filas ordenadas a la derecha,
+y avance abajo al centro. Pausa se abre con SPACE o el botón inferior izquierdo.
+F2 conserva debug y ayuda; el entrenamiento mantiene su presentación.
+
+Los datos siguen viniendo de RaceFlow, RaceStandings, BalloonTrack y
+BalloonItems. El turbo conserva cargas, sin barra de combustible. Los nombres
+`icon_rocket.png` e `icon_bomb.png` del kit están invertidos respecto a su dibujo;
+el mapeo los corrige sin editar los PNG. Detalles, capturas, pruebas y límites en
+[HUD V1](docs/hud-v1.md). Este apartado sustituye la presentación provisional
+M7.2 descrita arriba; no cambia sus reglas ni resultados históricos.
+
+```powershell
+& $godot --headless --path . --fixed-fps 60 --script res://tests/hud_test.gd
+```

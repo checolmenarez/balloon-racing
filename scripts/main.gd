@@ -51,22 +51,18 @@ func _ready() -> void:
 	_update_camera()
 	race_flow.setup(competitors, track, standings, combat)
 	$HUD/RaceOverlay.flow = race_flow
+	item_label.racer = balloon
+	track_progress.configure(competitors, track)
+	$HUD.configure(self)
 
 
 func _process(delta: float) -> void:
-	$HUD/StormWarning.visible = balloon.items.storm_warning_left > 0.0
+	$HUD/StormWarning.visible = balloon.items.storm_warning_left > 0.0 or balloon.items.storm_left > 0.0
+	$HUD/StormWarning.text = tr("¡TORMENTA EN CAMINO!") if balloon.items.storm_warning_left > 0 else tr("¡IMPACTO DE TORMENTA!")
 	balloon_visibility.update_visuals(delta)
-	item_label.text = "[A] %s" % balloon.items.item_name()
-	item_label.text += "\n[D] Turbo: %d" % balloon.items.turbo_charges
-	if balloon.items.boost_left > 0.0:
-		item_label.text += "\nTurbo activo %.1f s" % balloon.items.boost_left
-	elif balloon.items.turbo_charges > 0 and balloon.items.turbo_wait_left > 0.0:
-		item_label.text += " · espera %.0f s" % ceilf(balloon.items.turbo_wait_left)
 	_update_camera()
 	standings.update_positions()
-	race_label.text = "Posición: %d.º / 4" % standings.get_place(balloon)
 	track_progress.value = track.get_progress(balloon.global_position.x) * 100.0
-	track_title.text = "%s · %s" % [track.track_name, track.get_zone_title(balloon.global_position.x)]
 	if debug_panel.visible:
 		debug_label.text = "Velocidad X: %.1f px/s\nVelocidad Y: %.1f px/s\nQuemador: %s\nAltura: %.1f px\nColisiones: %d\nPenalización: %s" % [
 			balloon.velocity.x, balloon.velocity.y,

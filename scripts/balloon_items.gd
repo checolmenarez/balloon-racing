@@ -74,6 +74,7 @@ func tick(delta: float) -> void:
 		storm_warning_left = maxf(0.0, storm_warning_left - delta)
 		if storm_warning_left <= 0.0:
 			storm_left = config.storm_duration
+			get_node("/root/Music").play_effect("collision", get_parent().global_position)
 			storms_received += 1
 			hits_received += 1
 			if is_instance_valid(_storm_source):
@@ -129,4 +130,4 @@ func receive_hit(source: Balloon, impulse: Vector2) -> bool:
 
 
 func item_name() -> String:
-	return ["Vacío", "Cohete", "Bomba", "Turbo", "Tormenta"][equipped]
+	return tr(["Vacío", "Cohete", "Bomba", "Turbo", "Tormenta"][equipped])

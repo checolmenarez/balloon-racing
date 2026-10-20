@@ -102,3 +102,203 @@ msgstr ""
 
 msgid "Mouse / Flechas / Cruceta: elegir   |   Tab: navegar   |   Enter / A: aceptar   |   Esc / B: volver"
 msgstr ""
+
+#: M7.2 race and training
+msgid "¡YA!"
+msgstr ""
+
+#: M7.2 race and training
+msgid " · Esperando llegadas…"
+msgstr ""
+
+#: M7.2 race and training
+msgid "Listo"
+msgstr ""
+
+#: M7.2 race and training
+msgid "En espera"
+msgstr ""
+
+#: M7.2 race and training
+msgid "Busca una caja"
+msgstr ""
+
+#: M7.2 race and training
+msgid "En uso"
+msgstr ""
+
+#: M7.2 race and training
+msgid "Sin objetivo"
+msgstr ""
+
+#: M7.2 race and training
+msgid "[A] %s · %s"
+msgstr ""
+
+#: M7.2 race and training
+msgid "[D] Turbo: %d"
+msgstr ""
+
+#: M7.2 race and training
+msgid "Espera %.0f s"
+msgstr ""
+
+#: M7.2 race and training
+msgid "%d / 4"
+msgstr ""
+
+#: M7.2 race and training
+msgid "Vacío"
+msgstr ""
+
+#: M7.2 race and training
+msgid "Cohete"
+msgstr ""
+
+#: M7.2 race and training
+msgid "Bomba"
+msgstr ""
+
+#: M7.2 race and training
+msgid "Turbo"
+msgstr ""
+
+#: M7.2 race and training
+msgid "Tormenta"
+msgstr ""
+
+#: M7.2 race and training
+msgid "↑ Subir · A Objeto · D Turbo · SPACE Pausa"
+msgstr ""
+
+#: M7.2 race and training
+msgid "¡TORMENTA EN CAMINO!"
+msgstr ""
+
+#: M7.2 race and training
+msgid "¡IMPACTO DE TORMENTA!"
+msgstr ""
+
+#: M7.2 race and training
+msgid "Reiniciar entrenamiento"
+msgstr ""
+
+#: M7.2 race and training
+msgid "PAUSA"
+msgstr ""
+
+#: M7.2 race and training
+msgid "Continuar"
+msgstr ""
+
+#: M7.2 race and training
+msgid "Reiniciar carrera"
+msgstr ""
+
+#: M7.2 race and training
+msgid "SPACE: continuar"
+msgstr ""
+
+#: M7.2 race and training
+msgid "Volver al menú principal"
+msgstr ""
+
+#: M7.2 race and training
+msgid "Volver al menú"
+msgstr ""
+
+#: M7.2 race and training
+msgid "¡ENTRENAMIENTO COMPLETADO!"
+msgstr ""
+
+#: M7.2 race and training
+msgid "¡Ya estás listo para competir!"
+msgstr ""
+
+#: M7.2 race and training
+msgid "Repetir etapa"
+msgstr ""
+
+#: M7.2 race and training
+msgid "Correr"
+msgstr ""
+
+#: M7.2 race and training
+msgid "ACADEMIA DE VUELO · %d/4 · SPACE: pausa"
+msgstr ""
+
+#: M7.2 race and training
+msgid "Mantén ↑ para subir"
+msgstr ""
+
+#: M7.2 race and training
+msgid "¡Bien! Suelta ↑ para descender"
+msgstr ""
+
+#: M7.2 race and training
+msgid "El globo tiene inercia. Anticipa tus movimientos"
+msgstr ""
+
+#: M7.2 race and training
+msgid "Esquiva los obstáculos controlando tu altura"
+msgstr ""
+
+#: M7.2 race and training
+msgid "¡Recuerda! El globo tarda en cambiar de dirección"
+msgstr ""
+
+#: M7.2 race and training
+msgid "Recoge la caja para conseguir un objeto"
+msgstr ""
+
+#: M7.2 race and training
+msgid "Pulsa A para utilizar tu cohete"
+msgstr ""
+
+#: M7.2 race and training
+msgid "¡Diana alcanzada! Continúa"
+msgstr ""
+
+#: M7.2 race and training
+msgid "El cohete va hacia delante; puedes repetir la etapa"
+msgstr ""
+
+#: M7.2 race and training
+msgid "Pulsa D para activar tu turbo"
+msgstr ""
+
+#: M7.2 race and training
+msgid "¡Atraviesa la corriente de viento para acelerar!"
+msgstr ""
+
+#: M7.2 race and training
+msgid "¡Muy bien! Cruza la meta del entrenamiento"
+msgstr ""
+
+#: M7.2 race and training
+msgid "¡Diana! Sigue adelante"
+msgstr ""
+
+#: M7.2 race and training
+msgid "¡Etapa completada!"
+msgstr ""
+
+#: M7.2 race and training
+msgid "Probemos de nuevo desde esta etapa"
+msgstr ""
+
+#: HUD V1
+msgid "%s\nTramo %d/%d"
+msgstr ""
+
+#: HUD V1
+msgid "[%s] Turbo: %d"
+msgstr ""
+
+#: HUD V1
+msgid "Sin cargas"
+msgstr ""
+
+#: HUD V1
+msgid "Pausa"
+msgstr ""

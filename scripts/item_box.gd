@@ -8,6 +8,14 @@ var consumed: bool = false
 var _respawn_left: float = 0.0
 var _blocked_collectors: Dictionary = {}
 var _world_texture: Texture2D
+@export_range(0.0, 1.0, 0.05) var halo_opacity: float = 0.18
+var _pulse: float = 0.0
+
+
+func _process(delta: float) -> void:
+	_pulse += delta * 3.0
+	if visible:
+		queue_redraw()
 
 
 func _ready() -> void:
@@ -47,6 +55,8 @@ func _on_body_entered(body: Node2D) -> void:
 
 
 func _draw() -> void:
+	draw_circle(Vector2.ZERO, 31.0 + sin(_pulse) * 3.0, Color(1, 0.88, 0.4, halo_opacity))
+	draw_arc(Vector2.ZERO, 28.0 + sin(_pulse) * 2.0, 0, TAU, 32, Color(1, 0.95, 0.65, halo_opacity * 2.0), 2.0, true)
 	if _world_texture != null:
 		draw_texture_rect(_world_texture, Rect2(-24, -24, 48, 48), false)
 		return

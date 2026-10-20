@@ -108,6 +108,10 @@ func _build_signs() -> void:
 
 
 func _draw() -> void:
+	var start_x: float = get_parent().get_node("References/Start").position.x
+	# Decorative tape shares the start reference and has no collision node.
+	for y in range(70, 640, 20):
+		draw_rect(Rect2(start_x - 6, y, 12, 20), Color(1, 0.88, 0.45, 0.65) if y % 40 == 10 else Color(0.16, 0.27, 0.32, 0.55))
 	# The line remains the exact racing reference, even though the arch is decorative.
 	var marker := get_parent().get_node("References/Finish") as Marker2D
 	if marker == null:
