@@ -62,7 +62,7 @@ func _run() -> void:
 	_check(racers[0].visual.local_outline_visible and not racers[1].visual.local_outline_visible, "Only local has a contour")
 	_check(racers[0].visual.modulate.a == 1.0, "Local stays opaque")
 	for index in range(1, 4):
-		_check(is_equal_approx(racers[index].visual.modulate.a, 0.45), "All overlapping rivals fade")
+		_check(is_equal_approx(racers[index].visual.modulate.a, 0.60), "All overlapping rivals fade")
 		_check(racers[index].visual.z_index == 1, "Rival visual layer")
 	for racer in racers:
 		_check(racer.position == Vector2(240, 350) and racer.velocity == Vector2.ZERO,
@@ -78,7 +78,7 @@ func _run() -> void:
 	for step in 120:
 		racers[1].position = racers[0].position + Vector2(Balloon.HALF_WIDTH * 2.0 - 3.0 if step % 2 == 0 else Balloon.HALF_WIDTH * 2.0 + 6.0, 0)
 		visibility.update_visuals(1.0 / 60.0)
-		_check(is_equal_approx(racers[1].visual.modulate.a, 0.45), "Hysteresis suppresses edge flicker")
+		_check(is_equal_approx(racers[1].visual.modulate.a, 0.60), "Hysteresis suppresses edge flicker")
 	for index in range(1, 4):
 		racers[index].position = racers[0].position + Vector2(index * 130.0, 0)
 	_settle()
@@ -95,7 +95,7 @@ func _run() -> void:
 	visibility.overlapping_opacity = 0.30
 	_settle()
 	_check(is_equal_approx(racers[1].visual.modulate.a, 0.30), "Opacity is configurable")
-	visibility.overlapping_opacity = 0.45
+	visibility.overlapping_opacity = 0.60
 	# Ownership is explicit; the blue balloon becomes local without changing input.
 	racers[0].is_local_player = false
 	racers[2].is_local_player = true

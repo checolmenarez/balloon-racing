@@ -197,7 +197,7 @@ func _update_hud() -> void:
 		1:
 			instruction.text = tr("Esquiva los obstáculos controlando tu altura") if balloon.position.x < 5500 else tr("¡Recuerda! El globo tarda en cambiar de dirección")
 		2:
-			instruction.text = tr("Recoge la caja para conseguir un objeto") if balloon.items.collected == 0 else (tr("Pulsa A para utilizar tu cohete") if balloon.items.equipped != BalloonItems.Kind.NONE else (tr("¡Diana alcanzada! Continúa") if target_hit else tr("El cohete va hacia delante; puedes repetir la etapa")))
+			instruction.text = tr("Recoge la caja para conseguir un objeto") if balloon.items.collected == 0 else (tr("Pulsa A para utilizar tu misil") if balloon.items.equipped != BalloonItems.Kind.NONE else (tr("¡Diana alcanzada! Continúa") if target_hit else tr("El misil va hacia delante; puedes repetir la etapa")))
 		3:
 			instruction.text = tr("Pulsa D para activar tu turbo") if not turbo_used else (tr("¡Atraviesa la corriente de viento para acelerar!") if not wind_crossed else tr("¡Muy bien! Cruza la meta del entrenamiento"))
 	$HUD/Debug.text = "Etapa: %d · Reintentos: %d\nVX %.1f · VY %.1f\nQuemador: %s · Objeto: %s\nTurbo: %d · Viento: %.2f\nAscenso/descenso: %s/%s · Diana: %s" % [stage + 1, retries, balloon.velocity.x, balloon.velocity.y, balloon.burner_active, balloon.items.item_name(), balloon.items.turbo_charges, balloon.items.wind_multiplier(), rose, descended, target_hit]

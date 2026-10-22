@@ -1,0 +1,11 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Failed to read the root certificate store.
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2582)
+Impact configuration 0 completed
+Impact configuration 1 completed
+Impact configuration 2 completed
+Course mode 0: x=9043.6, collisions=0
+Course mode 1: x=9040.6, collisions=4
+Course mode 2: x=9040.6, collisions=4
+OBSTACLE TEST at 60 Hz: PASS (0 failures)

@@ -152,7 +152,7 @@ msgid "Vacío"
 msgstr ""
 
 #: M7.2 race and training
-msgid "Cohete"
+msgid "Misil"
 msgstr ""
 
 #: M7.2 race and training
@@ -252,7 +252,7 @@ msgid "Recoge la caja para conseguir un objeto"
 msgstr ""
 
 #: M7.2 race and training
-msgid "Pulsa A para utilizar tu cohete"
+msgid "Pulsa A para utilizar tu misil"
 msgstr ""
 
 #: M7.2 race and training
@@ -260,7 +260,7 @@ msgid "¡Diana alcanzada! Continúa"
 msgstr ""
 
 #: M7.2 race and training
-msgid "El cohete va hacia delante; puedes repetir la etapa"
+msgid "El misil va hacia delante; puedes repetir la etapa"
 msgstr ""
 
 #: M7.2 race and training

@@ -1,0 +1,144 @@
+# CODEX — Balloon Racing: Valle Ventoso 2.0 — Blockout experimental
+
+## Objetivo
+
+Implementar el blueprint jugable Valle Ventoso 2.0 sobre el circuito existente de Godot, con cambios mínimos, preservando los sistemas actuales.
+
+El Game Owner ha autorizado proceder con el blockout experimental.
+
+No comenzar pase artístico.
+
+## Contexto
+
+Motor: Godot 4.7.2 Standard.
+
+Archivos principales a inspeccionar:
+
+- `scenes/Track01.tscn`
+- `scripts/track.gd`
+- `scripts/obstacle.gd`
+- `scripts/wind_zone.gd`
+- `scripts/bot_controller.gd`
+- `scripts/balloon.gd`
+- `resources/default_balloon_physics.tres`
+- Scripts de carrera y clasificación
+- Pruebas de pista, colisiones, viento, IA y carrera
+
+Leer `AGENTS.md` y la documentación oficial aplicable antes de modificar el proyecto.
+
+## Alcance autorizado
+
+Rediseñar la distribución jugable de los seis sectores manteniendo la estructura existente.
+
+### S1: x=240–2699
+Salida abierta, obstáculo inicial sencillo y cajas a diferentes alturas.
+
+### S2: x=2700–5999
+Rocas alternadas que requieren correcciones de altura. Sin bifurcación estructural.
+
+### S3: x=6000–9699
+Corriente horizontal favorable, obstáculos escalonados y espacio de recuperación.
+
+No añadir física de viento vertical ni ralentización negativa.
+
+### S4: x=9700–13399
+Única bifurcación estructural.
+
+Reutilizar:
+- Fork
+- UpperRoute
+- LowerRoute
+- Merge
+- RouteDivider
+- UpperCurrent
+
+Ruta superior: más exigente y potencialmente más rápida.
+
+Ruta inferior: más espaciosa y segura.
+
+Conservar un incentivo temporal medible mediante el sistema existente de viento horizontal.
+
+Medir diferencia de tiempos entre rutas.
+
+### S5: x=13400–16799
+Obstáculos estáticos de precisión, correcciones de altura y viento horizontal moderado.
+
+Sin segunda bifurcación.
+
+### S6: x=16800–18400
+Obstáculos iniciales sencillos, cajas opcionales y tramo final abierto.
+
+Conservar la meta.
+
+## Restricciones
+
+1. No modificar controles ni mecánicas de vuelo.
+2. No cambiar el balance de objetos ni las dos cargas aprobadas de turbo.
+3. No introducir cañones funcionales.
+4. No añadir colisiones dinámicas a molinos.
+5. No introducir poderes ni objetos nuevos.
+6. No implementar viento vertical.
+7. No introducir nuevas bifurcaciones.
+8. Mantener el flujo de carrera, HUD, menús y podio.
+9. No modificar el arte final ni sustituir los assets existentes.
+10. Proteger la rama main; no hacer push ni merge.
+11. No añadir una nueva arquitectura de navegación salvo que resulte técnicamente indispensable; informar antes de ampliar el alcance.
+
+## Implementación
+
+Primero, ajustar posiciones y parámetros de los nodos existentes en `Track01.tscn`.
+
+Reutilizar las clases y escenas actuales de obstáculos, viento y cajas.
+
+Evitar refactorizaciones no relacionadas.
+
+Preservar referencias de inicio, sectores, bifurcación, convergencia y meta.
+
+Crear o ajustar únicamente las pruebas indispensables para demostrar que el nuevo circuito funciona.
+
+Si una geometría resulta incompatible con BotController, simplificarla antes de proponer un sistema de IA nuevo.
+
+## Criterios de aceptación
+
+- Se completan los seis sectores.
+- Existe una única bifurcación estructural en S4.
+- Los cuatro corredores pueden terminar la carrera.
+- No hay bloqueos persistentes de bots.
+- Los obstáculos pueden superarse sin impactos inevitables.
+- El viento produce diferencias observables de velocidad.
+- El atajo superior puede medirse frente a la ruta inferior.
+- La clasificación y la meta funcionan correctamente.
+- Las cajas y objetos existentes siguen funcionando.
+- No aparecen errores nuevos de carga o ejecución.
+
+## Pruebas mínimas
+
+1. Importación de Godot sin errores.
+2. Prueba de colisiones y pista.
+3. Prueba de carrera con cuatro corredores.
+4. Prueba de bots atravesando ambas rutas S4.
+5. Prueba de viento horizontal.
+6. Prueba de objetos y turbo.
+7. Medición de tiempo de carrera.
+8. Comparación controlada entre tiempos de S4 interior y exterior.
+
+Registrar los resultados disponibles e identificar expresamente cualquier prueba no ejecutada.
+
+No dar por validada la diversión ni el balance a partir de pruebas automatizadas.
+
+## Entrega
+
+Informar:
+
+- Archivos modificados.
+- Cambios realizados por sector.
+- Obstáculos y cajas recolocados.
+- Zonas de viento configuradas.
+- Pruebas ejecutadas y resultados.
+- Tiempo observado de carrera.
+- Ventaja temporal observada de S4, si pudo medirse.
+- Riesgos y validaciones humanas pendientes.
+
+No realizar commit, push ni merge sin autorización del Game Owner.
+
+El objetivo final es disponer de un blockout jugable de Valle Ventoso 2.0 para playtesting humano, sin nuevas funcionalidades fuera del alcance aprobado.

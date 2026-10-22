@@ -79,7 +79,8 @@ func _run() -> void:
 	change_scene_to_file("res://scenes/CharacterSelect.tscn")
 	for frame in 4:
 		await process_frame
-	check(root.gui_snap_controls_to_pixels == original_snap, "Leaving restores viewport setting")
+	# CharacterSelect also disables snapping while open; inspect what it inherited.
+	check(current_scene._previous_snap == original_snap, "Leaving restores viewport setting before selector takes ownership")
 	check(old_home.get_ref() == null, "Home and bound tweens are released")
 	check(root.get_node("Music") == music and music.stream == stream, "Navigation reuses single music player")
 	print("HOME POLISH TEST: %s (%d failures), 30 seconds sampled" % ["PASS" if failures == 0 else "FAIL", failures])

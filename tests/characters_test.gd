@@ -38,8 +38,9 @@ func _run() -> void:
 			racer.visual.refresh()
 			check(racer.visual.current_state == state, "Gameplay selects " + state)
 			var sprite: Sprite2D = racer.get_node("Visual/CharacterSprite")
-			check(sprite.texture == texture and sprite.visible and not racer.get_node("Visual/Artwork").visible, "Only official sprite rendered")
-			var basket := CharacterCatalog.basket_anchor(id, state)
+			var shown: String = "idle" if state == "burner" else state
+			check(sprite.texture == CharacterCatalog.texture_for(id, shown) and sprite.visible and not racer.get_node("Visual/Artwork").visible, "Only official sprite rendered, with stable normal-flight silhouette")
+			var basket := CharacterCatalog.basket_anchor(id, shown)
 			var anchor: Vector2 = sprite.transform * (basket - texture.get_size() * 0.5)
 			check(anchor.is_equal_approx(Vector2(0, 61)), "Basket anchor remains stable")
 			check(racer.get_node("CollisionShape2D").shape.size == Vector2(77.44, 118.8), "Collision shape unchanged")

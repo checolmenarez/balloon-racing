@@ -130,4 +130,4 @@ func receive_hit(source: Balloon, impulse: Vector2) -> bool:
 
 
 func item_name() -> String:
-	return tr(["Vacío", "Cohete", "Bomba", "Turbo", "Tormenta"][equipped])
+	return tr(["Vacío", "Misil", "Bomba", "Turbo", "Tormenta"][equipped])

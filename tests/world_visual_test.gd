@@ -36,13 +36,14 @@ func _run() -> void:
 	baseline.get_node("WorldVisual").free()
 	root.add_child(baseline)
 	var before: Array = geometry(baseline)
+	var wind_count: int = baseline.get_node("WindZones").get_child_count()
 	baseline.free()
 	var main: Node2D = load("res://scenes/Main.tscn").instantiate()
 	root.add_child(main)
 	check(geometry(main.track) == before, "Every collision polygon, position, mask and enabled state is unchanged")
 	check(before.size() == 17, "Original 17 formations retained")
 	check(main.track.get_node("ItemBoxes").get_child_count() == 32, "All item boxes retained")
-	check(main.track.get_node("WindZones").get_child_count() == 3, "Only original wind zones are active")
+	check(main.track.get_node("WindZones").get_child_count() == wind_count, "Artwork preserves the current track's wind zones")
 	var world: Node = main.track.get_node("WorldVisual")
 	check_visual_only(world)
 	var layers: Array[Node] = world.get_node("ParallaxBackground").get_children()
@@ -54,8 +55,10 @@ func _run() -> void:
 		speeds.append(layer.scroll_factor)
 	main.camera.position.x = 1000.0
 	for layer in layers:
+		var previous_drift: float = layer._drift
 		layer._process(0.016)
-		check(is_equal_approx(layer.position.x, 1000.0 * (1.0 - layer.scroll_factor)), "Parallax responds to camera only")
+		var drift: float = 0.0 if GameFeel.reduced_motion else layer.drift_speed * 0.016
+		check(is_equal_approx(layer.position.x, 1000.0 * (1.0 - layer.scroll_factor) + previous_drift + drift), "Parallax combines camera depth with timed cloud drift")
 	for box in main.track.get_node("ItemBoxes").get_children():
 		check(box.get_node("Shape").shape.size == Vector2(48, 48), "Item sensor unchanged")
 		check(box._world_texture != null and not box.get_node("Symbol").visible, "Illustrated box replaces placeholder")

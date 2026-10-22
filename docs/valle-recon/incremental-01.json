@@ -1,0 +1,7971 @@
+{
+	"baseline": "Passive human; unchanged production bots and combat; 60 Hz",
+	"engine": "4.7.2-stable (official)",
+	"missing_finishes": 0,
+	"races": [
+		{
+			"racers": [
+				{
+					"events": [
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 4.11666666666666,
+							"x": 1145.66748046875,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 1,
+							"time": 6.73333333333331,
+							"x": 1721.27587890625,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 2,
+							"time": 16.1500000000004,
+							"x": 3721.26953125,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 2,
+							"time": 24.6499999999999,
+							"x": 5521.27734375,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 3,
+							"time": 33.3333333333327,
+							"x": 7361.265625,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 3,
+							"time": 38.6166666666658,
+							"x": 8451.265625,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 4,
+							"time": 53.1666666666649,
+							"x": 11581.2705078125,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 5,
+							"time": 63.583333333331,
+							"x": 13801.2734375,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 5,
+							"time": 68.3999999999974,
+							"x": 14791.2763671875,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 5,
+							"time": 73.2166666666638,
+							"x": 15781.2734375,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 6,
+							"time": 80.8999999999967,
+							"x": 17401.267578125,
+							"y": 586.320007324219
+						}
+					],
+					"finish_time": 85.7573077606073,
+					"max_stall": 0.0166666666666667,
+					"name": "Balloon",
+					"route": "passive",
+					"s4_enter": 44.6166666666654,
+					"s4_exit": 61.7499999999978,
+					"sectors": [
+						{
+							"boost_seconds": 0.0,
+							"collected": 1,
+							"collisions": 1,
+							"seconds": 11.5000000000002,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 2,
+							"seconds": 15.6500000000004,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 2,
+							"seconds": 17.466666666667,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 1,
+							"seconds": 17.1333333333336,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 3,
+							"seconds": 16.416666666667,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 1,
+							"seconds": 7.59999999999998,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						}
+					]
+				},
+				{
+					"events": [
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 4.11666666666666,
+							"x": 1145.66748046875,
+							"y": 388.124938964844
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 1,
+							"time": 6.24999999999998,
+							"x": 1614.99560546875,
+							"y": 226.263763427734
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 1,
+							"time": 8.45,
+							"x": 2098.99194335938,
+							"y": 294.777191162109
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 3,
+							"time": 38.8833333333324,
+							"x": 8964.37109375,
+							"y": 308.456726074219
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 39.849999999999,
+							"x": 9251.482421875,
+							"y": 378.553802490234
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 3,
+							"time": 41.0833333333323,
+							"x": 9602.3984375,
+							"y": 489.178588867188
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 4,
+							"time": 44.8499999999987,
+							"x": 10542.5859375,
+							"y": 568.510803222656
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 4,
+							"time": 45.1166666666654,
+							"x": 10577.7890625,
+							"y": 549.997131347656
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 4,
+							"time": 54.6166666666648,
+							"x": 12647.439453125,
+							"y": 454.764495849609
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 5,
+							"time": 68.5999999999974,
+							"x": 15928.623046875,
+							"y": 385.678894042969
+						}
+					],
+					"finish_time": 80.0559580891461,
+					"max_stall": 0.0166666666666667,
+					"name": "BotNovice",
+					"route": "lower",
+					"s4_enter": 41.4166666666656,
+					"s4_exit": 58.049999999998,
+					"sectors": [
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 10.4833333333334,
+							"turbo": 1,
+							"used": 1,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 15.0000000000003,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 2.35,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 15.9333333333337,
+							"turbo": 1,
+							"used": 1,
+							"wind_seconds": 1.65
+						},
+						{
+							"boost_seconds": 1.68333333333333,
+							"collected": 2,
+							"collisions": 0,
+							"seconds": 16.6333333333337,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 1,
+							"seconds": 14.7333333333336,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 4.64999999999999
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 7.28333333333331,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						}
+					]
+				},
+				{
+					"events": [
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 4.11666666666666,
+							"x": 1145.66748046875,
+							"y": 343.180328369141
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 1,
+							"time": 4.41666666666666,
+							"x": 1211.66674804688,
+							"y": 345.180389404297
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 1,
+							"time": 8.08333333333331,
+							"x": 2083.73754882813,
+							"y": 241.416244506836
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 8.98333333333336,
+							"x": 2351.03491210938,
+							"y": 285.096740722656
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 2,
+							"time": 12.4833333333335,
+							"x": 3205.74340820313,
+							"y": 425.040863037109
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 2,
+							"time": 16.7333333333337,
+							"x": 4294.7353515625,
+							"y": 356.054901123047
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 2,
+							"time": 20.1833333333335,
+							"x": 5053.70166015625,
+							"y": 476.33251953125
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 24.5833333333332,
+							"x": 6175.70166015625,
+							"y": 261.666015625
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 3,
+							"time": 37.4166666666658,
+							"x": 8921.27734375,
+							"y": 395.526458740234
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 4,
+							"time": 43.2833333333322,
+							"x": 10366.04296875,
+							"y": 116.581993103027
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 4,
+							"time": 49.6833333333318,
+							"x": 11905.5439453125,
+							"y": 206.245254516602
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 4,
+							"time": 52.6499999999983,
+							"x": 12647.4345703125,
+							"y": 168.704040527344
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 5,
+							"time": 62.2166666666644,
+							"x": 14948.6748046875,
+							"y": 339.294372558594
+						}
+					],
+					"finish_time": 77.7781832711743,
+					"max_stall": 0.0166666666666667,
+					"name": "BotBalanced",
+					"route": "upper",
+					"s4_enter": 40.2666666666657,
+					"s4_exit": 55.5999999999981,
+					"sectors": [
+						{
+							"boost_seconds": 4.03333333333332,
+							"collected": 2,
+							"collisions": 0,
+							"seconds": 10.2000000000001,
+							"turbo": 1,
+							"used": 1,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 4.03333333333332,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 13.6000000000003,
+							"turbo": 0,
+							"used": 2,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 16.466666666667,
+							"turbo": 1,
+							"used": 0,
+							"wind_seconds": 1.63333333333333
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 1,
+							"collisions": 1,
+							"seconds": 15.3333333333337,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 11.5000000000002
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 1,
+							"seconds": 14.916666666667,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 4.01666666666666
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 7.26666666666665,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						}
+					]
+				},
+				{
+					"events": [
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 1,
+							"time": 8.45,
+							"x": 2098.99194335938,
+							"y": 291.291687011719
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 9.33333333333338,
+							"x": 2361.33935546875,
+							"y": 371.333343505859
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 2,
+							"time": 20.9166666666668,
+							"x": 4995.64404296875,
+							"y": 451.013641357422
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 25.9166666666665,
+							"x": 6095.59521484375,
+							"y": 459.457733154297
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 3,
+							"time": 29.3499999999996,
+							"x": 6850.89501953125,
+							"y": 493.332733154297
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 34.0833333333327,
+							"x": 8046.22509765625,
+							"y": 298.791076660156
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 3,
+							"time": 34.8499999999993,
+							"x": 8214.8876953125,
+							"y": 317.916046142578
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 3,
+							"time": 37.7833333333325,
+							"x": 8860.2783203125,
+							"y": 329.165771484375
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 39.0999999999991,
+							"x": 9251.34375,
+							"y": 348.082336425781
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 3,
+							"time": 39.9833333333323,
+							"x": 9498.3056640625,
+							"y": 191.457305908203
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 4,
+							"time": 43.9499999999988,
+							"x": 10547.0361328125,
+							"y": 203.415512084961
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 4,
+							"time": 44.6499999999987,
+							"x": 10731.439453125,
+							"y": 214.350357055664
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 4,
+							"time": 53.5499999999982,
+							"x": 13003.236328125,
+							"y": 154.522003173828
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 4,
+							"time": 54.7166666666648,
+							"x": 13349.75,
+							"y": 238.0908203125
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 5,
+							"time": 58.3166666666646,
+							"x": 14238.9833984375,
+							"y": 362.941955566406
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 5,
+							"time": 59.0333333333313,
+							"x": 14451.841796875,
+							"y": 421.162902832031
+						}
+					],
+					"finish_time": 75.9912715325844,
+					"max_stall": 0.0166666666666667,
+					"name": "BotCompetitive",
+					"route": "upper",
+					"s4_enter": 40.6666666666656,
+					"s4_exit": 54.8999999999982,
+					"sectors": [
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 10.4833333333334,
+							"turbo": 1,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 15.0000000000003,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 4.71666666666666,
+							"collected": 3,
+							"collisions": 0,
+							"seconds": 15.1833333333337,
+							"turbo": 1,
+							"used": 3,
+							"wind_seconds": 1.6
+						},
+						{
+							"boost_seconds": 2.68333333333333,
+							"collected": 2,
+							"collisions": 1,
+							"seconds": 14.2333333333336,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 10.5666666666668
+						},
+						{
+							"boost_seconds": 2.68333333333333,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 13.8333333333336,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 4.99999999999999
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 7.26666666666665,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						}
+					]
+				}
+			],
+			"seed": 1
+		},
+		{
+			"racers": [
+				{
+					"events": [
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 4.11666666666666,
+							"x": 1145.66748046875,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 1,
+							"time": 7.13333333333331,
+							"x": 1721.27478027344,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 2,
+							"time": 16.5500000000003,
+							"x": 3721.2685546875,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 2,
+							"time": 25.4499999999998,
+							"x": 5521.2744140625,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 3,
+							"time": 34.1333333333327,
+							"x": 7361.2626953125,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 3,
+							"time": 39.4166666666657,
+							"x": 8451.27734375,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 4,
+							"time": 53.9666666666649,
+							"x": 11581.267578125,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 5,
+							"time": 64.383333333331,
+							"x": 13801.2705078125,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 5,
+							"time": 69.1999999999974,
+							"x": 14791.279296875,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 5,
+							"time": 74.0166666666638,
+							"x": 15781.27734375,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 6,
+							"time": 81.6999999999966,
+							"x": 17401.271484375,
+							"y": 586.320007324219
+						}
+					],
+					"finish_time": 86.5572900017723,
+					"max_stall": 0.0166666666666667,
+					"name": "Balloon",
+					"route": "passive",
+					"s4_enter": 45.4166666666654,
+					"s4_exit": 62.5499999999977,
+					"sectors": [
+						{
+							"boost_seconds": 0.0,
+							"collected": 1,
+							"collisions": 1,
+							"seconds": 11.9000000000002,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 2,
+							"seconds": 16.0500000000004,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 2,
+							"seconds": 17.466666666667,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 1,
+							"seconds": 17.1333333333336,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 3,
+							"seconds": 16.416666666667,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 1,
+							"seconds": 7.59999999999998,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						}
+					]
+				},
+				{
+					"events": [
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 4.11666666666666,
+							"x": 1145.66748046875,
+							"y": 362.264038085938
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 1,
+							"time": 8.45,
+							"x": 2098.99194335938,
+							"y": 245.624618530273
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 3,
+							"time": 27.5166666666664,
+							"x": 6419.7197265625,
+							"y": 471.52587890625
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 35.1833333333326,
+							"x": 8047.6591796875,
+							"y": 331.636657714844
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 3,
+							"time": 35.216666666666,
+							"x": 8054.9921875,
+							"y": 332.747772216797
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 3,
+							"time": 39.2499999999991,
+							"x": 9002.2763671875,
+							"y": 408.246917724609
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 40.0833333333323,
+							"x": 9249.7861328125,
+							"y": 360.441192626953
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 3,
+							"time": 41.4499999999989,
+							"x": 9640.3037109375,
+							"y": 207.996520996094
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 4,
+							"time": 44.7833333333321,
+							"x": 10549.6884765625,
+							"y": 199.551651000977
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 4,
+							"time": 45.4499999999987,
+							"x": 10725.541015625,
+							"y": 217.042053222656
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 4,
+							"time": 51.2333333333317,
+							"x": 12196.3984375,
+							"y": 136.093399047852
+						}
+					],
+					"finish_time": 77.9433581956992,
+					"max_stall": 0.0166666666666667,
+					"name": "BotNovice",
+					"route": "upper",
+					"s4_enter": 41.6666666666656,
+					"s4_exit": 56.1833333333314,
+					"sectors": [
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 10.4833333333334,
+							"turbo": 1,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 15.0000000000003,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 4.24999999999999,
+							"collected": 2,
+							"collisions": 0,
+							"seconds": 16.1833333333337,
+							"turbo": 1,
+							"used": 3,
+							"wind_seconds": 1.66666666666667
+						},
+						{
+							"boost_seconds": 1.8,
+							"collected": 1,
+							"collisions": 2,
+							"seconds": 14.516666666667,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 10.9833333333335
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 14.5000000000003,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 4.76666666666666
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 7.26666666666665,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						}
+					]
+				},
+				{
+					"events": [
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 4.53333333333332,
+							"x": 1237.33312988281,
+							"y": 366.291625976563
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 1,
+							"time": 4.78333333333332,
+							"x": 1292.33251953125,
+							"y": 384.624908447266
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 1,
+							"time": 8.45,
+							"x": 2098.99194335938,
+							"y": 227.985733032227
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 9.30000000000004,
+							"x": 2351.439453125,
+							"y": 347.152221679688
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 1,
+							"time": 10.2833333333334,
+							"x": 2643.48657226563,
+							"y": 399.388000488281
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 2,
+							"time": 17.8333333333336,
+							"x": 4317.3408203125,
+							"y": 441.012512207031
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 3,
+							"time": 35.9499999999992,
+							"x": 8186.05908203125,
+							"y": 311.525939941406
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 3,
+							"time": 39.6166666666657,
+							"x": 9017.732421875,
+							"y": 380.747924804688
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 40.399999999999,
+							"x": 9250.3916015625,
+							"y": 356.734161376953
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 5,
+							"time": 69.4833333333307,
+							"x": 15957.759765625,
+							"y": 238.636520385742
+						}
+					],
+					"finish_time": 80.8073699165302,
+					"max_stall": 0.0166666666666667,
+					"name": "BotBalanced",
+					"route": "lower",
+					"s4_enter": 42.0333333333322,
+					"s4_exit": 58.8499999999979,
+					"sectors": [
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 2,
+							"collisions": 0,
+							"seconds": 10.4833333333334,
+							"turbo": 1,
+							"used": 2,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 15.0000000000003,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 16.5500000000003,
+							"turbo": 1,
+							"used": 1,
+							"wind_seconds": 1.66666666666667
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 16.816666666667,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 1,
+							"seconds": 14.7000000000003,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 4.88333333333332
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 7.26666666666665,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						}
+					]
+				},
+				{
+					"events": [
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 9.63333333333339,
+							"x": 2359.3310546875,
+							"y": 370.847198486328
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 1,
+							"time": 9.91666666666674,
+							"x": 2421.66577148438,
+							"y": 437.097137451172
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 2,
+							"time": 18.2666666666669,
+							"x": 4295.85888671875,
+							"y": 335.412292480469
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 2,
+							"time": 18.3500000000002,
+							"x": 4314.19140625,
+							"y": 354.578948974609
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 26.4499999999998,
+							"x": 6096.1123046875,
+							"y": 298.037200927734
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 3,
+							"time": 27.1499999999997,
+							"x": 6250.10546875,
+							"y": 468.995208740234
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 3,
+							"time": 39.6166666666657,
+							"x": 9017.6923828125,
+							"y": 290.842468261719
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 4,
+							"time": 46.5499999999986,
+							"x": 10752.95703125,
+							"y": 204.573425292969
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 4,
+							"time": 53.9333333333316,
+							"x": 12646.3525390625,
+							"y": 179.342147827148
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 4,
+							"time": 55.3833333333315,
+							"x": 13007.1845703125,
+							"y": 162.438659667969
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 5,
+							"time": 56.8333333333314,
+							"x": 13437.8515625,
+							"y": 232.493545532227
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 5,
+							"time": 60.1499999999979,
+							"x": 14242.1982421875,
+							"y": 302.262420654297
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 5,
+							"time": 60.8499999999978,
+							"x": 14450.1064453125,
+							"y": 365.670989990234
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 5,
+							"time": 64.5499999999976,
+							"x": 15469.8779296875,
+							"y": 310.121856689453
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 5,
+							"time": 69.4333333333307,
+							"x": 16544.998046875,
+							"y": 498.180084228516
+						}
+					],
+					"finish_time": 77.866657787246,
+					"max_stall": 0.0166666666666667,
+					"name": "BotCompetitive",
+					"route": "upper",
+					"s4_enter": 42.0333333333322,
+					"s4_exit": 56.7166666666647,
+					"sectors": [
+						{
+							"boost_seconds": 0.950000000000001,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 10.8666666666668,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 1.06666666666667,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 15.1500000000003,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 16.016666666667,
+							"turbo": 1,
+							"used": 1,
+							"wind_seconds": 1.66666666666667
+						},
+						{
+							"boost_seconds": 1.33333333333333,
+							"collected": 1,
+							"collisions": 1,
+							"seconds": 14.6833333333336,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 9.95000000000007
+						},
+						{
+							"boost_seconds": 2.7,
+							"collected": 3,
+							"collisions": 0,
+							"seconds": 13.8833333333336,
+							"turbo": 0,
+							"used": 2,
+							"wind_seconds": 4.73333333333332
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 7.26666666666665,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						}
+					]
+				}
+			],
+			"seed": 2
+		},
+		{
+			"racers": [
+				{
+					"events": [
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 4.11666666666666,
+							"x": 1145.66748046875,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 1,
+							"time": 6.73333333333331,
+							"x": 1721.27587890625,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 2,
+							"time": 16.1500000000004,
+							"x": 3721.26953125,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 2,
+							"time": 24.6499999999999,
+							"x": 5521.27734375,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 3,
+							"time": 33.3333333333327,
+							"x": 7361.265625,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 3,
+							"time": 38.9999999999991,
+							"x": 8451.267578125,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 4,
+							"time": 53.5499999999982,
+							"x": 11581.2724609375,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 5,
+							"time": 63.9666666666643,
+							"x": 13801.275390625,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 5,
+							"time": 68.7833333333307,
+							"x": 14791.2783203125,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 5,
+							"time": 73.5999999999971,
+							"x": 15781.275390625,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 6,
+							"time": 81.28333333333,
+							"x": 17401.26953125,
+							"y": 586.320007324219
+						}
+					],
+					"finish_time": 86.1406322145231,
+					"max_stall": 0.0166666666666667,
+					"name": "Balloon",
+					"route": "passive",
+					"s4_enter": 44.9999999999987,
+					"s4_exit": 62.1333333333311,
+					"sectors": [
+						{
+							"boost_seconds": 0.0,
+							"collected": 1,
+							"collisions": 1,
+							"seconds": 11.5000000000002,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 2,
+							"seconds": 15.6500000000004,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 2,
+							"seconds": 17.8500000000003,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 1,
+							"seconds": 17.1333333333336,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 3,
+							"seconds": 16.416666666667,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 1,
+							"seconds": 7.59999999999998,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						}
+					]
+				},
+				{
+					"events": [
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 4.11666666666666,
+							"x": 1145.66748046875,
+							"y": 327.958526611328
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 2,
+							"time": 11.3833333333335,
+							"x": 2744.33959960938,
+							"y": 469.861419677734
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 26.7833333333331,
+							"x": 6132.279296875,
+							"y": 421.0283203125
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 3,
+							"time": 34.116666666666,
+							"x": 7745.541015625,
+							"y": 216.375411987305
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 3,
+							"time": 34.8499999999993,
+							"x": 7963.349609375,
+							"y": 237.430938720703
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 35.1333333333326,
+							"x": 8047.5029296875,
+							"y": 295.264282226563
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 3,
+							"time": 37.4333333333325,
+							"x": 8629.552734375,
+							"y": 421.253784179688
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 3,
+							"time": 40.7166666666656,
+							"x": 9397.408203125,
+							"y": 294.795532226563
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 4,
+							"time": 45.8499999999987,
+							"x": 10548.84375,
+							"y": 171.809097290039
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 4,
+							"time": 52.1499999999983,
+							"x": 12212.25390625,
+							"y": 206.245239257813
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 4,
+							"time": 55.3833333333315,
+							"x": 13003.2822265625,
+							"y": 185.717498779297
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 5,
+							"time": 63.1999999999977,
+							"x": 14942.458984375,
+							"y": 336.410369873047
+						}
+					],
+					"finish_time": 78.7470697922185,
+					"max_stall": 0.0166666666666667,
+					"name": "BotNovice",
+					"route": "upper",
+					"s4_enter": 42.0999999999989,
+					"s4_exit": 56.7333333333314,
+					"sectors": [
+						{
+							"boost_seconds": 0.0,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 11.1833333333335,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 15.0000000000003,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 2,
+							"collisions": 1,
+							"seconds": 15.916666666667,
+							"turbo": 1,
+							"used": 2,
+							"wind_seconds": 1.81666666666667
+						},
+						{
+							"boost_seconds": 1.35,
+							"collected": 1,
+							"collisions": 1,
+							"seconds": 14.6333333333336,
+							"turbo": 1,
+							"used": 0,
+							"wind_seconds": 10.8333333333335
+						},
+						{
+							"boost_seconds": 0.666666666666667,
+							"collected": 0,
+							"collisions": 1,
+							"seconds": 14.7500000000003,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 3.76666666666666
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 7.26666666666665,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						}
+					]
+				},
+				{
+					"events": [
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 1,
+							"time": 8.45,
+							"x": 2098.99194335938,
+							"y": 280.166595458984
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 9.30000000000004,
+							"x": 2351.439453125,
+							"y": 399.333312988281
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 2,
+							"time": 12.8500000000002,
+							"x": 3220.99780273438,
+							"y": 440.569274902344
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 2,
+							"time": 17.0333333333336,
+							"x": 4295.32275390625,
+							"y": 365.096557617188
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 3,
+							"time": 38.5166666666658,
+							"x": 8948.9677734375,
+							"y": 308.955688476563
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 4,
+							"time": 46.5666666666653,
+							"x": 10965.93359375,
+							"y": 206.245208740234
+						}
+					],
+					"finish_time": 77.8687178121084,
+					"max_stall": 0.0166666666666667,
+					"name": "BotBalanced",
+					"route": "upper",
+					"s4_enter": 41.2333333333323,
+					"s4_exit": 56.1999999999981,
+					"sectors": [
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 10.4833333333334,
+							"turbo": 1,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 14.7000000000003,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 16.0500000000004,
+							"turbo": 1,
+							"used": 0,
+							"wind_seconds": 1.65
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 1,
+							"seconds": 14.966666666667,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 10.2500000000001
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 14.4000000000003,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 5.21666666666665
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 7.28333333333331,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						}
+					]
+				},
+				{
+					"events": [
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 1,
+							"time": 8.45,
+							"x": 2098.99194335938,
+							"y": 264.750030517578
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 2,
+							"time": 18.5500000000002,
+							"x": 4388.46533203125,
+							"y": 438.332946777344
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 2,
+							"time": 18.7166666666669,
+							"x": 4425.13037109375,
+							"y": 460.416290283203
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 26.3166666666665,
+							"x": 6097.05615234375,
+							"y": 400.707794189453
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 3,
+							"time": 37.4166666666658,
+							"x": 8538.994140625,
+							"y": 335.179809570313
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 3,
+							"time": 38.8833333333324,
+							"x": 8861.689453125,
+							"y": 362.249145507813
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 40.1833333333323,
+							"x": 9247.8046875,
+							"y": 374.165710449219
+						}
+					],
+					"finish_time": 80.4813532232253,
+					"max_stall": 0.0166666666666667,
+					"name": "BotCompetitive",
+					"route": "lower",
+					"s4_enter": 41.9999999999989,
+					"s4_exit": 58.7999999999979,
+					"sectors": [
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 10.4833333333334,
+							"turbo": 1,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 15.4000000000003,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 2,
+							"collisions": 0,
+							"seconds": 16.116666666667,
+							"turbo": 1,
+							"used": 1,
+							"wind_seconds": 1.61666666666667
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 16.8000000000003,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0666666666666667
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 14.416666666667,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 5.21666666666665
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 7.26666666666665,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						}
+					]
+				}
+			],
+			"seed": 3
+		},
+		{
+			"racers": [
+				{
+					"events": [
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 4.11666666666666,
+							"x": 1145.66748046875,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 1,
+							"time": 6.73333333333331,
+							"x": 1721.27587890625,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 2,
+							"time": 16.5500000000003,
+							"x": 3721.27319335938,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 2,
+							"time": 25.0499999999999,
+							"x": 5521.2705078125,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 3,
+							"time": 33.7333333333327,
+							"x": 7361.2587890625,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 3,
+							"time": 39.0166666666657,
+							"x": 8451.2734375,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 4,
+							"time": 53.5666666666649,
+							"x": 11581.2783203125,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 5,
+							"time": 63.983333333331,
+							"x": 13801.267578125,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 5,
+							"time": 68.7999999999974,
+							"x": 14791.275390625,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 5,
+							"time": 73.6166666666638,
+							"x": 15781.2783203125,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 6,
+							"time": 81.2999999999967,
+							"x": 17401.271484375,
+							"y": 586.320007324219
+						}
+					],
+					"finish_time": 86.1572900017723,
+					"max_stall": 0.0166666666666667,
+					"name": "Balloon",
+					"route": "passive",
+					"s4_enter": 45.0166666666654,
+					"s4_exit": 62.1499999999978,
+					"sectors": [
+						{
+							"boost_seconds": 0.0,
+							"collected": 1,
+							"collisions": 1,
+							"seconds": 11.9000000000002,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 2,
+							"seconds": 15.6500000000004,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 2,
+							"seconds": 17.466666666667,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 1,
+							"seconds": 17.1333333333336,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 3,
+							"seconds": 16.416666666667,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 1,
+							"seconds": 7.59999999999998,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						}
+					]
+				},
+				{
+					"events": [
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 4.11666666666666,
+							"x": 1145.66748046875,
+							"y": 388.124938964844
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 1,
+							"time": 5.51666666666665,
+							"x": 1453.6640625,
+							"y": 279.124938964844
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 1,
+							"time": 8.45,
+							"x": 2098.99194335938,
+							"y": 294.777191162109
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 2,
+							"time": 17.7333333333336,
+							"x": 4295.341796875,
+							"y": 273.999237060547
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 2,
+							"time": 20.9166666666668,
+							"x": 4995.64404296875,
+							"y": 529.832336425781
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 25.6166666666665,
+							"x": 6095.07421875,
+							"y": 418.651763916016
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 3,
+							"time": 38.5166666666658,
+							"x": 8946.248046875,
+							"y": 368.776733398438
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 4,
+							"time": 50.2666666666651,
+							"x": 11685.212890625,
+							"y": 542.190795898438
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 5,
+							"time": 63.8166666666643,
+							"x": 14553.0458984375,
+							"y": 447.542907714844
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 6,
+							"time": 77.9833333333302,
+							"x": 17746.6015625,
+							"y": 253.070648193359
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 6,
+							"time": 78.4833333333302,
+							"x": 17856.58203125,
+							"y": 280.106475830078
+						}
+					],
+					"finish_time": 80.9538536671961,
+					"max_stall": 0.0166666666666667,
+					"name": "BotNovice",
+					"route": "lower",
+					"s4_enter": 41.2499999999989,
+					"s4_exit": 58.3166666666646,
+					"sectors": [
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 10.4833333333334,
+							"turbo": 1,
+							"used": 1,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 14.716666666667,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 16.0500000000004,
+							"turbo": 1,
+							"used": 0,
+							"wind_seconds": 1.65
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 1,
+							"seconds": 17.066666666667,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 15.366666666667,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 5.36666666666665
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 7.28333333333331,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 0.0
+						}
+					]
+				},
+				{
+					"events": [
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 4.11666666666666,
+							"x": 1145.66748046875,
+							"y": 296.055114746094
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 1,
+							"time": 4.41666666666666,
+							"x": 1211.66674804688,
+							"y": 302.930114746094
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 8.86666666666669,
+							"x": 2344.66479492188,
+							"y": 211.915786743164
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 2,
+							"time": 22.75,
+							"x": 5398.97900390625,
+							"y": 259.610137939453
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 26.3666666666665,
+							"x": 6194.6103515625,
+							"y": 420.179046630859
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 3,
+							"time": 38.5166666666658,
+							"x": 8867.58203125,
+							"y": 385.261138916016
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 5,
+							"time": 73.3499999999971,
+							"x": 16796.47265625,
+							"y": 503.998809814453
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 6,
+							"time": 75.0333333333304,
+							"x": 17166.740234375,
+							"y": 346.915130615234
+						}
+					],
+					"finish_time": 80.6400550523853,
+					"max_stall": 0.0166666666666667,
+					"name": "BotBalanced",
+					"route": "lower",
+					"s4_enter": 41.6166666666656,
+					"s4_exit": 58.4333333333313,
+					"sectors": [
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 2,
+							"collisions": 0,
+							"seconds": 10.4833333333334,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 15.0000000000003,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 16.1333333333337,
+							"turbo": 1,
+							"used": 0,
+							"wind_seconds": 1.61666666666667
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 16.816666666667,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 14.9333333333337,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 4.88333333333332
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 7.28333333333331,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						}
+					]
+				},
+				{
+					"events": [
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 1,
+							"time": 8.81666666666668,
+							"x": 2093.12377929688,
+							"y": 264.180572509766
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 9.68333333333339,
+							"x": 2350.52124023438,
+							"y": 373.958343505859
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 1,
+							"time": 9.91666666666674,
+							"x": 2419.82055664063,
+							"y": 404.875
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 35.1833333333326,
+							"x": 8047.640625,
+							"y": 395.957702636719
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 3,
+							"time": 38.8833333333324,
+							"x": 8861.693359375,
+							"y": 337.207702636719
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 3,
+							"time": 40.349999999999,
+							"x": 9297.310546875,
+							"y": 309.541015625
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 4,
+							"time": 45.833333333332,
+							"x": 10544.8134765625,
+							"y": 496.666015625
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 4,
+							"time": 56.8499999999981,
+							"x": 12968.6953125,
+							"y": 470.166137695313
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 4,
+							"time": 58.9666666666646,
+							"x": 13347.8623046875,
+							"y": 452.785308837891
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 4,
+							"time": 59.0499999999979,
+							"x": 13366.197265625,
+							"y": 442.991241455078
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 5,
+							"time": 59.3999999999979,
+							"x": 13443.2041015625,
+							"y": 379.106201171875
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 5,
+							"time": 61.2499999999978,
+							"x": 13907.4453125,
+							"y": 292.813110351563
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 5,
+							"time": 63.6999999999977,
+							"x": 14446.4931640625,
+							"y": 399.021453857422
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 5,
+							"time": 63.8166666666643,
+							"x": 14472.162109375,
+							"y": 410.104797363281
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 5,
+							"time": 67.5833333333308,
+							"x": 15447.58203125,
+							"y": 336.979797363281
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 5,
+							"time": 71.1499999999972,
+							"x": 16241.119140625,
+							"y": 335.313110351563
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 5,
+							"time": 72.1833333333305,
+							"x": 16547.998046875,
+							"y": 441.063110351563
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 6,
+							"time": 78.1166666666635,
+							"x": 17840.984375,
+							"y": 262.410003662109
+						}
+					],
+					"finish_time": 79.999171270715,
+					"max_stall": 0.0166666666666667,
+					"name": "BotCompetitive",
+					"route": "lower",
+					"s4_enter": 41.9999999999989,
+					"s4_exit": 59.2166666666646,
+					"sectors": [
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 10.8833333333335,
+							"turbo": 1,
+							"used": 1,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 15.0000000000003,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 16.116666666667,
+							"turbo": 1,
+							"used": 1,
+							"wind_seconds": 1.61666666666667
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 2,
+							"collisions": 0,
+							"seconds": 17.216666666667,
+							"turbo": 0,
+							"used": 2,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 1.88333333333333,
+							"collected": 4,
+							"collisions": 0,
+							"seconds": 13.8166666666669,
+							"turbo": 0,
+							"used": 3,
+							"wind_seconds": 4.83333333333332
+						},
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 6.96666666666665,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 0.0
+						}
+					]
+				}
+			],
+			"seed": 4
+		},
+		{
+			"racers": [
+				{
+					"events": [
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 4.11666666666666,
+							"x": 1145.66748046875,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 1,
+							"time": 6.73333333333331,
+							"x": 1721.27587890625,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 2,
+							"time": 16.1500000000004,
+							"x": 3721.26953125,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 2,
+							"time": 25.0499999999999,
+							"x": 5521.275390625,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 3,
+							"time": 33.7333333333327,
+							"x": 7361.263671875,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 3,
+							"time": 39.0166666666657,
+							"x": 8451.2783203125,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 4,
+							"time": 53.5666666666649,
+							"x": 11581.2685546875,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 5,
+							"time": 63.983333333331,
+							"x": 13801.271484375,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 5,
+							"time": 68.7999999999974,
+							"x": 14791.279296875,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 5,
+							"time": 73.6166666666638,
+							"x": 15781.27734375,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 6,
+							"time": 81.2999999999967,
+							"x": 17401.271484375,
+							"y": 586.320007324219
+						}
+					],
+					"finish_time": 86.1572900017723,
+					"max_stall": 0.0166666666666667,
+					"name": "Balloon",
+					"route": "passive",
+					"s4_enter": 45.0166666666654,
+					"s4_exit": 62.1499999999978,
+					"sectors": [
+						{
+							"boost_seconds": 0.0,
+							"collected": 1,
+							"collisions": 1,
+							"seconds": 11.5000000000002,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 2,
+							"seconds": 16.0500000000004,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 2,
+							"seconds": 17.466666666667,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 1,
+							"seconds": 17.1333333333336,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 3,
+							"seconds": 16.416666666667,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 1,
+							"seconds": 7.59999999999998,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						}
+					]
+				},
+				{
+					"events": [
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 4.11666666666666,
+							"x": 1145.66748046875,
+							"y": 297.083282470703
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 1,
+							"time": 4.41666666666666,
+							"x": 1211.66674804688,
+							"y": 293.333282470703
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 1,
+							"time": 7.71666666666664,
+							"x": 2091.6591796875,
+							"y": 260.832794189453
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 8.58333333333334,
+							"x": 2349.056640625,
+							"y": 279.790985107422
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 2,
+							"time": 12.1166666666668,
+							"x": 3213.6650390625,
+							"y": 458.249237060547
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 2,
+							"time": 16.3333333333337,
+							"x": 4295.3232421875,
+							"y": 384.041168212891
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 2,
+							"time": 19.8166666666668,
+							"x": 5061.62255859375,
+							"y": 455.2490234375
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 23.9499999999999,
+							"x": 6124.95849609375,
+							"y": 261.429473876953
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 3,
+							"time": 27.1499999999997,
+							"x": 6828.92724609375,
+							"y": 415.873779296875
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 31.9833333333328,
+							"x": 8046.25634765625,
+							"y": 404.054077148438
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 3,
+							"time": 34.216666666666,
+							"x": 8536.78125,
+							"y": 462.149475097656
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 3,
+							"time": 35.9499999999992,
+							"x": 8854.65625,
+							"y": 388.697357177734
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 4,
+							"time": 46.3166666666653,
+							"x": 11464.337890625,
+							"y": 206.245178222656
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 5,
+							"time": 60.3499999999979,
+							"x": 14935.9384765625,
+							"y": 333.336364746094
+						}
+					],
+					"finish_time": 75.8858195702332,
+					"max_stall": 0.0166666666666667,
+					"name": "BotNovice",
+					"route": "upper",
+					"s4_enter": 39.0999999999991,
+					"s4_exit": 53.9499999999982,
+					"sectors": [
+						{
+							"boost_seconds": 4.03333333333332,
+							"collected": 2,
+							"collisions": 0,
+							"seconds": 9.7833333333334,
+							"turbo": 1,
+							"used": 1,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 4.03333333333332,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 13.6000000000003,
+							"turbo": 0,
+							"used": 2,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 4.03333333333332,
+							"collected": 2,
+							"collisions": 1,
+							"seconds": 15.716666666667,
+							"turbo": 1,
+							"used": 1,
+							"wind_seconds": 1.6
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 1,
+							"seconds": 14.8500000000003,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 10.7166666666668
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 1,
+							"seconds": 14.666666666667,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 5.24999999999999
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 7.28333333333331,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						}
+					]
+				},
+				{
+					"events": [
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 1,
+							"time": 8.45,
+							"x": 2098.99194335938,
+							"y": 280.166595458984
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 9.30000000000004,
+							"x": 2351.439453125,
+							"y": 399.333312988281
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 2,
+							"time": 17.2500000000003,
+							"x": 4189.01318359375,
+							"y": 218.194152832031
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 3,
+							"time": 38.5166666666658,
+							"x": 8867.5625,
+							"y": 352.99951171875
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 39.799999999999,
+							"x": 9248.7275390625,
+							"y": 310.263397216797
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 4,
+							"time": 48.7833333333318,
+							"x": 11193.873046875,
+							"y": 497.602630615234
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 4,
+							"time": 51.0499999999984,
+							"x": 11692.578125,
+							"y": 537.688415527344
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 4,
+							"time": 55.6333333333315,
+							"x": 12648.2177734375,
+							"y": 495.668762207031
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 4,
+							"time": 58.3166666666646,
+							"x": 13238.603515625,
+							"y": 446.089569091797
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 4,
+							"time": 58.7999999999979,
+							"x": 13344.9462890625,
+							"y": 371.781494140625
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 5,
+							"time": 59.0499999999979,
+							"x": 13410.21875,
+							"y": 312.941986083984
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 5,
+							"time": 63.4666666666643,
+							"x": 14446.5107421875,
+							"y": 378.580902099609
+						}
+					],
+					"finish_time": 80.6979222162993,
+					"max_stall": 0.0166666666666667,
+					"name": "BotBalanced",
+					"route": "lower",
+					"s4_enter": 41.6166666666656,
+					"s4_exit": 59.0166666666646,
+					"sectors": [
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 10.4833333333334,
+							"turbo": 1,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 15.0000000000003,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 16.1333333333337,
+							"turbo": 1,
+							"used": 0,
+							"wind_seconds": 1.61666666666667
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 2,
+							"collisions": 1,
+							"seconds": 17.4000000000003,
+							"turbo": 0,
+							"used": 2,
+							"wind_seconds": 0.183333333333333
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 14.416666666667,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 5.21666666666665
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 7.26666666666665,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						}
+					]
+				},
+				{
+					"events": [
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 1,
+							"time": 8.45,
+							"x": 2098.99194335938,
+							"y": 250.666610717773
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 2,
+							"time": 17.7500000000003,
+							"x": 4299.00830078125,
+							"y": 442.124481201172
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 3,
+							"time": 29.3499999999996,
+							"x": 6850.89501953125,
+							"y": 439.124298095703
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 3,
+							"time": 38.5166666666658,
+							"x": 8867.5625,
+							"y": 381.346496582031
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 39.9333333333323,
+							"x": 9288.3291015625,
+							"y": 368.082611083984
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 4,
+							"time": 46.9499999999986,
+							"x": 10877.044921875,
+							"y": 454.665374755859
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 4,
+							"time": 55.3833333333315,
+							"x": 12646.001953125,
+							"y": 500.997955322266
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 5,
+							"time": 66.7499999999975,
+							"x": 15308.9716796875,
+							"y": 375.997741699219
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 5,
+							"time": 67.2833333333308,
+							"x": 15448.3173828125,
+							"y": 299.2060546875
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 5,
+							"time": 71.1499999999972,
+							"x": 16299.0595703125,
+							"y": 330.372497558594
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 5,
+							"time": 71.9999999999972,
+							"x": 16551.486328125,
+							"y": 423.289123535156
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 6,
+							"time": 77.3833333333302,
+							"x": 17824.150390625,
+							"y": 294.705261230469
+						}
+					],
+					"finish_time": 79.3225269665845,
+					"max_stall": 0.0166666666666667,
+					"name": "BotCompetitive",
+					"route": "lower",
+					"s4_enter": 41.6166666666656,
+					"s4_exit": 58.8166666666646,
+					"sectors": [
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 10.4833333333334,
+							"turbo": 1,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 15.0000000000003,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 16.1333333333337,
+							"turbo": 1,
+							"used": 1,
+							"wind_seconds": 1.61666666666667
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 17.2000000000003,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 1.7,
+							"collected": 2,
+							"collisions": 0,
+							"seconds": 14.0333333333336,
+							"turbo": 0,
+							"used": 2,
+							"wind_seconds": 4.18333333333332
+						},
+						{
+							"boost_seconds": 2.26666666666666,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 6.48333333333332,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 0.0
+						}
+					]
+				}
+			],
+			"seed": 5
+		},
+		{
+			"racers": [
+				{
+					"events": [
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 4.11666666666666,
+							"x": 1145.66748046875,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 1,
+							"time": 6.73333333333331,
+							"x": 1721.27587890625,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 2,
+							"time": 16.1500000000004,
+							"x": 3721.26953125,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 2,
+							"time": 24.6499999999999,
+							"x": 5521.27734375,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 3,
+							"time": 33.7333333333327,
+							"x": 7361.26708984375,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 3,
+							"time": 39.0166666666657,
+							"x": 8451.267578125,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 4,
+							"time": 53.5666666666649,
+							"x": 11581.2724609375,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 5,
+							"time": 63.983333333331,
+							"x": 13801.275390625,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 5,
+							"time": 68.7999999999974,
+							"x": 14791.2783203125,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 5,
+							"time": 73.6166666666638,
+							"x": 15781.275390625,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 6,
+							"time": 81.2999999999967,
+							"x": 17401.26953125,
+							"y": 586.320007324219
+						}
+					],
+					"finish_time": 86.1572988811898,
+					"max_stall": 0.0166666666666667,
+					"name": "Balloon",
+					"route": "passive",
+					"s4_enter": 45.0166666666654,
+					"s4_exit": 62.1499999999978,
+					"sectors": [
+						{
+							"boost_seconds": 0.0,
+							"collected": 1,
+							"collisions": 1,
+							"seconds": 11.5000000000002,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 2,
+							"seconds": 15.6500000000004,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 2,
+							"seconds": 17.8666666666669,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 1,
+							"seconds": 17.1333333333336,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 3,
+							"seconds": 16.416666666667,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 1,
+							"seconds": 7.59999999999998,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						}
+					]
+				},
+				{
+					"events": [
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 4.11666666666666,
+							"x": 1145.66748046875,
+							"y": 288.639251708984
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 1,
+							"time": 5.88333333333332,
+							"x": 1534.32983398438,
+							"y": 282.430694580078
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 26.6166666666664,
+							"x": 6095.6142578125,
+							"y": 365.193237304688
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 3,
+							"time": 27.1499999999997,
+							"x": 6212.9423828125,
+							"y": 451.859893798828
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 3,
+							"time": 33.4333333333327,
+							"x": 7508.34033203125,
+							"y": 312.801788330078
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 36.1166666666659,
+							"x": 8047.66748046875,
+							"y": 430.869812011719
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 3,
+							"time": 36.3166666666659,
+							"x": 8091.66552734375,
+							"y": 416.369812011719
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 3,
+							"time": 40.349999999999,
+							"x": 9001.7998046875,
+							"y": 286.286865234375
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 41.1833333333323,
+							"x": 9249.3095703125,
+							"y": 279.314514160156
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 4,
+							"time": 52.216666666665,
+							"x": 11767.064453125,
+							"y": 526.253479003906
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 4,
+							"time": 57.949999999998,
+							"x": 12994.02734375,
+							"y": 510.000396728516
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 5,
+							"time": 59.7833333333312,
+							"x": 13538.548828125,
+							"y": 313.583587646484
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 5,
+							"time": 67.5833333333308,
+							"x": 15448.6826171875,
+							"y": 364.500396728516
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 5,
+							"time": 71.1499999999972,
+							"x": 16249.5537109375,
+							"y": 379.722381591797
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 5,
+							"time": 72.1666666666639,
+							"x": 16551.482421875,
+							"y": 469.430694580078
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 6,
+							"time": 74.8166666666637,
+							"x": 17210.087890625,
+							"y": 276.611297607422
+						}
+					],
+					"finish_time": 80.226318593497,
+					"max_stall": 0.0166666666666667,
+					"name": "BotNovice",
+					"route": "lower",
+					"s4_enter": 42.8333333333322,
+					"s4_exit": 59.3333333333312,
+					"sectors": [
+						{
+							"boost_seconds": 0.0,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 11.1833333333335,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 15.0000000000003,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 3,
+							"collisions": 1,
+							"seconds": 16.6500000000003,
+							"turbo": 1,
+							"used": 2,
+							"wind_seconds": 1.68333333333333
+						},
+						{
+							"boost_seconds": 1.38333333333333,
+							"collected": 0,
+							"collisions": 1,
+							"seconds": 16.5000000000003,
+							"turbo": 1,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 2.5,
+							"collected": 2,
+							"collisions": 0,
+							"seconds": 13.6833333333336,
+							"turbo": 0,
+							"used": 2,
+							"wind_seconds": 4.89999999999999
+						},
+						{
+							"boost_seconds": 0.15,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 7.21666666666665,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 0.0
+						}
+					]
+				},
+				{
+					"events": [
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 1,
+							"time": 8.45,
+							"x": 2098.99194335938,
+							"y": 175.804718017578
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 9.30000000000004,
+							"x": 2351.439453125,
+							"y": 294.971221923828
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 2,
+							"time": 13.5833333333336,
+							"x": 3262.39819335938,
+							"y": 490.011749267578
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 2,
+							"time": 17.5833333333336,
+							"x": 4296.388671875,
+							"y": 285.261596679688
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 3,
+							"time": 27.883333333333,
+							"x": 6412.724609375,
+							"y": 406.261596679688
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 3,
+							"time": 34.116666666666,
+							"x": 7760.5361328125,
+							"y": 197.470062255859
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 35.0833333333326,
+							"x": 8047.6474609375,
+							"y": 380.386596679688
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 3,
+							"time": 41.4499999999989,
+							"x": 9490.4326171875,
+							"y": 202.928375244141
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 4,
+							"time": 46.1666666666653,
+							"x": 10550.193359375,
+							"y": 201.970108032227
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 4,
+							"time": 48.6166666666652,
+							"x": 11196.8076171875,
+							"y": 125.614952087402
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 4,
+							"time": 51.0833333333317,
+							"x": 11787.1552734375,
+							"y": 206.245269775391
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 4,
+							"time": 55.7499999999981,
+							"x": 12963.951171875,
+							"y": 194.366470336914
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 4,
+							"time": 57.049999999998,
+							"x": 13350.06640625,
+							"y": 243.951232910156
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 5,
+							"time": 60.8833333333312,
+							"x": 14217.2998046875,
+							"y": 321.856536865234
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 5,
+							"time": 61.9166666666644,
+							"x": 14448.9541015625,
+							"y": 356.742309570313
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 6,
+							"time": 75.9166666666636,
+							"x": 17641.4375,
+							"y": 259.670745849609
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 6,
+							"time": 76.4666666666636,
+							"x": 17744.814453125,
+							"y": 302.170745849609
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 6,
+							"time": 76.6499999999969,
+							"x": 17785.140625,
+							"y": 305.379089355469
+						}
+					],
+					"finish_time": 79.2108151305242,
+					"max_stall": 0.0166666666666667,
+					"name": "BotBalanced",
+					"route": "upper",
+					"s4_enter": 42.4166666666655,
+					"s4_exit": 57.2333333333314,
+					"sectors": [
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 10.6000000000001,
+							"turbo": 1,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 15.1333333333337,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 16.6833333333337,
+							"turbo": 1,
+							"used": 2,
+							"wind_seconds": 1.8
+						},
+						{
+							"boost_seconds": 1.48333333333333,
+							"collected": 2,
+							"collisions": 2,
+							"seconds": 14.816666666667,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 11.0500000000001
+						},
+						{
+							"boost_seconds": 2.55,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 14.5500000000003,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 3.54999999999999
+						},
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 7.43333333333331,
+							"turbo": 0,
+							"used": 2,
+							"wind_seconds": 0.0
+						}
+					]
+				},
+				{
+					"events": [
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 4.11666666666666,
+							"x": 1145.66748046875,
+							"y": 364.055572509766
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 1,
+							"time": 4.41666666666666,
+							"x": 1211.66674804688,
+							"y": 383.000030517578
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 9.33333333333338,
+							"x": 2345.3974609375,
+							"y": 449.875030517578
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 1,
+							"time": 9.55000000000005,
+							"x": 2393.06518554688,
+							"y": 482.916687011719
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 2,
+							"time": 18.3166666666669,
+							"x": 4321.759765625,
+							"y": 439.291320800781
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 2,
+							"time": 18.3500000000002,
+							"x": 4329.0927734375,
+							"y": 444.207977294922
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 26.3833333333331,
+							"x": 6096.34765625,
+							"y": 445.916259765625
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 3,
+							"time": 30.0833333333329,
+							"x": 6910.3115234375,
+							"y": 473.707916259766
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 3,
+							"time": 39.2499999999991,
+							"x": 8938.720703125,
+							"y": 347.416015625
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 40.299999999999,
+							"x": 9250.5830078125,
+							"y": 220.874328613281
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 4,
+							"time": 47.8166666666652,
+							"x": 10985.732421875,
+							"y": 206.245239257813
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 6,
+							"time": 78.1166666666635,
+							"x": 18130.4375,
+							"y": 324.522338867188
+						}
+					],
+					"finish_time": 79.3421683537528,
+					"max_stall": 0.0166666666666667,
+					"name": "BotCompetitive",
+					"route": "upper",
+					"s4_enter": 42.3833333333322,
+					"s4_exit": 57.2666666666647,
+					"sectors": [
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 2,
+							"collisions": 0,
+							"seconds": 10.9500000000001,
+							"turbo": 0,
+							"used": 2,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 15.0000000000003,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 2,
+							"collisions": 0,
+							"seconds": 16.4333333333337,
+							"turbo": 1,
+							"used": 1,
+							"wind_seconds": 1.23333333333333
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 1,
+							"seconds": 14.8833333333337,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 10.7333333333334
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 14.416666666667,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 5.19999999999999
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 7.66666666666664,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 0.0
+						}
+					]
+				}
+			],
+			"seed": 6
+		},
+		{
+			"racers": [
+				{
+					"events": [
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 4.11666666666666,
+							"x": 1145.66748046875,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 1,
+							"time": 6.73333333333331,
+							"x": 1721.27587890625,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 2,
+							"time": 16.5500000000003,
+							"x": 3721.27319335938,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 2,
+							"time": 25.8499999999998,
+							"x": 5521.26611328125,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 3,
+							"time": 34.5333333333327,
+							"x": 7361.27587890625,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 3,
+							"time": 39.8166666666657,
+							"x": 8451.2763671875,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 4,
+							"time": 54.3666666666649,
+							"x": 11581.2666015625,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 5,
+							"time": 64.7833333333309,
+							"x": 13801.26953125,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 5,
+							"time": 69.5999999999973,
+							"x": 14791.27734375,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 5,
+							"time": 74.4166666666637,
+							"x": 15781.275390625,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 6,
+							"time": 82.0999999999966,
+							"x": 17401.26953125,
+							"y": 586.320007324219
+						}
+					],
+					"finish_time": 86.9572988811897,
+					"max_stall": 0.0166666666666667,
+					"name": "Balloon",
+					"route": "passive",
+					"s4_enter": 45.8166666666653,
+					"s4_exit": 62.9499999999977,
+					"sectors": [
+						{
+							"boost_seconds": 0.0,
+							"collected": 1,
+							"collisions": 1,
+							"seconds": 11.9000000000002,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 2,
+							"seconds": 16.4500000000003,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 2,
+							"seconds": 17.466666666667,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 1,
+							"seconds": 17.1333333333336,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 3,
+							"seconds": 16.416666666667,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 1,
+							"seconds": 7.59999999999998,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						}
+					]
+				},
+				{
+					"events": [
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 4.11666666666666,
+							"x": 1145.66748046875,
+							"y": 327.958526611328
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 1,
+							"time": 9.55000000000005,
+							"x": 2340.99731445313,
+							"y": 290.486358642578
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 3,
+							"time": 39.6166666666657,
+							"x": 8869.798828125,
+							"y": 411.004119873047
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 40.899999999999,
+							"x": 9250.9638671875,
+							"y": 367.531646728516
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 3,
+							"time": 41.8166666666656,
+							"x": 9507.826171875,
+							"y": 441.725952148438
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 4,
+							"time": 56.0833333333314,
+							"x": 12646.771484375,
+							"y": 531.071411132813
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 4,
+							"time": 56.1166666666648,
+							"x": 12654.10546875,
+							"y": 532.182556152344
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 4,
+							"time": 57.5833333333313,
+							"x": 12976.80078125,
+							"y": 495.182373046875
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 4,
+							"time": 58.8333333333313,
+							"x": 13348.0654296875,
+							"y": 476.390777587891
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 5,
+							"time": 61.1166666666645,
+							"x": 13945.3935546875,
+							"y": 419.14501953125
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 5,
+							"time": 62.7166666666644,
+							"x": 14247.2666015625,
+							"y": 309.0576171875
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 6,
+							"time": 75.3166666666637,
+							"x": 17166.6875,
+							"y": 475.008209228516
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 6,
+							"time": 77.0166666666636,
+							"x": 17540.62109375,
+							"y": 286.049896240234
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 6,
+							"time": 77.9499999999969,
+							"x": 17745.91796875,
+							"y": 257.063781738281
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 6,
+							"time": 78.1166666666635,
+							"x": 17782.578125,
+							"y": 265.883239746094
+						}
+					],
+					"finish_time": 80.7542709998191,
+					"max_stall": 0.0166666666666667,
+					"name": "BotNovice",
+					"route": "lower",
+					"s4_enter": 42.6999999999989,
+					"s4_exit": 59.0166666666646,
+					"sectors": [
+						{
+							"boost_seconds": 0.0,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 11.1833333333335,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 15.4000000000003,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 16.116666666667,
+							"turbo": 1,
+							"used": 1,
+							"wind_seconds": 1.61666666666667
+						},
+						{
+							"boost_seconds": 1.43333333333333,
+							"collected": 2,
+							"collisions": 0,
+							"seconds": 16.316666666667,
+							"turbo": 1,
+							"used": 1,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 2.6,
+							"collected": 0,
+							"collisions": 1,
+							"seconds": 14.6333333333336,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 3.84999999999999
+						},
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 2,
+							"collisions": 0,
+							"seconds": 7.11666666666665,
+							"turbo": 0,
+							"used": 2,
+							"wind_seconds": 0.0
+						}
+					]
+				},
+				{
+					"events": [
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 1,
+							"time": 8.45,
+							"x": 2098.99194335938,
+							"y": 279.625244140625
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 9.30000000000004,
+							"x": 2351.439453125,
+							"y": 399.333740234375
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 2,
+							"time": 19.4500000000002,
+							"x": 4672.99169921875,
+							"y": 428.25
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 25.9166666666665,
+							"x": 6095.59521484375,
+							"y": 287.041564941406
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 3,
+							"time": 29.3499999999996,
+							"x": 6850.89501953125,
+							"y": 542.957824707031
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 34.0833333333327,
+							"x": 8046.22509765625,
+							"y": 425.193817138672
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 3,
+							"time": 37.7833333333325,
+							"x": 8860.2783203125,
+							"y": 313.179809570313
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 4,
+							"time": 43.2833333333322,
+							"x": 10051.2880859375,
+							"y": 496.110870361328
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 4,
+							"time": 45.533333333332,
+							"x": 10546.33203125,
+							"y": 523.485900878906
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 4,
+							"time": 51.266666666665,
+							"x": 11721.947265625,
+							"y": 526.252136230469
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 4,
+							"time": 57.5833333333313,
+							"x": 12990.7138671875,
+							"y": 488.372161865234
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 4,
+							"time": 58.9166666666646,
+							"x": 13386.7294921875,
+							"y": 382.227905273438
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 5,
+							"time": 59.0499999999979,
+							"x": 13426.3310546875,
+							"y": 358.999572753906
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 5,
+							"time": 63.3666666666644,
+							"x": 14452.34765625,
+							"y": 295.100524902344
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 5,
+							"time": 66.3833333333309,
+							"x": 15226.0830078125,
+							"y": 431.774749755859
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 5,
+							"time": 67.1333333333308,
+							"x": 15448.841796875,
+							"y": 343.483367919922
+						}
+					],
+					"finish_time": 80.5049635943849,
+					"max_stall": 0.0166666666666667,
+					"name": "BotBalanced",
+					"route": "lower",
+					"s4_enter": 40.9166666666656,
+					"s4_exit": 58.9666666666646,
+					"sectors": [
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 10.4833333333334,
+							"turbo": 1,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 15.0000000000003,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 4.03333333333332,
+							"collected": 2,
+							"collisions": 0,
+							"seconds": 15.4333333333337,
+							"turbo": 1,
+							"used": 1,
+							"wind_seconds": 1.6
+						},
+						{
+							"boost_seconds": 1.38333333333333,
+							"collected": 2,
+							"collisions": 1,
+							"seconds": 18.0500000000003,
+							"turbo": 0,
+							"used": 2,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 2.65,
+							"collected": 2,
+							"collisions": 0,
+							"seconds": 14.266666666667,
+							"turbo": 0,
+							"used": 2,
+							"wind_seconds": 4.96666666666665
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 7.28333333333331,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						}
+					]
+				},
+				{
+					"events": [
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 1,
+							"time": 8.45,
+							"x": 2098.99194335938,
+							"y": 250.66667175293
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 9.30000000000004,
+							"x": 2351.439453125,
+							"y": 292.958343505859
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 1,
+							"time": 9.55000000000005,
+							"x": 2425.68872070313,
+							"y": 321.500030517578
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 2,
+							"time": 18.2500000000002,
+							"x": 4295.27099609375,
+							"y": 371.888641357422
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 2,
+							"time": 18.3500000000002,
+							"x": 4317.27001953125,
+							"y": 396.888580322266
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 2,
+							"time": 18.5333333333336,
+							"x": 4357.6015625,
+							"y": 442.471832275391
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 2,
+							"time": 23.1166666666666,
+							"x": 5279.3779296875,
+							"y": 376.702117919922
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 27.3833333333331,
+							"x": 6218.0029296875,
+							"y": 419.826904296875
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 3,
+							"time": 30.0833333333329,
+							"x": 6811.9765625,
+							"y": 433.660217285156
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 35.4166666666659,
+							"x": 8139.30078125,
+							"y": 405.465637207031
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 3,
+							"time": 38.8833333333324,
+							"x": 8909.3623046875,
+							"y": 378.923950195313
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 40.0333333333323,
+							"x": 9250.92578125,
+							"y": 351.382293701172
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 3,
+							"time": 40.7166666666656,
+							"x": 9453.8837890625,
+							"y": 434.521179199219
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 4,
+							"time": 41.8166666666656,
+							"x": 9708.7373046875,
+							"y": 536.090637207031
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 4,
+							"time": 45.383333333332,
+							"x": 10544.9931640625,
+							"y": 460.173950195313
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 4,
+							"time": 46.2166666666653,
+							"x": 10728.3427734375,
+							"y": 449.340637207031
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 4,
+							"time": 54.9333333333315,
+							"x": 12646.1796875,
+							"y": 536.423889160156
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 5,
+							"time": 68.9499999999974,
+							"x": 15841.85546875,
+							"y": 274.298980712891
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 5,
+							"time": 72.1499999999972,
+							"x": 16545.875,
+							"y": 466.090637207031
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 5,
+							"time": 72.2499999999972,
+							"x": 16567.87109375,
+							"y": 459.840637207031
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 6,
+							"time": 74.9666666666637,
+							"x": 17165.431640625,
+							"y": 385.382110595703
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 6,
+							"time": 78.1166666666635,
+							"x": 17771.767578125,
+							"y": 250.687591552734
+						}
+					],
+					"finish_time": 80.9727757059104,
+					"max_stall": 0.0166666666666667,
+					"name": "BotCompetitive",
+					"route": "lower",
+					"s4_enter": 41.7833333333322,
+					"s4_exit": 58.3666666666646,
+					"sectors": [
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 11.0000000000001,
+							"turbo": 1,
+							"used": 1,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 2,
+							"collisions": 0,
+							"seconds": 15.4000000000003,
+							"turbo": 0,
+							"used": 2,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 4.03333333333332,
+							"collected": 3,
+							"collisions": 0,
+							"seconds": 15.3833333333337,
+							"turbo": 0,
+							"used": 3,
+							"wind_seconds": 1.63333333333333
+						},
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 2,
+							"collisions": 0,
+							"seconds": 16.5833333333337,
+							"turbo": 1,
+							"used": 1,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 14.9500000000003,
+							"turbo": 0,
+							"used": 2,
+							"wind_seconds": 4.89999999999999
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 7.66666666666664,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 0.0
+						}
+					]
+				}
+			],
+			"seed": 7
+		},
+		{
+			"racers": [
+				{
+					"events": [
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 4.11666666666666,
+							"x": 1145.66748046875,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 1,
+							"time": 6.73333333333331,
+							"x": 1721.27587890625,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 2,
+							"time": 16.5500000000003,
+							"x": 3721.27319335938,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 2,
+							"time": 25.0499999999999,
+							"x": 5521.2705078125,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 3,
+							"time": 33.7333333333327,
+							"x": 7361.2587890625,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 3,
+							"time": 39.0166666666657,
+							"x": 8451.2734375,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 4,
+							"time": 53.5666666666649,
+							"x": 11581.2783203125,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 5,
+							"time": 63.983333333331,
+							"x": 13801.267578125,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 5,
+							"time": 68.7999999999974,
+							"x": 14791.275390625,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 5,
+							"time": 73.6166666666638,
+							"x": 15781.2783203125,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 6,
+							"time": 81.2999999999967,
+							"x": 17401.271484375,
+							"y": 586.320007324219
+						}
+					],
+					"finish_time": 86.1572900017723,
+					"max_stall": 0.0166666666666667,
+					"name": "Balloon",
+					"route": "passive",
+					"s4_enter": 45.0166666666654,
+					"s4_exit": 62.1499999999978,
+					"sectors": [
+						{
+							"boost_seconds": 0.0,
+							"collected": 1,
+							"collisions": 1,
+							"seconds": 11.9000000000002,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 2,
+							"seconds": 15.6500000000004,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 2,
+							"seconds": 17.466666666667,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 1,
+							"seconds": 17.1333333333336,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 3,
+							"seconds": 16.416666666667,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 1,
+							"seconds": 7.59999999999998,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						}
+					]
+				},
+				{
+					"events": [
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 4.11666666666666,
+							"x": 1145.66748046875,
+							"y": 362.264038085938
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 1,
+							"time": 5.88333333333332,
+							"x": 1534.32983398438,
+							"y": 231.01383972168
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 1,
+							"time": 8.45,
+							"x": 2098.99194335938,
+							"y": 245.62467956543
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 9.30000000000004,
+							"x": 2351.439453125,
+							"y": 291.444061279297
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 1,
+							"time": 9.91666666666674,
+							"x": 2534.58764648438,
+							"y": 314.763519287109
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 2,
+							"time": 17.7333333333336,
+							"x": 4295.341796875,
+							"y": 371.110260009766
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 2,
+							"time": 20.9166666666668,
+							"x": 4995.64404296875,
+							"y": 496.582092285156
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 25.7333333333332,
+							"x": 6095.56982421875,
+							"y": 258.304321289063
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 3,
+							"time": 37.3666666666658,
+							"x": 8568.3720703125,
+							"y": 442.560089111328
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 3,
+							"time": 38.1499999999991,
+							"x": 8690.4248046875,
+							"y": 390.288482666016
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 3,
+							"time": 39.6166666666657,
+							"x": 9042.4560546875,
+							"y": 354.386199951172
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 40.3166666666657,
+							"x": 9250.3642578125,
+							"y": 388.442779541016
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 3,
+							"time": 41.8166666666656,
+							"x": 9680.4833984375,
+							"y": 176.47038269043
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 4,
+							"time": 44.9666666666654,
+							"x": 10549.53125,
+							"y": 115.359039306641
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 4,
+							"time": 51.1499999999984,
+							"x": 12181.9228515625,
+							"y": 127.235328674316
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 5,
+							"time": 68.0333333333308,
+							"x": 15933.7197265625,
+							"y": 228.01350402832
+						}
+					],
+					"finish_time": 79.8599094299382,
+					"max_stall": 0.0166666666666667,
+					"name": "BotNovice",
+					"route": "upper",
+					"s4_enter": 41.8833333333322,
+					"s4_exit": 56.0833333333314,
+					"sectors": [
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 2,
+							"collisions": 0,
+							"seconds": 10.4833333333334,
+							"turbo": 1,
+							"used": 2,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 14.816666666667,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 2.08333333333333,
+							"collected": 2,
+							"collisions": 1,
+							"seconds": 16.5833333333337,
+							"turbo": 1,
+							"used": 2,
+							"wind_seconds": 1.68333333333333
+						},
+						{
+							"boost_seconds": 1.95,
+							"collected": 1,
+							"collisions": 1,
+							"seconds": 14.2000000000003,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 11.0500000000001
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 1,
+							"seconds": 16.516666666667,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 4.74999999999999
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 7.26666666666665,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						}
+					]
+				},
+				{
+					"events": [
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 1,
+							"time": 8.45,
+							"x": 2098.99194335938,
+							"y": 227.985702514648
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 9.45000000000005,
+							"x": 2395.98901367188,
+							"y": 366.902191162109
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 2,
+							"time": 22.0166666666667,
+							"x": 5237.63330078125,
+							"y": 371.471130371094
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 26.4666666666664,
+							"x": 6216.58984375,
+							"y": 422.20703125
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 3,
+							"time": 39.2499999999991,
+							"x": 8957.755859375,
+							"y": 367.289886474609
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 5,
+							"time": 61.2499999999978,
+							"x": 13876.46875,
+							"y": 319.789001464844
+						}
+					],
+					"finish_time": 81.0754572899985,
+					"max_stall": 0.0166666666666667,
+					"name": "BotBalanced",
+					"route": "lower",
+					"s4_enter": 41.9666666666656,
+					"s4_exit": 59.2833333333313,
+					"sectors": [
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 10.4833333333334,
+							"turbo": 1,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 15.0000000000003,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 16.4833333333337,
+							"turbo": 1,
+							"used": 0,
+							"wind_seconds": 1.81666666666667
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 17.316666666667,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 14.5333333333336,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 4.61666666666666
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 7.26666666666665,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						}
+					]
+				},
+				{
+					"events": [
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 2,
+							"time": 18.9833333333335,
+							"x": 4329.8203125,
+							"y": 436.143218994141
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 2,
+							"time": 20.5500000000001,
+							"x": 4674.4716796875,
+							"y": 439.809875488281
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 35.8833333333326,
+							"x": 8047.6552734375,
+							"y": 347.101348876953
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 3,
+							"time": 35.9499999999992,
+							"x": 8062.3212890625,
+							"y": 355.268005371094
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 3,
+							"time": 39.6166666666657,
+							"x": 8869.775390625,
+							"y": 335.476348876953
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 40.899999999999,
+							"x": 9250.9404296875,
+							"y": 340.518005371094
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 3,
+							"time": 41.0833333333323,
+							"x": 9305.392578125,
+							"y": 381.698547363281
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 4,
+							"time": 46.533333333332,
+							"x": 10545.5615234375,
+							"y": 523.115173339844
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 4,
+							"time": 57.5833333333313,
+							"x": 12976.77734375,
+							"y": 456.490142822266
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 4,
+							"time": 58.8333333333313,
+							"x": 13348.0419921875,
+							"y": 446.073486328125
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 5,
+							"time": 59.0499999999979,
+							"x": 13412.39453125,
+							"y": 405.990142822266
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 5,
+							"time": 59.1666666666646,
+							"x": 13447.0458984375,
+							"y": 378.573486328125
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 5,
+							"time": 60.5166666666645,
+							"x": 13813.5556640625,
+							"y": 300.990173339844
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 5,
+							"time": 63.783333333331,
+							"x": 14445.7451171875,
+							"y": 423.115173339844
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 5,
+							"time": 63.8166666666643,
+							"x": 14453.0791015625,
+							"y": 423.365173339844
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 5,
+							"time": 67.6666666666641,
+							"x": 15446.833984375,
+							"y": 411.490173339844
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 5,
+							"time": 68.9499999999974,
+							"x": 15745.3271484375,
+							"y": 342.906829833984
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 5,
+							"time": 72.5833333333305,
+							"x": 16544.689453125,
+							"y": 489.823486328125
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 6,
+							"time": 74.8166666666637,
+							"x": 17035.935546875,
+							"y": 388.920715332031
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 6,
+							"time": 75.4166666666637,
+							"x": 17167.912109375,
+							"y": 345.240142822266
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 6,
+							"time": 76.6499999999969,
+							"x": 17439.197265625,
+							"y": 177.740005493164
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 6,
+							"time": 78.0499999999969,
+							"x": 17747.142578125,
+							"y": 217.23991394043
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 6,
+							"time": 78.4833333333302,
+							"x": 17842.458984375,
+							"y": 189.614852905273
+						}
+					],
+					"finish_time": 80.3608721389075,
+					"max_stall": 0.0166666666666667,
+					"name": "BotCompetitive",
+					"route": "lower",
+					"s4_enter": 42.6999999999989,
+					"s4_exit": 59.0166666666646,
+					"sectors": [
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 11.5000000000002,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 15.0833333333337,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 2,
+							"collisions": 0,
+							"seconds": 16.116666666667,
+							"turbo": 1,
+							"used": 2,
+							"wind_seconds": 1.61666666666667
+						},
+						{
+							"boost_seconds": 1.43333333333333,
+							"collected": 2,
+							"collisions": 0,
+							"seconds": 16.316666666667,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.583333333333333,
+							"collected": 4,
+							"collisions": 0,
+							"seconds": 14.7333333333336,
+							"turbo": 0,
+							"used": 4,
+							"wind_seconds": 4.91666666666665
+						},
+						{
+							"boost_seconds": 1.88333333333333,
+							"collected": 2,
+							"collisions": 0,
+							"seconds": 6.61666666666665,
+							"turbo": 0,
+							"used": 3,
+							"wind_seconds": 0.0
+						}
+					]
+				}
+			],
+			"seed": 8
+		},
+		{
+			"racers": [
+				{
+					"events": [
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 4.11666666666666,
+							"x": 1145.66748046875,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 1,
+							"time": 6.73333333333331,
+							"x": 1721.27587890625,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 2,
+							"time": 16.5500000000003,
+							"x": 3721.27319335938,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 2,
+							"time": 25.0499999999999,
+							"x": 5521.2705078125,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 3,
+							"time": 33.7333333333327,
+							"x": 7361.2587890625,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 3,
+							"time": 39.0166666666657,
+							"x": 8451.2734375,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 4,
+							"time": 53.5666666666649,
+							"x": 11581.2783203125,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 5,
+							"time": 63.983333333331,
+							"x": 13801.267578125,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 5,
+							"time": 68.7999999999974,
+							"x": 14791.275390625,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 5,
+							"time": 73.6166666666638,
+							"x": 15781.2783203125,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 6,
+							"time": 81.2999999999967,
+							"x": 17401.271484375,
+							"y": 586.320007324219
+						}
+					],
+					"finish_time": 86.1572900017723,
+					"max_stall": 0.0166666666666667,
+					"name": "Balloon",
+					"route": "passive",
+					"s4_enter": 45.0166666666654,
+					"s4_exit": 62.1499999999978,
+					"sectors": [
+						{
+							"boost_seconds": 0.0,
+							"collected": 1,
+							"collisions": 1,
+							"seconds": 11.9000000000002,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 2,
+							"seconds": 15.6500000000004,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 2,
+							"seconds": 17.466666666667,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 1,
+							"seconds": 17.1333333333336,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 3,
+							"seconds": 16.416666666667,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 1,
+							"seconds": 7.59999999999998,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						}
+					]
+				},
+				{
+					"events": [
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 4.11666666666666,
+							"x": 1145.66748046875,
+							"y": 322.944549560547
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 1,
+							"time": 8.45,
+							"x": 2098.99194335938,
+							"y": 292.069580078125
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 1,
+							"time": 9.91666666666674,
+							"x": 2534.58764648438,
+							"y": 370.180572509766
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 2,
+							"time": 17.7333333333336,
+							"x": 4295.341796875,
+							"y": 365.569000244141
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 2,
+							"time": 23.1166666666666,
+							"x": 5479.62255859375,
+							"y": 181.249588012695
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 3,
+							"time": 32.2999999999995,
+							"x": 7499.56005859375,
+							"y": 317.460571289063
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 3,
+							"time": 37.4666666666658,
+							"x": 8585.0634765625,
+							"y": 262.171325683594
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 3,
+							"time": 39.2499999999991,
+							"x": 8938.826171875,
+							"y": 313.609924316406
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 4,
+							"time": 45.8499999999987,
+							"x": 10544.939453125,
+							"y": 511.569580078125
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 5,
+							"time": 67.8499999999974,
+							"x": 15613.4560546875,
+							"y": 387.918243408203
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 5,
+							"time": 72.0833333333305,
+							"x": 16544.830078125,
+							"y": 538.043212890625
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 6,
+							"time": 75.549999999997,
+							"x": 17307.361328125,
+							"y": 266.959930419922
+						}
+					],
+					"finish_time": 80.5174214171518,
+					"max_stall": 0.0166666666666667,
+					"name": "BotNovice",
+					"route": "lower",
+					"s4_enter": 42.0166666666656,
+					"s4_exit": 58.8333333333313,
+					"sectors": [
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 10.4833333333334,
+							"turbo": 1,
+							"used": 1,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 15.0000000000003,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 0,
+							"collisions": 2,
+							"seconds": 16.5333333333337,
+							"turbo": 1,
+							"used": 0,
+							"wind_seconds": 1.63333333333333
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 16.816666666667,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 14.416666666667,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 5.18333333333332
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 7.28333333333331,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 0.0
+						}
+					]
+				},
+				{
+					"events": [
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 1,
+							"time": 8.45,
+							"x": 2098.99194335938,
+							"y": 227.985702514648
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 9.30000000000004,
+							"x": 2351.439453125,
+							"y": 347.152252197266
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 2,
+							"time": 12.8500000000002,
+							"x": 3220.99780273438,
+							"y": 486.610260009766
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 2,
+							"time": 17.8333333333336,
+							"x": 4331.6328125,
+							"y": 441.013000488281
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 2,
+							"time": 20.9166666666668,
+							"x": 5009.93603515625,
+							"y": 458.943389892578
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 25.5499999999998,
+							"x": 6096.7548828125,
+							"y": 333.623657226563
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 3,
+							"time": 29.3499999999996,
+							"x": 6815.9462890625,
+							"y": 444.637481689453
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 34.2499999999993,
+							"x": 8047.94140625,
+							"y": 374.026062011719
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 3,
+							"time": 38.1499999999991,
+							"x": 8914.0654296875,
+							"y": 336.470611572266
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 4,
+							"time": 42.1833333333322,
+							"x": 9955.4619140625,
+							"y": 126.053840637207
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 4,
+							"time": 44.7833333333321,
+							"x": 10549.5146484375,
+							"y": 128.401000976563
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 4,
+							"time": 48.0666666666652,
+							"x": 11416.41796875,
+							"y": 206.245239257813
+						}
+					],
+					"finish_time": 78.1013496714584,
+					"max_stall": 0.0166666666666667,
+					"name": "BotBalanced",
+					"route": "upper",
+					"s4_enter": 41.0333333333323,
+					"s4_exit": 55.8333333333314,
+					"sectors": [
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 10.4833333333334,
+							"turbo": 1,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 4.03333333333332,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 14.6333333333336,
+							"turbo": 0,
+							"used": 2,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 4.03333333333332,
+							"collected": 2,
+							"collisions": 0,
+							"seconds": 15.916666666667,
+							"turbo": 1,
+							"used": 1,
+							"wind_seconds": 1.63333333333333
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 1,
+							"collisions": 1,
+							"seconds": 14.8000000000003,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 10.9666666666668
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 14.616666666667,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 4.26666666666666
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 7.66666666666664,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						}
+					]
+				},
+				{
+					"events": [
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 4.11666666666666,
+							"x": 1145.66748046875,
+							"y": 364.055572509766
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 1,
+							"time": 8.45,
+							"x": 2098.99194335938,
+							"y": 291.291687011719
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 2,
+							"time": 13.2166666666669,
+							"x": 3301.66625976563,
+							"y": 382.041595458984
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 25.9166666666665,
+							"x": 6095.59521484375,
+							"y": 459.457733154297
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 3,
+							"time": 26.0499999999998,
+							"x": 6124.92724609375,
+							"y": 483.124389648438
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 3,
+							"time": 38.8833333333324,
+							"x": 8964.37109375,
+							"y": 356.207366943359
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 39.849999999999,
+							"x": 9251.482421875,
+							"y": 289.748992919922
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 3,
+							"time": 41.0833333333323,
+							"x": 9602.3984375,
+							"y": 128.373931884766
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 4,
+							"time": 46.383333333332,
+							"x": 10838.9208984375,
+							"y": 206.245254516602
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 4,
+							"time": 53.3999999999983,
+							"x": 12650.1064453125,
+							"y": 127.328506469727
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 4,
+							"time": 54.6499999999982,
+							"x": 12966.201171875,
+							"y": 147.953491210938
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 4,
+							"time": 55.9333333333314,
+							"x": 13347.3662109375,
+							"y": 252.203521728516
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 5,
+							"time": 70.7833333333306,
+							"x": 16784.84765625,
+							"y": 449.870147705078
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 6,
+							"time": 72.5166666666638,
+							"x": 17166.11328125,
+							"y": 316.078460693359
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 6,
+							"time": 72.6166666666638,
+							"x": 17188.109375,
+							"y": 298.828460693359
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 6,
+							"time": 75.149999999997,
+							"x": 17745.34375,
+							"y": 234.286666870117
+						}
+					],
+					"finish_time": 78.1262386787395,
+					"max_stall": 0.0166666666666667,
+					"name": "BotCompetitive",
+					"route": "upper",
+					"s4_enter": 41.5333333333323,
+					"s4_exit": 56.1166666666648,
+					"sectors": [
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 10.4833333333334,
+							"turbo": 1,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 15.0000000000003,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 2,
+							"collisions": 0,
+							"seconds": 16.0500000000004,
+							"turbo": 1,
+							"used": 2,
+							"wind_seconds": 1.61666666666667
+						},
+						{
+							"boost_seconds": 1.46666666666667,
+							"collected": 2,
+							"collisions": 1,
+							"seconds": 14.5833333333336,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 10.1833333333334
+						},
+						{
+							"boost_seconds": 0.55,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 14.7500000000003,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 5.13333333333332
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 2,
+							"collisions": 0,
+							"seconds": 7.26666666666665,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 0.0
+						}
+					]
+				}
+			],
+			"seed": 9
+		},
+		{
+			"racers": [
+				{
+					"events": [
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 4.11666666666666,
+							"x": 1145.66748046875,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 1,
+							"time": 6.73333333333331,
+							"x": 1721.27587890625,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 2,
+							"time": 16.1500000000004,
+							"x": 3721.26953125,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 2,
+							"time": 24.6499999999999,
+							"x": 5521.27734375,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 3,
+							"time": 33.3333333333327,
+							"x": 7361.265625,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 3,
+							"time": 38.6166666666658,
+							"x": 8451.265625,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 4,
+							"time": 53.1666666666649,
+							"x": 11581.2705078125,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 5,
+							"time": 63.583333333331,
+							"x": 13801.2734375,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 5,
+							"time": 68.3999999999974,
+							"x": 14791.2763671875,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 5,
+							"time": 73.2166666666638,
+							"x": 15781.2734375,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 6,
+							"time": 80.8999999999967,
+							"x": 17401.267578125,
+							"y": 586.320007324219
+						}
+					],
+					"finish_time": 85.7573077606073,
+					"max_stall": 0.0166666666666667,
+					"name": "Balloon",
+					"route": "passive",
+					"s4_enter": 44.6166666666654,
+					"s4_exit": 61.7499999999978,
+					"sectors": [
+						{
+							"boost_seconds": 0.0,
+							"collected": 1,
+							"collisions": 1,
+							"seconds": 11.5000000000002,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 2,
+							"seconds": 15.6500000000004,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 2,
+							"seconds": 17.466666666667,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 1,
+							"seconds": 17.1333333333336,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 3,
+							"seconds": 16.416666666667,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 1,
+							"seconds": 7.59999999999998,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						}
+					]
+				},
+				{
+					"events": [
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 4.11666666666666,
+							"x": 1145.66748046875,
+							"y": 288.639251708984
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 1,
+							"time": 4.41666666666666,
+							"x": 1211.66674804688,
+							"y": 282.514251708984
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 1,
+							"time": 8.45,
+							"x": 2151.05981445313,
+							"y": 294.777374267578
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 9.1166666666667,
+							"x": 2349.05786132813,
+							"y": 352.832794189453
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 2,
+							"time": 12.4833333333335,
+							"x": 3192.39721679688,
+							"y": 424.638061523438
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 2,
+							"time": 16.8000000000003,
+							"x": 4296.05615234375,
+							"y": 371.818359375
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 2,
+							"time": 19.4500000000002,
+							"x": 4879.0302734375,
+							"y": 392.679046630859
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 25.3999999999998,
+							"x": 6187.97216796875,
+							"y": 263.066925048828
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 3,
+							"time": 36.3166666666659,
+							"x": 8511.8447265625,
+							"y": 338.746459960938
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 3,
+							"time": 38.5166666666658,
+							"x": 9011.2890625,
+							"y": 301.871215820313
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 4,
+							"time": 44.7999999999987,
+							"x": 10547.7294921875,
+							"y": 479.648284912109
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 4,
+							"time": 49.9999999999984,
+							"x": 11691.6103515625,
+							"y": 538.273620605469
+						}
+					],
+					"finish_time": 79.6997158586364,
+					"max_stall": 0.0166666666666667,
+					"name": "BotNovice",
+					"route": "lower",
+					"s4_enter": 40.949999999999,
+					"s4_exit": 58.0166666666647,
+					"sectors": [
+						{
+							"boost_seconds": 3.86666666666666,
+							"collected": 2,
+							"collisions": 0,
+							"seconds": 10.3000000000001,
+							"turbo": 1,
+							"used": 1,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 2.18333333333333,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 14.2500000000003,
+							"turbo": 0,
+							"used": 2,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 16.4000000000004,
+							"turbo": 1,
+							"used": 1,
+							"wind_seconds": 1.68333333333333
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 1,
+							"collisions": 1,
+							"seconds": 17.066666666667,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 14.416666666667,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 5.16666666666665
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 7.26666666666665,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						}
+					]
+				},
+				{
+					"events": [
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 1,
+							"time": 8.45,
+							"x": 2098.99194335938,
+							"y": 279.624572753906
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 2,
+							"time": 18.0333333333336,
+							"x": 4361.3388671875,
+							"y": 441.916442871094
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 2,
+							"time": 19.0833333333335,
+							"x": 4592.32861328125,
+							"y": 478.666442871094
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 34.9833333333326,
+							"x": 8090.17333984375,
+							"y": 422.818542480469
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 3,
+							"time": 35.216666666666,
+							"x": 8141.50439453125,
+							"y": 415.818542480469
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 3,
+							"time": 38.5166666666658,
+							"x": 8867.5625,
+							"y": 332.748748779297
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 4,
+							"time": 50.6333333333317,
+							"x": 11687.27734375,
+							"y": 540.931762695313
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 4,
+							"time": 55.2333333333315,
+							"x": 12646.5439453125,
+							"y": 503.445037841797
+						}
+					],
+					"finish_time": 80.3988545551379,
+					"max_stall": 0.0166666666666667,
+					"name": "BotBalanced",
+					"route": "lower",
+					"s4_enter": 41.6166666666656,
+					"s4_exit": 58.6666666666646,
+					"sectors": [
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 10.4833333333334,
+							"turbo": 1,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 15.0000000000003,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 16.1333333333337,
+							"turbo": 1,
+							"used": 1,
+							"wind_seconds": 1.61666666666667
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 1,
+							"collisions": 1,
+							"seconds": 17.0500000000003,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 14.466666666667,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 4.93333333333332
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 7.26666666666665,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						}
+					]
+				},
+				{
+					"events": [
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 4.11666666666666,
+							"x": 1145.66748046875,
+							"y": 364.055572509766
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 1,
+							"time": 5.88333333333332,
+							"x": 1534.32983398438,
+							"y": 245.458343505859
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 1,
+							"time": 8.45,
+							"x": 2098.99194335938,
+							"y": 291.291687011719
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 9.33333333333338,
+							"x": 2361.33935546875,
+							"y": 371.333343505859
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 2,
+							"time": 12.8500000000002,
+							"x": 3220.99780273438,
+							"y": 441.624938964844
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 26.0333333333331,
+							"x": 6188.72265625,
+							"y": 421.332885742188
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 3,
+							"time": 28.983333333333,
+							"x": 6837.69384765625,
+							"y": 501.791198730469
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 33.7833333333327,
+							"x": 8047.68994140625,
+							"y": 343.207946777344
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 3,
+							"time": 38.1499999999991,
+							"x": 8932.8828125,
+							"y": 323.665832519531
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 39.2166666666657,
+							"x": 9249.6953125,
+							"y": 316.0546875
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 3,
+							"time": 40.349999999999,
+							"x": 9570.91015625,
+							"y": 460.874114990234
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 4,
+							"time": 44.0833333333321,
+							"x": 10546.30078125,
+							"y": 529.290649414063
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 4,
+							"time": 55.0166666666648,
+							"x": 12951.84765625,
+							"y": 431.679321289063
+						}
+					],
+					"finish_time": 78.1513674302934,
+					"max_stall": 0.0166666666666667,
+					"name": "BotCompetitive",
+					"route": "lower",
+					"s4_enter": 40.799999999999,
+					"s4_exit": 56.5333333333314,
+					"sectors": [
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 2,
+							"collisions": 0,
+							"seconds": 10.4833333333334,
+							"turbo": 1,
+							"used": 1,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 14.7000000000003,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 4.48333333333332,
+							"collected": 3,
+							"collisions": 0,
+							"seconds": 15.616666666667,
+							"turbo": 0,
+							"used": 3,
+							"wind_seconds": 1.63333333333333
+						},
+						{
+							"boost_seconds": 3.08333333333333,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 15.7333333333337,
+							"turbo": 1,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.5,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 14.3500000000003,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 4.79999999999999
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 7.28333333333331,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						}
+					]
+				}
+			],
+			"seed": 10
+		},
+		{
+			"racers": [
+				{
+					"events": [
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 4.11666666666666,
+							"x": 1145.66748046875,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 1,
+							"time": 6.73333333333331,
+							"x": 1721.27587890625,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 2,
+							"time": 16.1500000000004,
+							"x": 3721.26953125,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 2,
+							"time": 25.0499999999999,
+							"x": 5521.275390625,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 3,
+							"time": 33.7333333333327,
+							"x": 7361.263671875,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 3,
+							"time": 39.0166666666657,
+							"x": 8451.2783203125,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 4,
+							"time": 53.5666666666649,
+							"x": 11581.2685546875,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 5,
+							"time": 63.983333333331,
+							"x": 13801.271484375,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 5,
+							"time": 68.7999999999974,
+							"x": 14791.279296875,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 5,
+							"time": 73.6166666666638,
+							"x": 15781.27734375,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 6,
+							"time": 81.2999999999967,
+							"x": 17401.271484375,
+							"y": 586.320007324219
+						}
+					],
+					"finish_time": 86.1572900017723,
+					"max_stall": 0.0166666666666667,
+					"name": "Balloon",
+					"route": "passive",
+					"s4_enter": 45.0166666666654,
+					"s4_exit": 62.1499999999978,
+					"sectors": [
+						{
+							"boost_seconds": 0.0,
+							"collected": 1,
+							"collisions": 1,
+							"seconds": 11.5000000000002,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 2,
+							"seconds": 16.0500000000004,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 2,
+							"seconds": 17.466666666667,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 1,
+							"seconds": 17.1333333333336,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 3,
+							"seconds": 16.416666666667,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 1,
+							"seconds": 7.59999999999998,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						}
+					]
+				},
+				{
+					"events": [
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 4.11666666666666,
+							"x": 1145.66748046875,
+							"y": 362.264038085938
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 1,
+							"time": 4.41666666666666,
+							"x": 1211.66674804688,
+							"y": 389.389038085938
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 9.40000000000005,
+							"x": 2348.2578125,
+							"y": 353.818878173828
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 1,
+							"time": 10.6500000000001,
+							"x": 2623.26391601563,
+							"y": 401.818817138672
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 2,
+							"time": 18.2500000000002,
+							"x": 4295.28759765625,
+							"y": 282.859649658203
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 2,
+							"time": 21.6500000000001,
+							"x": 5043.25439453125,
+							"y": 566.859375
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 26.2666666666665,
+							"x": 6096.10009765625,
+							"y": 435.058837890625
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 3,
+							"time": 29.7166666666663,
+							"x": 6855.06640625,
+							"y": 440.197631835938
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 34.8999999999993,
+							"x": 8048.4970703125,
+							"y": 252.780883789063
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 3,
+							"time": 38.8833333333324,
+							"x": 8936.623046875,
+							"y": 381.017120361328
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 4,
+							"time": 46.933333333332,
+							"x": 10950.6240234375,
+							"y": 206.245178222656
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 4,
+							"time": 51.666666666665,
+							"x": 12158.685546875,
+							"y": 112.992073059082
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 4,
+							"time": 55.3833333333315,
+							"x": 13056.1279296875,
+							"y": 183.487945556641
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 5,
+							"time": 59.0333333333313,
+							"x": 14024.431640625,
+							"y": 411.253479003906
+						}
+					],
+					"finish_time": 79.5393802166546,
+					"max_stall": 0.0166666666666667,
+					"name": "BotNovice",
+					"route": "upper",
+					"s4_enter": 41.6666666666656,
+					"s4_exit": 56.5499999999981,
+					"sectors": [
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 2,
+							"collisions": 0,
+							"seconds": 11.0000000000001,
+							"turbo": 0,
+							"used": 2,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 14.8333333333337,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 4.03333333333332,
+							"collected": 2,
+							"collisions": 0,
+							"seconds": 15.8333333333337,
+							"turbo": 1,
+							"used": 1,
+							"wind_seconds": 1.65
+						},
+						{
+							"boost_seconds": 1.16666666666667,
+							"collected": 0,
+							"collisions": 2,
+							"seconds": 14.8833333333337,
+							"turbo": 1,
+							"used": 0,
+							"wind_seconds": 11.0666666666668
+						},
+						{
+							"boost_seconds": 0.850000000000001,
+							"collected": 0,
+							"collisions": 1,
+							"seconds": 15.2000000000003,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 3.74999999999999
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 7.79999999999998,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						}
+					]
+				},
+				{
+					"events": [
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 4.11666666666666,
+							"x": 1145.66748046875,
+							"y": 395.360748291016
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 1,
+							"time": 5.51666666666665,
+							"x": 1453.6640625,
+							"y": 330.235687255859
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 1,
+							"time": 8.45,
+							"x": 2098.99194335938,
+							"y": 280.166259765625
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 9.30000000000004,
+							"x": 2351.439453125,
+							"y": 399.332855224609
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 2,
+							"time": 21.2833333333334,
+							"x": 4989.77197265625,
+							"y": 435.331268310547
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 26.3166666666665,
+							"x": 6097.05615234375,
+							"y": 355.733947753906
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 3,
+							"time": 31.1833333333328,
+							"x": 7167.67529296875,
+							"y": 190.789840698242
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 3,
+							"time": 39.2499999999991,
+							"x": 8957.7646484375,
+							"y": 362.331176757813
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 40.2333333333323,
+							"x": 9249.826171875,
+							"y": 324.720062255859
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 3,
+							"time": 41.4499999999989,
+							"x": 9595.7919921875,
+							"y": 521.997802734375
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 4,
+							"time": 45.583333333332,
+							"x": 10545.4248046875,
+							"y": 570.497741699219
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 5,
+							"time": 62.7166666666644,
+							"x": 14368.630859375,
+							"y": 360.986999511719
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 5,
+							"time": 72.0333333333305,
+							"x": 16548.248046875,
+							"y": 396.555847167969
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 5,
+							"time": 72.2499999999972,
+							"x": 16595.90625,
+							"y": 401.7919921875
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 6,
+							"time": 74.849999999997,
+							"x": 17167.8046875,
+							"y": 363.694915771484
+						}
+					],
+					"finish_time": 80.4518824365089,
+					"max_stall": 0.0166666666666667,
+					"name": "BotBalanced",
+					"route": "lower",
+					"s4_enter": 41.8166666666656,
+					"s4_exit": 58.5666666666646,
+					"sectors": [
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 2,
+							"collisions": 0,
+							"seconds": 10.4833333333334,
+							"turbo": 1,
+							"used": 1,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 15.4000000000003,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 2.38333333333333,
+							"collected": 2,
+							"collisions": 0,
+							"seconds": 15.9333333333337,
+							"turbo": 1,
+							"used": 2,
+							"wind_seconds": 1.65
+						},
+						{
+							"boost_seconds": 1.65,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 16.7500000000003,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 14.616666666667,
+							"turbo": 0,
+							"used": 2,
+							"wind_seconds": 4.16666666666666
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 7.28333333333331,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						}
+					]
+				},
+				{
+					"events": [
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 3,
+							"time": 34.116666666666,
+							"x": 7745.541015625,
+							"y": 201.138122558594
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 39.9666666666657,
+							"x": 9250.4453125,
+							"y": 376.151885986328
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 4,
+							"time": 42.5499999999989,
+							"x": 9834.9638671875,
+							"y": 480.596343994141
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 4,
+							"time": 45.783333333332,
+							"x": 10546.3603515625,
+							"y": 521.763000488281
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 4,
+							"time": 56.8499999999981,
+							"x": 12981.2431640625,
+							"y": 495.762969970703
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 5,
+							"time": 58.6833333333313,
+							"x": 13525.7646484375,
+							"y": 323.929626464844
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 5,
+							"time": 62.6499999999977,
+							"x": 14448.0107421875,
+							"y": 436.471313476563
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 5,
+							"time": 62.7166666666644,
+							"x": 14462.6787109375,
+							"y": 440.971313476563
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 5,
+							"time": 66.5333333333308,
+							"x": 15449.8330078125,
+							"y": 344.679626464844
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 6,
+							"time": 77.3833333333302,
+							"x": 17852.7890625,
+							"y": 256.637084960938
+						}
+					],
+					"finish_time": 79.871097496001,
+					"max_stall": 0.0166666666666667,
+					"name": "BotCompetitive",
+					"route": "lower",
+					"s4_enter": 41.9499999999989,
+					"s4_exit": 58.2666666666646,
+					"sectors": [
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 11.1833333333335,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 15.0000000000003,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 15.766666666667,
+							"turbo": 1,
+							"used": 0,
+							"wind_seconds": 1.81666666666667
+						},
+						{
+							"boost_seconds": 1.41666666666667,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 16.316666666667,
+							"turbo": 1,
+							"used": 1,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.6,
+							"collected": 2,
+							"collisions": 0,
+							"seconds": 14.3333333333336,
+							"turbo": 0,
+							"used": 2,
+							"wind_seconds": 5.04999999999999
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 7.28333333333331,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 0.0
+						}
+					]
+				}
+			],
+			"seed": 11
+		},
+		{
+			"racers": [
+				{
+					"events": [
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 4.11666666666666,
+							"x": 1145.66748046875,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 1,
+							"time": 6.73333333333331,
+							"x": 1721.27587890625,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 2,
+							"time": 16.1500000000004,
+							"x": 3721.26953125,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 2,
+							"time": 24.6499999999999,
+							"x": 5521.27734375,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 3,
+							"time": 33.3333333333327,
+							"x": 7361.265625,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 3,
+							"time": 38.6166666666658,
+							"x": 8451.265625,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 4,
+							"time": 53.1666666666649,
+							"x": 11581.2705078125,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 5,
+							"time": 63.583333333331,
+							"x": 13801.2734375,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 5,
+							"time": 68.3999999999974,
+							"x": 14791.2763671875,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 5,
+							"time": 73.2166666666638,
+							"x": 15781.2734375,
+							"y": 586.320007324219
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 6,
+							"time": 80.8999999999967,
+							"x": 17401.267578125,
+							"y": 586.320007324219
+						}
+					],
+					"finish_time": 85.7573077606073,
+					"max_stall": 0.0166666666666667,
+					"name": "Balloon",
+					"route": "passive",
+					"s4_enter": 44.6166666666654,
+					"s4_exit": 61.7499999999978,
+					"sectors": [
+						{
+							"boost_seconds": 0.0,
+							"collected": 1,
+							"collisions": 1,
+							"seconds": 11.5000000000002,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 2,
+							"seconds": 15.6500000000004,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 2,
+							"seconds": 17.466666666667,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 1,
+							"seconds": 17.1333333333336,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 3,
+							"seconds": 16.416666666667,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 1,
+							"seconds": 7.59999999999998,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						}
+					]
+				},
+				{
+					"events": [
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 4.11666666666666,
+							"x": 1145.66748046875,
+							"y": 362.264038085938
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 1,
+							"time": 8.45,
+							"x": 2098.99194335938,
+							"y": 310.80517578125
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 2,
+							"time": 22.0166666666667,
+							"x": 5237.63330078125,
+							"y": 318.471405029297
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 26.4499999999998,
+							"x": 6212.92333984375,
+							"y": 420.706634521484
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 3,
+							"time": 38.5166666666658,
+							"x": 8867.5625,
+							"y": 331.192596435547
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 4,
+							"time": 45.9499999999987,
+							"x": 10705.634765625,
+							"y": 226.089721679688
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 4,
+							"time": 47.3166666666653,
+							"x": 11010.5576171875,
+							"y": 149.247329711914
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 4,
+							"time": 52.4999999999983,
+							"x": 12275.7431640625,
+							"y": 145.187072753906
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 4,
+							"time": 57.0166666666647,
+							"x": 13378.4658203125,
+							"y": 232.214813232422
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 5,
+							"time": 68.9499999999974,
+							"x": 16200.5830078125,
+							"y": 258.9228515625
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 5,
+							"time": 70.516666666664,
+							"x": 16545.23828125,
+							"y": 397.561340332031
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 6,
+							"time": 76.2833333333303,
+							"x": 17813.6796875,
+							"y": 231.935638427734
+						}
+					],
+					"finish_time": 78.2577874243589,
+					"max_stall": 0.0166666666666667,
+					"name": "BotNovice",
+					"route": "upper",
+					"s4_enter": 41.6166666666656,
+					"s4_exit": 57.099999999998,
+					"sectors": [
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 10.4833333333334,
+							"turbo": 1,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 15.0000000000003,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 16.1333333333337,
+							"turbo": 1,
+							"used": 0,
+							"wind_seconds": 1.61666666666667
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 1,
+							"collisions": 2,
+							"seconds": 15.4833333333337,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 11.1333333333335
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 14.5833333333336,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 4.39999999999999
+						},
+						{
+							"boost_seconds": 1.98333333333333,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 6.58333333333332,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 0.0
+						}
+					]
+				},
+				{
+					"events": [
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 1,
+							"time": 8.45,
+							"x": 2098.99194335938,
+							"y": 279.624572753906
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 1,
+							"time": 9.30000000000004,
+							"x": 2351.439453125,
+							"y": 328.735656738281
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 3,
+							"time": 38.5166666666658,
+							"x": 8867.5625,
+							"y": 332.748748779297
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 4,
+							"time": 47.7833333333319,
+							"x": 11141.9814453125,
+							"y": 206.245239257813
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 4,
+							"time": 48.4166666666652,
+							"x": 11250.099609375,
+							"y": 213.96745300293
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 4,
+							"time": 53.7166666666649,
+							"x": 12647.7705078125,
+							"y": 208.814987182617
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 4,
+							"time": 53.9166666666649,
+							"x": 12700.5751953125,
+							"y": 206.481674194336
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 5,
+							"time": 61.2333333333311,
+							"x": 14445.330078125,
+							"y": 345.190093994141
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 5,
+							"time": 65.6499999999976,
+							"x": 15565.962890625,
+							"y": 300.885009765625
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 5,
+							"time": 70.0999999999973,
+							"x": 16545.0078125,
+							"y": 487.593353271484
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 6,
+							"time": 75.9166666666636,
+							"x": 17824.447265625,
+							"y": 184.898864746094
+						}
+					],
+					"finish_time": 77.8548605630066,
+					"max_stall": 0.0166666666666667,
+					"name": "BotBalanced",
+					"route": "upper",
+					"s4_enter": 41.6166666666656,
+					"s4_exit": 56.7666666666647,
+					"sectors": [
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 10.4833333333334,
+							"turbo": 1,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 15.0000000000003,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 16.1333333333337,
+							"turbo": 1,
+							"used": 0,
+							"wind_seconds": 1.61666666666667
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 1,
+							"collisions": 1,
+							"seconds": 15.1500000000003,
+							"turbo": 0,
+							"used": 2,
+							"wind_seconds": 10.7500000000001
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 2,
+							"collisions": 0,
+							"seconds": 14.5000000000003,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 4.76666666666666
+						},
+						{
+							"boost_seconds": 1.95,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 6.59999999999998,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 0.0
+						}
+					]
+				},
+				{
+					"events": [
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 1,
+							"time": 8.45,
+							"x": 2098.99194335938,
+							"y": 250.66667175293
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 2,
+							"time": 17.7333333333336,
+							"x": 4295.341796875,
+							"y": 335.583160400391
+						},
+						{
+							"metric": "used",
+							"n": 1,
+							"sector": 2,
+							"time": 20.9166666666668,
+							"x": 4995.64404296875,
+							"y": 489.957977294922
+						},
+						{
+							"metric": "collected",
+							"n": 1,
+							"sector": 3,
+							"time": 25.7333333333332,
+							"x": 6095.56982421875,
+							"y": 362.957977294922
+						},
+						{
+							"metric": "turbo",
+							"n": 1,
+							"sector": 3,
+							"time": 38.5166666666658,
+							"x": 8915.94140625,
+							"y": 380.304840087891
+						},
+						{
+							"metric": "collisions",
+							"n": 1,
+							"sector": 4,
+							"time": 50.0999999999984,
+							"x": 11859.0625,
+							"y": 206.245269775391
+						}
+					],
+					"finish_time": 78.2681228911352,
+					"max_stall": 0.0166666666666667,
+					"name": "BotCompetitive",
+					"route": "upper",
+					"s4_enter": 41.3833333333323,
+					"s4_exit": 56.5833333333314,
+					"sectors": [
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 10.4833333333334,
+							"turbo": 1,
+							"used": 0,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 14.816666666667,
+							"turbo": 0,
+							"used": 1,
+							"wind_seconds": 0.0
+						},
+						{
+							"boost_seconds": 2.01666666666666,
+							"collected": 1,
+							"collisions": 0,
+							"seconds": 16.0833333333337,
+							"turbo": 1,
+							"used": 0,
+							"wind_seconds": 1.63333333333333
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 1,
+							"seconds": 15.2000000000003,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 11.1000000000001
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 14.416666666667,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 5.21666666666665
+						},
+						{
+							"boost_seconds": 0.0,
+							"collected": 0,
+							"collisions": 0,
+							"seconds": 7.28333333333331,
+							"turbo": 0,
+							"used": 0,
+							"wind_seconds": 0.0
+						}
+					]
+				}
+			],
+			"seed": 12
+		}
+	]
+}

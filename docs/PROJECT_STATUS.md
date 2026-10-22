@@ -1,5 +1,13 @@
 # Estado del proyecto
 
+## Game Feel 2.0 — intervención del 2026-10-21
+
+Implementada presentación de vuelo, turbo, impactos, corrientes y ambiente,
+con opción de movimiento reducido. Veinte suites automatizadas pasan, incluida
+competencia de seis semillas. No se modifica gameplay ni se crean commits.
+Aceptación humana y 60 FPS estables pendientes; inventario, assets faltantes,
+evidencia y pasos de prueba en [README, Game Feel 2.0](../README.md#game-feel-20--primera-intervención-2026-10-21).
+
 Fecha de actualización: 2026-10-18
 Commit de referencia: `448d2023d4f657f46b73d2ae00d9fe9ded44569c` — `MVP commit 1` (2026-10-16)
 
@@ -15,7 +23,7 @@ La siguiente lista describe implementación observable y documentación relacion
 
 - Estructura Godot: escenas reutilizables en `scenes/`, lógica GDScript en `scripts/`, parámetros en `resources/`, pruebas en `tests/` y assets en `assets/`. `project.godot` apunta al Home como escena principal y define el Input Map.
 - Vuelo y colisiones: `Balloon.tscn`, `balloon.gd`, `flight_controller.gd` y `obstacle.gd`, con física y límites parametrizados. Evidencia: `docs/milestone-1-verification.md`, `docs/milestone-2-verification.md`.
-- Pista Valle Ventoso: `Track01.tscn` contiene referencias de inicio, bifurcaciones, meta, obstáculos, cajas y tres zonas de viento. Evidencia: `docs/milestone-3-verification.md` y `docs/milestone-6.3-verification.md`.
+- Pista Valle Ventoso: `Track01.tscn` contiene referencias de inicio, bifurcación, meta, obstáculos, cajas y cuatro zonas de viento tras la intervención experimental 01 (2026-10-20). Evidencia histórica: `docs/milestone-3-verification.md` y `docs/milestone-6.3-verification.md`; cambios incrementales y límites de validación en `docs/valle-ventoso-reconocimiento.md`, sección F.
 - Flujo de carrera: cuenta atrás, reloj, clasificación, meta, timeout, podio y reinicio mediante `race_flow.gd`, `race_standings.gd` y `RaceOverlay.tscn`. Evidencia: `docs/milestone-6-verification.md`.
 - Rivales locales: `Main.tscn` instancia tres controladores bot y tres perfiles en `resources/bot_*.tres`. Evidencia: `docs/milestone-4-verification.md` y las simulaciones de M6.
 - Objetos y caos: cajas, cohete, bomba, Turbo, Tormenta, protección, penalizaciones y reaparición mediante `item_box.gd`, `item_combat.gd`, `item_projectile.gd`, `storm_effect.gd` y `default_items.tres`. Evidencia: `docs/milestone-5-verification.md`, `docs/milestone-6.3-verification.md`.

@@ -1,0 +1,17 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Failed to read the root certificate store.
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2582)
+RECON seed 1: 4 finishes
+RECON seed 2: 4 finishes
+RECON seed 3: 4 finishes
+RECON seed 4: 4 finishes
+RECON seed 5: 4 finishes
+RECON seed 6: 4 finishes
+RECON seed 7: 4 finishes
+RECON seed 8: 4 finishes
+RECON seed 9: 4 finishes
+RECON seed 10: 4 finishes
+RECON seed 11: 4 finishes
+RECON seed 12: 4 finishes
+RECON: 0 missing finishes

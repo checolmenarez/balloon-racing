@@ -39,7 +39,7 @@ func _target_height(x: float, upper_route: bool) -> float:
 		return 410.0
 	if x < 16400.0:
 		return 305.0
-	if x < 17550.0:
+	if x < 17250.0:
 		return 440.0
 	return 320.0
 
@@ -55,6 +55,8 @@ func _test_course(mode: int) -> void:
 	var visited: Array[int] = []
 	var previous_progress: float = 0.0
 	var elapsed: float = 0.0
+	var s4_enter: float = -1.0
+	var s4_exit: float = -1.0
 	var crossed_divider: bool = false
 	_check(track.get_progress(track.start.global_position.x - 500.0) == 0.0, "Progress clamps before start")
 	_check(track.get_progress(track.finish.global_position.x + 500.0) == 1.0, "Progress clamps after finish")
@@ -73,6 +75,10 @@ func _test_course(mode: int) -> void:
 		await physics_frame
 		await process_frame
 		elapsed = float(frame + 1) / Engine.physics_ticks_per_second
+		if balloon.position.x >= track.fork.position.x and s4_enter < 0.0:
+			s4_enter = elapsed
+		if balloon.position.x >= track.zones.get_child(4).position.x and s4_exit < 0.0:
+			s4_exit = elapsed
 		var progress: float = track.get_progress(balloon.global_position.x)
 		_check(progress >= previous_progress, "Progress never regresses with default physics")
 		previous_progress = progress
@@ -111,6 +117,8 @@ func _test_course(mode: int) -> void:
 	_check(debug.contains("Progreso: 100.0%") and debug.contains("Zona: 6/6"), "Debug progress and final zone")
 	_check(is_equal_approx(main.get_node("Camera2D").position.x, balloon.position.x + 280.0), "Camera reaches finish")
 	print("Track mode %d: %.2f s, %d collisions, zones=%s" % [mode, elapsed, balloon.collision_count, visited])
+	if mode < 2:
+		print("Controlled S4 %s: %.3f s" % ["upper" if mode == 0 else "lower", s4_exit - s4_enter])
 	Input.action_release("burner")
 	main.queue_free()
 	await process_frame

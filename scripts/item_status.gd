@@ -1,6 +1,6 @@
 extends Label
 
-@export_range(0.0, 1.0, 0.05) var roulette_duration: float = 0.55
+@export_range(0.0, 3.0, 0.05) var roulette_duration: float = 1.55
 var racer: Balloon
 var roulette_left: float = 0.0
 var displayed_kind: int = BalloonItems.Kind.NONE
@@ -79,7 +79,7 @@ func _process(delta: float) -> void:
 			_pop = HudStyle.pop(skin_icon, _pop)
 	_collected = items.collected
 	roulette_left = maxf(0, roulette_left - elapsed)
-	if items.equipped == BalloonItems.Kind.NONE:
+	if items.equipped == BalloonItems.Kind.NONE or not racer.racing:
 		roulette_left = 0 # Use/retry cancels presentation immediately.
 	displayed_kind = items.equipped
 	if roulette_left > 0:

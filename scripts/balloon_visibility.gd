@@ -2,7 +2,7 @@ class_name BalloonVisibility
 extends Node
 
 @export var overlap_transparency_enabled: bool = true
-@export_range(0.0, 1.0, 0.05) var overlapping_opacity: float = 0.45
+@export_range(0.0, 1.0, 0.05) var overlapping_opacity: float = 0.60
 @export var local_marker_visible: bool = true
 @export_range(0.01, 0.5, 0.01) var fade_time: float = 0.12
 @export_range(0.0, 40.0, 1.0) var release_margin: float = 12.0

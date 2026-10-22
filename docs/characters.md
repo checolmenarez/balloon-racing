@@ -1,5 +1,50 @@
 # Integración de personajes
 
+## Gestos de pilotos — 2026-10-22
+
+Actualización de audio/gestos: intervalo base de parpadeo 1,75 s; gestos de brazos de 1,2 s
+cada 2,75 s, con envolvente suave y descanso entre gestos. Ambos intervalos
+son configurables. Se conservan las mismas regiones y dibujos.
+
+Los cuatro pilotos parpadean brevemente a intervalos desfasados y mueven
+brazos/manos apoyados durante vuelo normal. `CharacterCatalog` centraliza
+regiones de ojos y brazos de cada PNG idle y el tono de párpado; el shader
+existente anima esas regiones con bordes suaves, sin recortar ni reemplazar
+assets. No son saludos completos ni animación esquelética. Las poses especiales
+conservan sus expresiones; se desactivan los gestos al mezclarlas para evitar
+aplicar regiones de idle sobre otras caras. Pausa congela ojos y manos, y
+movimiento reducido atenúa los brazos. Intervalo/duración y amplitud son
+`@export`. No consume el RNG de carrera ni añade nodos por frame.
+
+`arcade_feedback_test.gd` comprueba cierre y movimiento de los cuatro pilotos;
+`natural_motion_test.gd` comprueba congelación al pausar. Captura ampliada
+revisada en `.godot/arcade-feedback.png`; aceptación jugando pendiente.
+
+## Movimiento continuo — 2026-10-22
+
+`BalloonVisual` ahora usa recuperación angular amortiguada y el shader de
+contorno existente para respiración, balanceo retrasado de canasta y un leve
+movimiento del piloto. Las cuerdas permanecen unidas mediante deformación
+continua, sin cortar PNG ni añadir esqueletos. Los parámetros son `@export`.
+Durante reposo/quemador se mantiene el mismo PNG idle y se anima el encendido
+con la geometría de llama existente: no se alternan ilustraciones de distintas
+proporciones cada vez que se pulsa ↑. `current_state` sigue informando burner;
+`displayed_pose` indica idle. Turbo/impacto/victoria conservan sus PNG y usan
+mezcla alineada por canasta de 0,07 s, reversible si regresa la pose anterior.
+Pausa congela la animación y movimiento reducido la atenúa.
+
+Validación de esta intervención: natural_motion, characters, polish,
+game_feel, pause y visibility PASS en Godot 4.7.2. Natural_motion y visibility
+también PASS con renderizado ANGLE; capturas locales `.godot/natural-motion-*`.
+La prueba nueva comprueba movimiento sin cambiar PNG, transición reversible,
+collider intacto, pausa y recuperación equivalente a 15/30/60/120 Hz simulados.
+Son verificaciones automatizadas, no aceptación humana ni medida de 60 FPS.
+Persisten los avisos ambientales de certificados/ANGLE y avisos intermitentes
+de ObjectDB al cerrar. Las ilustraciones
+siguen siendo poses individuales: este movimiento procedural no añade
+fotogramas dibujados de manos o expresiones faciales. Revisar F5 y alternar ↑,
+turbo e impactos para evaluar naturalidad y posibles dobles contornos fugaces.
+
 ## Arquitectura
 
 - `Balloon.character_id`: identidad independiente del color; sin estadísticas nuevas.

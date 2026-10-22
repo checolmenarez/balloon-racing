@@ -39,8 +39,8 @@ msgstr "%d / 4"
 msgid "Vacío"
 msgstr "Vacío"
 
-msgid "Cohete"
-msgstr "Cohete"
+msgid "Misil"
+msgstr "Misil"
 
 msgid "Bomba"
 msgstr "Bomba"
@@ -114,14 +114,14 @@ msgstr "¡Recuerda! El globo tarda en cambiar de dirección"
 msgid "Recoge la caja para conseguir un objeto"
 msgstr "Recoge la caja para conseguir un objeto"
 
-msgid "Pulsa A para utilizar tu cohete"
-msgstr "Pulsa A para utilizar tu cohete"
+msgid "Pulsa A para utilizar tu misil"
+msgstr "Pulsa A para utilizar tu misil"
 
 msgid "¡Diana alcanzada! Continúa"
 msgstr "¡Diana alcanzada! Continúa"
 
-msgid "El cohete va hacia delante; puedes repetir la etapa"
-msgstr "El cohete va hacia delante; puedes repetir la etapa"
+msgid "El misil va hacia delante; puedes repetir la etapa"
+msgstr "El misil va hacia delante; puedes repetir la etapa"
 
 msgid "Pulsa D para activar tu turbo"
 msgstr "Pulsa D para activar tu turbo"

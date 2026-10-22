@@ -39,6 +39,14 @@ func _ready() -> void:
 	$Help/Panel/Rows/Instructions.text = "↑  Mantener para subir; soltar para descender.\nA  Usar el objeto equipado.\nD  Activar una carga de turbo personal.\nSPACE  Pausar o continuar la carrera.\nF2  Mostrar u ocultar la depuración.\n\nEsquiva obstáculos, recoge cajas y alcanza la meta.\nTienes dos cargas de turbo; la primera está\ndisponible cinco segundos después de GO."
 	$Options/Panel/Rows/MusicLabel.text = "Música"
 	$Options/Panel/Rows/EffectsLabel.text = "Efectos de sonido"
+	$Options/Panel/Rows/Title.text = "Opciones"
+	var motion := CheckButton.new()
+	motion.name = "ReducedMotion"
+	motion.text = "Reducir movimiento y efectos"
+	motion.button_pressed = GameFeel.reduced_motion
+	motion.toggled.connect(func(enabled: bool) -> void: GameFeel.reduced_motion = enabled)
+	$Options/Panel/Rows.add_child(motion)
+	$Options/Panel/Rows.move_child(motion, $Options/Panel/Rows/Back.get_index())
 	for panel in [$Help/Panel, $Options/Panel]:
 		var style := StyleBoxFlat.new()
 		style.bg_color = Color("19394bea")
@@ -150,19 +158,19 @@ func _process(delta: float) -> void:
 	for index in $Characters.get_child_count():
 		var character: TextureRect = $Characters.get_child(index)
 		var phase: float = _time * TAU / maxf(0.1, float_periods[index]) + index * 1.7
-		var displacement: float = 0.0 if reduce_motion else sin(phase) * float_amplitude
+		var displacement: float = 0.0 if reduce_motion or GameFeel.reduced_motion else sin(phase) * float_amplitude
 		# Both edges use immutable baselines: no resize/drift feedback from current size.
 		character.offset_top = _origin_offsets[index] + displacement
 		character.offset_bottom = _bottom_offsets[index] + displacement
 		character.pivot_offset = character.size * Vector2(0.5, 0.65)
-		character.rotation = 0.0 if reduce_motion else deg_to_rad(sway_degrees) * sin(phase + 0.5)
-	if reduce_motion and _logo_tween != null and _logo_tween.is_running():
+		character.rotation = 0.0 if reduce_motion or GameFeel.reduced_motion else deg_to_rad(sway_degrees) * sin(phase + 0.5)
+	if (reduce_motion or GameFeel.reduced_motion) and _logo_tween != null and _logo_tween.is_running():
 		_logo_tween.kill()
 		$Layout/Rows/Logo.scale = Vector2.ONE
 
 
 func _enter_logo() -> void:
-	if reduce_motion or _leaving:
+	if reduce_motion or GameFeel.reduced_motion or _leaving:
 		return
 	var logo: TextureRect = $Layout/Rows/Logo
 	logo.pivot_offset = logo.size * 0.5

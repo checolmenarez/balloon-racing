@@ -10,6 +10,8 @@ extends Area2D
 @export_range(1.0, 1.35, 0.05) var speed_multiplier: float = 1.20
 var _wind_texture: Texture2D
 var _visual_time: float = 0.0
+var _flow_points := PackedVector2Array()
+var _flow_colors := PackedColorArray()
 
 
 func _ready() -> void:
@@ -45,15 +47,29 @@ func _exit_tree() -> void:
 
 
 func _process(delta: float) -> void:
-	_visual_time += delta
+	_visual_time += delta * (0.2 if GameFeel.reduced_motion else 1.0)
 	queue_redraw()
 
 
 func _draw() -> void:
+	if not enabled:
+		return
 	var rect := Rect2(-size * 0.5, size)
+	var strength: float = clampf((speed_multiplier - 1.0) / 0.35, 0.0, 1.0)
 	draw_rect(rect, Color(0.3, 0.85, 0.95, 0.12))
 	draw_line(rect.position, Vector2(rect.end.x, rect.position.y), Color(0.2, 0.65, 0.8, 0.5), 1.0)
 	draw_line(Vector2(rect.position.x, rect.end.y), rect.end, Color(0.2, 0.65, 0.8, 0.5), 1.0)
+	var count: int = mini(48, maxi(6, int(size.x / 30.0)))
+	_flow_points.resize(count * 2)
+	_flow_colors.resize(count)
+	for index in count:
+		var travel: float = fposmod(index * 0.618 + _visual_time * (85.0 + strength * 90.0) / size.x, 1.0)
+		var at := Vector2(rect.position.x + travel * size.x, rect.position.y + 8.0 + fposmod(index * 0.381, 1.0) * (size.y - 16.0))
+		var alpha: float = sin(travel * PI) * (0.12 + strength * 0.22)
+		_flow_points[index * 2] = at
+		_flow_points[index * 2 + 1] = at + Vector2(minf(24.0 + strength * 16.0, rect.end.x - at.x), 0)
+		_flow_colors[index] = Color(0.25, 0.85, 1, alpha)
+	draw_multiline_colors(_flow_points, _flow_colors, 1.5, false)
 	for x in range(int(-size.x * 0.5) + 35, int(size.x * 0.5) - 20, 100):
 		if _wind_texture != null:
 			var height: float = minf(size.y - 12.0, 48.0)

@@ -1,0 +1,10 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Failed to read the root certificate store.
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2582)
+Track mode 0: 79.35 s, 0 collisions, zones=[0, 1, 2, 3, 4, 5]
+Track mode 1: 81.53 s, 0 collisions, zones=[0, 1, 2, 3, 4, 5]
+Track mode 2: 85.77 s, 10 collisions, zones=[0, 1, 2, 3, 4, 5]
+Track mode 3: 83.83 s, 10 collisions, zones=[0, 1, 2, 3, 4, 5]
+Track mode 4: 82.30 s, 4 collisions, zones=[0, 1, 2, 3, 4, 5]
+TRACK TEST at 60 Hz: PASS (0 failures)
