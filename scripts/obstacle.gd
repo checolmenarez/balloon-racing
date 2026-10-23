@@ -4,6 +4,12 @@ extends StaticBody2D
 
 enum Kind { LOWER, UPPER, GAP, ISLAND }
 
+## Optional local outline for static blockout formations. Shared by art and physics.
+@export var outline: PackedVector2Array = PackedVector2Array():
+	set(value):
+		outline = value
+		_refresh()
+
 @export var kind: Kind = Kind.LOWER:
 	set(value):
 		kind = value
@@ -42,6 +48,15 @@ func get_right_edge() -> float:
 
 func _refresh() -> void:
 	if not is_node_ready():
+		return
+	if outline.size() >= 3:
+		$LowerVisual.polygon = outline
+		$LowerVisual.color = Color("718275")
+		$LowerVisual.visible = true
+		$LowerCollision.polygon = outline
+		$LowerCollision.disabled = false
+		$UpperVisual.visible = false
+		$UpperCollision.disabled = true
 		return
 	if kind == Kind.ISLAND:
 		# A suspended divider: upper_tip_y and lower_tip_y are its two surfaces.

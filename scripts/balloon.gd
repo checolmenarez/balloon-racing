@@ -32,7 +32,7 @@ var collision_count: int = 0
 var impact_time_left: float = 0.0
 var protection_time_left: float = 0.0
 var _horizontal_rebound: float = 0.0
-var _ignored_obstacles: Array[FlightObstacle] = []
+var _ignored_obstacles: Array[PhysicsBody2D] = []
 
 
 func is_impact_penalized() -> bool:
@@ -55,13 +55,15 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 	for index in get_slide_collision_count():
 		var collision: KinematicCollision2D = get_slide_collision(index)
-		var obstacle := collision.get_collider() as FlightObstacle
-		if obstacle == null or obstacle in _ignored_obstacles:
+		var obstacle := collision.get_collider() as PhysicsBody2D
+		if not (obstacle is FlightObstacle or obstacle is FlyingCreatureObstacle) or obstacle in _ignored_obstacles:
 			continue
 		# A struck formation stays passable until we have completely cleared it.
 		# A timer alone could re-enable solidity while still inside a wide rock.
 		add_collision_exception_with(obstacle)
 		_ignored_obstacles.append(obstacle)
+		if obstacle is FlyingCreatureObstacle:
+			obstacle.react_to_impact()
 		if protection_time_left <= 0.0:
 			_apply_impact(collision.get_normal())
 	_enforce_vertical_bounds()
@@ -105,10 +107,10 @@ func _update_impact(delta: float) -> void:
 		impact_time_left = 0.0
 	protection_time_left = maxf(0.0, protection_time_left - delta)
 	for index in range(_ignored_obstacles.size() - 1, -1, -1):
-		var obstacle: FlightObstacle = _ignored_obstacles[index]
+		var obstacle = _ignored_obstacles[index]
 		if not is_instance_valid(obstacle):
 			_ignored_obstacles.remove_at(index)
-		elif protection_time_left <= 0.0 and global_position.x - HALF_WIDTH > obstacle.get_right_edge() + 2.0:
+		elif protection_time_left <= 0.0 and global_position.x - HALF_WIDTH > float(obstacle.call("get_right_edge")) + 2.0:
 			remove_collision_exception_with(obstacle)
 			_ignored_obstacles.remove_at(index)
 	# Keep the silhouette visible even while passing through the struck formation.

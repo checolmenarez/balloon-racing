@@ -18,15 +18,26 @@ func _run() -> void:
 	var args: PackedStringArray = OS.get_cmdline_user_args()
 	var label: String = args[0] if args.size() > 0 else "sample"
 	var main: Node2D = load("res://scenes/Main.tscn").instantiate()
+	var sample_x: float = 4000.0 if "s2" in args else 1000.0
+	for arg in args:
+		if arg.begins_with("x="):
+			sample_x = float(arg.trim_prefix("x="))
+		if arg.begins_with("track="):
+			main.get_node("Track01").free()
+			var course: Node = load(arg.trim_prefix("track=")).instantiate()
+			course.name = "Track01"
+			main.add_child(course)
 	main.race_seed = 21
 	main.get_node("RaceFlow").enabled = false
 	root.add_child(main)
 	main.combat.set_physics_process(false)
+	if "no_flappy" in args:
+		main.track.get_node("FlyingObstacles").free()
 	for index in 4:
 		var racer: Balloon = main.competitors[index]
 		racer.set_physics_process(false)
 		racer.racing = true
-		racer.position = Vector2(1000 - index * 95, 190 + index * 100)
+		racer.position = Vector2(sample_x - index * 95, 190 + index * 100)
 		racer.items.boost_left = 2.0
 		racer.visual.refresh()
 	if "no_world" in args:
@@ -48,7 +59,7 @@ func _run() -> void:
 	for reduced in [false, true]:
 		if reduced and args.size() > 1:
 			break
-		GameFeel._reduced = reduced
+		GameFeel._reduced = reduced or "reduced" in args
 		for frame in 60:
 			await RenderingServer.frame_post_draw
 		for sample in (1 if args.size() > 1 else 3):
@@ -63,7 +74,7 @@ func _run() -> void:
 			for ms in times:
 				mean += ms / times.size()
 			times.sort()
-			var row: Dictionary = {"reduced": reduced, "sample": sample, "fps": 1000.0 / mean, "mean_ms": mean, "p95_ms": times[85], "draw_calls": Performance.get_monitor(Performance.RENDER_TOTAL_DRAW_CALLS_IN_FRAME), "process_ms": Performance.get_monitor(Performance.TIME_PROCESS) * 1000.0}
+			var row: Dictionary = {"reduced": GameFeel.reduced_motion, "sample": sample, "fps": 1000.0 / mean, "mean_ms": mean, "p95_ms": times[85], "draw_calls": Performance.get_monitor(Performance.RENDER_TOTAL_DRAW_CALLS_IN_FRAME), "process_ms": Performance.get_monitor(Performance.TIME_PROCESS) * 1000.0}
 			results.append(row)
 			print("BENCH ", label, " ", JSON.stringify(row))
 	var file := FileAccess.open("res://.godot/feel-bench-" + label + ".json", FileAccess.WRITE)

@@ -14,34 +14,7 @@ func _check(condition: bool, message: String) -> void:
 
 
 func _target_height(x: float, upper_route: bool) -> float:
-	# Input driver used only by this test, never by the playable scene.
-	if x < 2250.0:
-		return 300.0
-	if x < 3350.0:
-		return 440.0
-	if x < 4250.0:
-		return 280.0
-	if x < 5150.0:
-		return 460.0
-	if x < 6050.0:
-		return 260.0
-	if x < 7000.0:
-		return 470.0
-	if x < 7950.0:
-		return 250.0
-	if x < 9150.0:
-		return 350.0
-	if x < 13200.0:
-		return 178.0 if upper_route else 490.0
-	if x < 14400.0:
-		return 335.0
-	if x < 15400.0:
-		return 410.0
-	if x < 16400.0:
-		return 305.0
-	if x < 17250.0:
-		return 440.0
-	return 320.0
+	return preload("res://tests/valle_routes.gd").height(x, upper_route)
 
 
 func _test_course(mode: int) -> void:
@@ -58,6 +31,7 @@ func _test_course(mode: int) -> void:
 	var s4_enter: float = -1.0
 	var s4_exit: float = -1.0
 	var crossed_divider: bool = false
+	var previous_collisions: int = 0
 	_check(track.get_progress(track.start.global_position.x - 500.0) == 0.0, "Progress clamps before start")
 	_check(track.get_progress(track.finish.global_position.x + 500.0) == 1.0, "Progress clamps after finish")
 	_check(track.start.global_position.x < track.fork.global_position.x and
@@ -74,6 +48,9 @@ func _test_course(mode: int) -> void:
 			Input.action_release("burner")
 		await physics_frame
 		await process_frame
+		if mode < 2 and balloon.collision_count > previous_collisions:
+			print("Controlled route contact: ", balloon.position, " obstacles=", balloon._ignored_obstacles)
+		previous_collisions = balloon.collision_count
 		elapsed = float(frame + 1) / Engine.physics_ticks_per_second
 		if balloon.position.x >= track.fork.position.x and s4_enter < 0.0:
 			s4_enter = elapsed

@@ -40,14 +40,19 @@ func _run() -> void:
 	baseline.free()
 	var main: Node2D = load("res://scenes/Main.tscn").instantiate()
 	root.add_child(main)
+	await process_frame
+	await process_frame
 	check(geometry(main.track) == before, "Every collision polygon, position, mask and enabled state is unchanged")
-	check(before.size() == 17, "Original 17 formations retained")
+	for obstacle in main.track.get_node("Obstacles").get_children():
+		check_visual_only(obstacle.get_node("LowerVisual"))
+		check_visual_only(obstacle.get_node("UpperVisual"))
+	check(before.size() == 22, "Valle Ventoso 2.0 formations dressed without changing collisions")
 	check(main.track.get_node("ItemBoxes").get_child_count() == 32, "All item boxes retained")
 	check(main.track.get_node("WindZones").get_child_count() == wind_count, "Artwork preserves the current track's wind zones")
 	var world: Node = main.track.get_node("WorldVisual")
 	check_visual_only(world)
 	var layers: Array[Node] = world.get_node("ParallaxBackground").get_children()
-	check(layers.size() == 6, "Six parallax layers")
+	check(layers.size() == 4, "Four layers: crowded mid/near islands removed")
 	var speeds: Array[float] = []
 	for layer in layers:
 		check(layer.texture != null, "Parallax texture loads")

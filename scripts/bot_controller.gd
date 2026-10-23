@@ -46,10 +46,28 @@ func wants_burner(body: CharacterBody2D, delta: float) -> bool:
 				minimum = maxf(minimum, top + Balloon.TOP_EXTENT)
 				maximum = minf(maximum, bottom - Balloon.BOTTOM_EXTENT)
 			FlightObstacle.Kind.ISLAND:
-				if profile.preferred_route == BotProfile.Route.UPPER:
+				# Irregular technical islands have a broad local bypass below.
+				# Keep S4's existing route choice and avoid treating all crests as flat.
+				if obstacle.outline.is_empty() and profile.preferred_route == BotProfile.Route.UPPER:
 					maximum = minf(maximum, top - Balloon.BOTTOM_EXTENT)
 				else:
 					minimum = maxf(minimum, bottom + Balloon.TOP_EXTENT)
+	# Local moving-obstacle adaptation: reserve its full predictable vertical sweep.
+	# Keep the existing corridor if terrain leaves no compatible side.
+	var creatures: Node = track.get_node_or_null("FlyingObstacles")
+	if creatures != null:
+		for creature: FlyingCreatureObstacle in creatures.get_children():
+			var bounds: Rect2 = creature.get_swept_bounds()
+			if bounds.end.x < x - Balloon.HALF_WIDTH or bounds.position.x > x + profile.look_ahead:
+				continue
+			var above: float = bounds.position.y - Balloon.BOTTOM_EXTENT - 8.0
+			var below: float = bounds.end.y + Balloon.TOP_EXTENT + 8.0
+			var can_above: bool = above >= minimum
+			var can_below: bool = below <= maximum
+			if can_above and (not can_below or profile.preferred_route == BotProfile.Route.UPPER):
+				maximum = minf(maximum, above)
+			elif can_below:
+				minimum = maxf(minimum, below)
 	if minimum <= maximum:
 		desired = (minimum + maximum) * 0.5
 		if in_fork:

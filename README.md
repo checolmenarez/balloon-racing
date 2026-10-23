@@ -14,6 +14,73 @@ Godot 4.7.2 Standard y GDScript. Prototipo local: un humano y tres bots.
 
 ## Jugar
 
+### Valle Ventoso 2.0 — blockout experimental
+
+Pase visual de Valle Ventoso: roca ilustrada y agua tomadas de la lámina
+`pista1_elements.png` proporcionada por el usuario, vegetación colgante, molinos
+y puentes del kit existente. Los detalles se recortan contra las caras reales
+de los obstáculos, sin nuevos colliders. Se retiran las capas de islas medias
+y primer plano: quedan cuatro capas de parallax, con menor opacidad y nubes
+cercanas por debajo del área de vuelo. Ajuste: `background_opacity` en
+`scripts/world_visual.gd`. No se mueve ni modifica la geometría de Track01.
+
+Seis sectores rediseñados, conservando límites, meta, física, turbo y 32 cajas.
+S2 incorpora una isla con paso superior/inferior; S3 y S5 combinan islas
+irregulares, techo y tres tramos de corriente a 1,20 que requieren dos cambios
+de altura. S4 conserva la única bifurcación y añade un embudo de entrada.
+S6 añade una segunda montaña y un tercer Flappy antes del sprint despejado.
+Los bots toman el paso inferior local de las islas técnicas; mantienen sus
+perfiles y la elección de S4. No se añadieron sistemas de navegación ni poderes.
+
+[Resultados y pendientes](docs/valle-ventoso-2.md),
+[coordenadas de nodos cambiados](docs/valle-ventoso-2-coordenadas.md) y
+[mapa geométrico actualizado](docs/mapa-geometrico-valle-ventoso.svg).
+Prueba específica: `tests/valle_redesign_test.gd`; el punto de entrada antiguo
+`valle_incremental_test.gd` reutiliza esa suite. Capturas por sector:
+`tests/valle_preview.gd` con renderizado. Regenerar mapa desde la escena:
+`python tools/generate_track_map.py`, luego `./tools/render_track_map.ps1` en Windows.
+
+### Flappy — obstáculos vivientes 1.0
+
+Tres instancias exclusivas de Valle Ventoso: centro de S2 **(4450, 340)**,
+S5 **(13600, 340)** y S6 **(17950, 400)**. S2/S5 conservan oscilación vertical
+sinusoidal de ±45 px, período 3 s, fases 0°/120° y X fija; S6 usa ±30 px,
+3,6 s y fase 210°. La escena reutilizable
+`scenes/FlyingCreatureObstacle.tscn` usa `AnimatableBody2D` actualizado en física;
+su cápsula de 70×82 px cubre el cuerpo, excluyendo alas, cresta y estrellas.
+Texturas, escala visual, amplitud/período/fase y reacción son configurables;
+la forma/tamaño se editan en `CollisionShape2D`. No hay reglas de mundo en el script.
+
+Usa los PNG entregados `living_obstacle.png` y `living_obstacle_punch.png`.
+El shader deforma las puntas de alas y anima párpados, sin generar sprites.
+Impacto: pose punch durante 0,4 s, recuperación visual y penalización/sonido
+estándar del globo. Se reutiliza la excepción de colisión hasta despejarlo
+horizontalmente: un contacto no acumula penalizaciones. Flappy permanece vivo.
+Pausa congela cuerpo y animación. Movimiento reducido atenúa efectos al 20 %,
+sin cambiar oscilación jugable. Los bots consideran el barrido vertical con
+una adaptación local, conservando perfiles y lógica de vuelo.
+
+Validación inicial de Flappy 1.0 en Godot 4.7.2: 11 suites PASS (flying_creature, obstacle, flight, turbo,
+items, arcade_feedback, world_visual, track, pause, game_feel, competition).
+La suite nueva verifica 30/60/120 Hz simulados, collider, pasos arriba/abajo,
+impacto único, recuperación, pausa y efectos reducidos. Track mantiene dos
+rutas controladas sin colisiones; se actualizó su conductor de prueba para
+esquivar los encuentros. Competition: tres semillas, todos los corredores en
+meta, sin bloqueos. Flying_creature también PASS en ventana ANGLE; capturas
+revisadas de ambos sectores. Logs/capturas: `.godot/flappy-*`.
+
+Rendimiento histórico de Flappy 1.0 A/B: 1280×720, ANGLE/Intel HD, cuatro turbos en posición fija en
+S2, VSync desactivado; tres pares alternados, 60 frames de calentamiento y
+90 dibujados por muestra. Sin/con Flappy: **33,28/32,35 FPS**, **30,05/30,91
+ms/frame** (+0,87 ms), 116/117 draw calls. Las dos criaturas se actualizan;
+solo S2 aparece en cámara. Repetir `tests/feel_benchmark.gd -- etiqueta s2`,
+añadiendo `no_flappy` para el control. No acredita 60 FPS ni rendimiento de
+toda una carrera. Persisten avisos ambientales de certificados/recursos al
+cerrar Godot. Pendiente playtesting humano de anticipación y apariencia;
+los bots aún pueden chocar ocasionalmente. No se hicieron commits.
+
+Referencia consultada: [AnimatableBody2D](https://docs.godotengine.org/en/stable/classes/class_animatablebody2d.html).
+
 `music_home_v2.mp3` acompaña menú, cuenta atrás y podio.
 Al dar GO se elige `music_race_01.mp3` o `music_race_02.mp3`; se mantiene durante
 toda la carrera y se reproduce en bucle. Los WAV anteriores se conservan.
