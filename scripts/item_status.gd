@@ -94,8 +94,8 @@ func _process(delta: float) -> void:
 		var target: Balloon = items.combat.storm_target(racer)
 		if target == null or not target.items.can_receive_storm():
 			status = tr("Sin objetivo")
-	text = tr("[A] %s · %s") % [items.item_name(), status]
-	text += "\n" + tr("[D] Turbo: %d") % items.turbo_charges
+	text = tr("[Z] %s · %s") % [items.item_name(), status]
+	text += "\n" + tr("[SPACE] Turbo: %d") % items.turbo_charges
 	if items.boost_left > 0:
 		text += " · " + tr("En uso")
 	elif items.turbo_charges > 0:

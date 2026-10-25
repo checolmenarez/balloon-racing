@@ -23,6 +23,10 @@ func get_upcoming_obstacles(world_x: float, distance: float) -> Array[FlightObst
 		var obstacle := child as FlightObstacle
 		if obstacle != null and obstacle.get_right_edge() >= world_x - Balloon.HALF_WIDTH - 4.0 and obstacle.global_position.x - obstacle.width * 0.5 <= world_x + distance:
 			result.append(obstacle)
+	result.sort_custom(func(a: FlightObstacle, b: FlightObstacle) -> bool:
+		if (a.kind == FlightObstacle.Kind.ISLAND) != (b.kind == FlightObstacle.Kind.ISLAND):
+			return a.kind == FlightObstacle.Kind.ISLAND
+		return a.global_position.x - a.width * 0.5 < b.global_position.x - b.width * 0.5)
 	return result
 
 

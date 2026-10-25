@@ -88,10 +88,10 @@ func _run() -> void:
 			await capture("stage%d" % (stage_seen + 1))
 		if training.stage == 2 and body.items.equipped != BalloonItems.Kind.NONE and x > 9000:
 			check(body.items.equipped == BalloonItems.Kind.ROCKET, "Box guarantees rocket")
-			await tap(KEY_A)
-			check(body.items.used == 1 and training.combat.get_child_count() == 1, "A launches existing rocket")
+			await tap(KEY_Z)
+			check(body.items.used == 1 and training.combat.get_child_count() == 1, "Z launches existing rocket")
 			if not paused_projectile:
-				await tap(KEY_SPACE)
+				await tap(KEY_ESCAPE)
 				var projectile: ItemProjectile = training.combat.get_child(0)
 				var snapshot: Array = [body.position, projectile.position, projectile.age, training._feedback_left, training.stage]
 				await step(20)
@@ -101,8 +101,8 @@ func _run() -> void:
 				check(not paused, "Continue button resumes")
 				paused_projectile = true
 		if training.stage == 3 and body.items.turbo_charges > 0:
-			await tap(KEY_D)
-			check(body.items.turbo_charges == 0 and body.items.boost_left > 0, "D consumes the lesson charge")
+			await tap(KEY_SPACE)
+			check(body.items.turbo_charges == 0 and body.items.boost_left > 0, "SPACE consumes the lesson charge")
 		boosted_speed = boosted_speed or (body.items.boost_left > 0 and body.velocity.x > body.physics.horizontal_speed)
 		wind_speed = wind_speed or (body.items.wind_multiplier() > 1 and body.velocity.x > body.physics.horizontal_speed)
 		check(body._forward_speed() <= body.physics.horizontal_speed * body.items.config.maximum_speed_bonus + 0.1, "Speed aids never stack")
@@ -127,7 +127,7 @@ func _run() -> void:
 	await step(3)
 	check(training.stage == 2 and training.balloon.position.x < 7700, "Missing box recovers stage three")
 	training.box._on_body_entered(training.balloon)
-	await tap(KEY_A)
+	await tap(KEY_Z)
 	for projectile in training.combat.get_children():
 		projectile.queue_free()
 	training.balloon.position.x = 10200
@@ -135,18 +135,18 @@ func _run() -> void:
 	check(training.stage == 2 and training.balloon.position.x < 7700 and not training.box.consumed, "Missed shot restores box and checkpoint")
 	training.stage = 3
 	training.retry_stage()
-	await tap(KEY_D)
+	await tap(KEY_SPACE)
 	training.retry_stage()
 	check(training.balloon.items.turbo_charges == 1 and training.balloon.items.boost_left == 0 and training.balloon.items.wind_zones.is_empty(), "Recovery clears effects and restores one charge")
-	await tap(KEY_SPACE)
+	await tap(KEY_ESCAPE)
 	training.get_node("HUD/Overlay/PausePanel/Rows/Restart").pressed.emit()
 	await step(4)
 	training = current_scene
 	check(not paused and training.stage == 0 and training.balloon.items.turbo_charges == 0, "Pause restart resets entire training")
-	await tap(KEY_SPACE)
-	await tap(KEY_SPACE)
-	check(not paused, "SPACE resumes training")
-	await tap(KEY_SPACE)
+	await tap(KEY_ESCAPE)
+	await tap(KEY_ESCAPE)
+	check(not paused, "ESC resumes training")
+	await tap(KEY_ESCAPE)
 	training.get_node("HUD/Overlay/PausePanel/Rows/Home").pressed.emit()
 	await step(3)
 	check(not paused and current_scene.scene_file_path == "res://scenes/StartMenu.tscn", "Paused Home navigation unpauses")

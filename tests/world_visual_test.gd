@@ -28,6 +28,17 @@ func check_visual_only(node: Node) -> void:
 		check_visual_only(child)
 
 
+func layout(track: Node) -> Array:
+	var result: Array = []
+	for category in ["References", "Zones", "ItemBoxes", "WindZones", "FlyingObstacles"]:
+		for node in track.get_node(category).get_children():
+			var entry: Array = [category, node.name, node._center if category == "FlyingObstacles" else node.position]
+			if category == "WindZones": entry.append_array([node.size, node.speed_multiplier])
+			if category == "FlyingObstacles": entry.append_array([node.amplitude, node.period, node.initial_phase_degrees])
+			result.append(entry)
+	return result
+
+
 func _run() -> void:
 	var manifest: Array = JSON.parse_string(FileAccess.get_file_as_string("res://tools/valle_crops.json"))
 	for entry in manifest:
@@ -36,6 +47,7 @@ func _run() -> void:
 	baseline.get_node("WorldVisual").free()
 	root.add_child(baseline)
 	var before: Array = geometry(baseline)
+	var layout_before: Array = layout(baseline)
 	var wind_count: int = baseline.get_node("WindZones").get_child_count()
 	baseline.free()
 	var main: Node2D = load("res://scenes/Main.tscn").instantiate()
@@ -43,14 +55,40 @@ func _run() -> void:
 	await process_frame
 	await process_frame
 	check(geometry(main.track) == before, "Every collision polygon, position, mask and enabled state is unchanged")
+	check(layout(main.track) == layout_before, "All routes, boxes, currents and moving obstacles are unchanged")
 	for obstacle in main.track.get_node("Obstacles").get_children():
 		check_visual_only(obstacle.get_node("LowerVisual"))
 		check_visual_only(obstacle.get_node("UpperVisual"))
-	check(before.size() == 22, "Valle Ventoso 2.0 formations dressed without changing collisions")
-	check(main.track.get_node("ItemBoxes").get_child_count() == 32, "All item boxes retained")
+	check(before.size() == 29, "Valle Ventoso 2.0 formations dressed without changing collisions")
+	check(main.track.get_node("ItemBoxes").get_child_count() == 24, "All item boxes retained")
 	check(main.track.get_node("WindZones").get_child_count() == wind_count, "Artwork preserves the current track's wind zones")
 	var world: Node = main.track.get_node("WorldVisual")
 	check_visual_only(world)
+	var kit_root: String = "res://assets/environments/valle_ventoso/terrain_kit/"
+	var kit_manifest: Array = JSON.parse_string(FileAccess.get_file_as_string(kit_root + "manifest.json"))
+	for entry in kit_manifest:
+		var texture: Texture2D = load(kit_root + entry.file)
+		check(texture.get_size() == Vector2(entry.size[0], entry.size[1]), "Kit dimensions match supplied manifest")
+	for obstacle in main.track.get_node("Obstacles").get_children():
+		for side in ["Lower", "Upper"]:
+			var collision: CollisionPolygon2D = obstacle.get_node(side + "Collision")
+			if collision.disabled: continue
+			var suffix: String = "Ceiling" if side == "Upper" else "Surface"
+			var mask: Polygon2D = world.get_node("TerrainVisual/" + str(obstacle.name) + suffix)
+			check(mask.get_meta("collision_outline") == collision.polygon, "Visual contour derives from unchanged collider")
+			check(mask.polygon.size() > collision.polygon.size(), "Every formation gets a more detailed visual outline")
+			for point in mask.polygon:
+				var nearest: float = INF
+				for i in collision.polygon.size():
+					nearest = minf(nearest, point.distance_to(Geometry2D.get_closest_point_to_segment(point, collision.polygon[i], collision.polygon[(i + 1) % collision.polygon.size()])))
+				var deck_recess: bool = obstacle.name == &"RouteDivider" and point.x > 80.0 and point.x < 210.0 and point.y > 330.0 and point.y < 350.0
+				check(nearest <= (16.01 if deck_recess else 8.01), "Contour stays close to collider; only the supported deck spans a 16 px recess")
+			check(mask.clip_children == CanvasItem.CLIP_CHILDREN_ONLY, "Mask itself does not draw a coloured polygon")
+			check(not obstacle.get_node(side + "Visual").visible, "Old polygon presentation hidden")
+			check(mask.get_child_count() > 0, "Every formation receives modular sprites")
+			for part: Sprite2D in mask.get_children():
+				check(part.texture.resource_path.begins_with(kit_root), "Terrain uses only the supplied kit")
+				check(is_equal_approx(part.scale.x, part.scale.y) and part.scale.x <= 2.0, "No stretched or extreme sprite scales")
 	var layers: Array[Node] = world.get_node("ParallaxBackground").get_children()
 	check(layers.size() == 4, "Four layers: crowded mid/near islands removed")
 	var speeds: Array[float] = []

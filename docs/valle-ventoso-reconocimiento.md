@@ -1,5 +1,7 @@
 # Valle Ventoso: reconocimiento jugable del estado actual
 
+> Balance vigente (2026-10-25): [cajas, bots, corrientes y colisiones](valle-ventoso-2.md#pasos-estrechos-y-corriente-inferior--2026-10-25). Las mediciones previas se conservan como historial.
+
 **Baseline histórico:** las secciones A–E y el mapa enlazado describen el circuito
 anterior a la intervención experimental 01. Consultar la sección F para los cambios
 posteriores autorizados y sus resultados; se conserva la evidencia original para comparar.
@@ -239,3 +241,7 @@ probar la transición a la rama alta con y sin turbo; verificar que las rocas po
 siguen exigiendo precisión; recoger y usar A en S6 y reservar D para el cierre;
 comprobar ambas rutas, adelantamientos y lectura de las cajas en movimiento.
 Las pruebas automatizadas demuestran transitabilidad y efectos medidos, no diversión.
+
+## Pase visual modular — 2026-10-25
+
+El estado del pase artístico, las comparativas S1–S6 a 1280 × 720 y los recursos que requieren corrección se mantienen en [la entrega del terrain kit](valle-terrain-kit/README.md). Se conserva íntegro el balance anterior; las capturas y pruebas automatizadas no equivalen a aceptación humana ni a calidad artística final.

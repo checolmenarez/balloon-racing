@@ -47,7 +47,7 @@ func boxes_and_size() -> void:
 	query.shape = shape
 	query.collision_mask = 2
 	var heights: Dictionary = {}
-	check(main.track.get_node("ItemBoxes").get_child_count() == 32, "32 boxes, up from 21")
+	check(main.track.get_node("ItemBoxes").get_child_count() == 24, "24 evenly distributed boxes")
 	for box in main.track.get_node("ItemBoxes").get_children():
 		heights[box.position.y] = true
 		query.transform = Transform2D(0.0, box.global_position + Vector2(0, (Balloon.BOTTOM_EXTENT - Balloon.TOP_EXTENT) * 0.5))
@@ -59,7 +59,7 @@ func boxes_and_size() -> void:
 	main.combat.config.box_respawn_time = 0.2
 	var box: Area2D = main.track.get_node("ItemBoxes/Box0")
 	var racer: Balloon = main.balloon
-	racer.position = Vector2(1200, 310)
+	racer.position = box.global_position
 	await step(0.1)
 	check(box.consumed and racer.items.collected == 1, "Real box pickup")
 	racer.items.equipped = BalloonItems.Kind.NONE
@@ -122,7 +122,7 @@ func storms() -> void:
 
 func winds() -> void:
 	setup()
-	var zone: Area2D = main.track.get_node("WindZones/UpperCurrent")
+	var zone: Area2D = main.track.get_node("WindZones/LowerCurrent")
 	for racer in main.competitors:
 		racer.position = zone.position
 	await step()

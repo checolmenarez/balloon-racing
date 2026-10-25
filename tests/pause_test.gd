@@ -53,7 +53,7 @@ func snapshot() -> Array:
 
 
 func _run() -> void:
-	var bindings: Dictionary = {"burner": KEY_UP, "use_item": KEY_A, "use_turbo": KEY_D, "pause": KEY_SPACE, "toggle_debug": KEY_F2}
+	var bindings: Dictionary = {"burner": KEY_UP, "use_item": KEY_Z, "use_turbo": KEY_SPACE, "pause": KEY_ESCAPE, "toggle_debug": KEY_F2}
 	for action in bindings:
 		var events: Array[InputEvent] = InputMap.action_get_events(action)
 		check(events.size() == 1 and events[0].physical_keycode == bindings[action], "Only intended binding for " + action)
@@ -62,19 +62,19 @@ func _run() -> void:
 	root.add_child(main)
 	current_scene = main
 	await step()
-	await tap(KEY_SPACE)
-	check(paused and main.get_node("HUD/RaceOverlay/PausePanel").visible, "SPACE pauses countdown and shows panel")
+	await tap(KEY_ESCAPE)
+	check(paused and main.get_node("HUD/RaceOverlay/PausePanel").visible, "ESC pauses countdown and shows panel")
 	var frozen: Array = snapshot()
 	await step(30)
 	check(snapshot() == frozen, "Countdown and bodies stay frozen")
-	send_key(KEY_SPACE, true, true)
+	send_key(KEY_ESCAPE, true, true)
 	await step()
 	check(paused, "Key repeat cannot unpause")
-	# SPACE must resume, not click the focused Restart button through ui_accept.
+	# ESC must resume, not click the focused Restart button through ui_accept.
 	main.get_node("HUD/RaceOverlay/PausePanel/Rows/Restart").grab_focus()
 	var identity: int = main.get_instance_id()
-	await tap(KEY_SPACE)
-	check(not paused and current_scene.get_instance_id() == identity, "SPACE resumes despite Restart focus")
+	await tap(KEY_ESCAPE)
+	check(not paused and current_scene.get_instance_id() == identity, "ESC resumes despite Restart focus")
 	while main.race_flow.state == RaceFlow.State.COUNTDOWN:
 		await step()
 	main.combat.set_physics_process(false)
@@ -87,10 +87,15 @@ func _run() -> void:
 	check(not main.balloon.burner_active, "Releasing UP stops burner")
 	main.balloon.items.turbo_wait_left = 0.0
 	main.balloon.items.collect(BalloonItems.Kind.ROCKET)
-	await tap(KEY_D)
-	check(main.balloon.items.turbo_charges == 1 and main.balloon.items.boost_left > 0.0, "D consumes exactly one personal charge")
-	await tap(KEY_A)
-	check(main.balloon.items.used == 1 and main.balloon.items.equipped == BalloonItems.Kind.NONE, "A launches equipped rocket")
+	main.get_node("HUD").pause_button.grab_focus()
+	await tap(KEY_SPACE)
+	check(not paused, "Space activates turbo even when the pause button has focus")
+	send_key(KEY_SPACE, true, true)
+	await step()
+	check(not paused and main.balloon.items.turbo_charges == 1, "Space repeat neither pauses nor consumes another charge")
+	check(main.balloon.items.turbo_charges == 1 and main.balloon.items.boost_left > 0.0, "SPACE consumes exactly one personal charge")
+	await tap(KEY_Z)
+	check(main.balloon.items.used == 1 and main.balloon.items.equipped == BalloonItems.Kind.NONE, "Z launches equipped rocket")
 	check(main.combat.get_child_count() == 1, "Actual projectile exists")
 	main.competitors[3].items.collect(BalloonItems.Kind.STORM)
 	main.competitors[3].items.use_item()
@@ -99,13 +104,13 @@ func _run() -> void:
 	box._respawn_left = 3.0
 	box.hide()
 	await step()
-	await tap(KEY_SPACE)
-	check(paused and not main.balloon.burner_active and not Input.is_action_pressed("burner"), "SPACE pauses without activating burner")
+	await tap(KEY_ESCAPE)
+	check(paused and not main.balloon.burner_active and not Input.is_action_pressed("burner"), "ESC pauses without activating burner")
 	frozen = snapshot()
 	await step(90)
 	check(snapshot() == frozen, "Bots, projectiles, storm, boosts, box timer and race clock freeze")
-	await tap(KEY_A)
-	await tap(KEY_D)
+	await tap(KEY_Z)
+	await tap(KEY_SPACE)
 	check(snapshot() == frozen and main.balloon.items.turbo_charges == 1, "Gameplay input cannot consume objects/charges during pause")
 	if "--capture" in OS.get_cmdline_user_args():
 		await RenderingServer.frame_post_draw
@@ -113,10 +118,10 @@ func _run() -> void:
 	main.get_node("HUD/RaceOverlay/PausePanel/Rows/Continue").pressed.emit()
 	await step(2)
 	check(not paused and snapshot() != frozen, "Continue button resumes simulation")
-	await tap(KEY_SPACE)
+	await tap(KEY_ESCAPE)
 	await tap(KEY_ENTER)
 	check(not paused, "Enter activates focused Continue button")
-	await tap(KEY_SPACE)
+	await tap(KEY_ESCAPE)
 	main.get_node("HUD/RaceOverlay/PausePanel/Rows/Restart").pressed.emit()
 	await step(3)
 	main = current_scene
@@ -134,7 +139,7 @@ func _run() -> void:
 	await step(2)
 	check(main.race_flow.records.size() == 4 and main.get_node("HUD/RaceOverlay/Results").visible, "Race can finish and display podium")
 	identity = main.get_instance_id()
-	await tap(KEY_SPACE)
-	check(not paused and current_scene.get_instance_id() == identity and not main.get_node("HUD/RaceOverlay/PausePanel").visible, "Results ignore pause without accidental restart")
+	await tap(KEY_ESCAPE)
+	check(not paused and current_scene.scene_file_path == "res://scenes/StartMenu.tscn", "Escape returns from results to the menu")
 	print("PAUSE TEST: %s (%d failures)" % ["PASS" if failures == 0 else "FAIL", failures])
 	quit(0 if failures == 0 else 1)

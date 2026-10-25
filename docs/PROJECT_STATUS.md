@@ -1,5 +1,9 @@
 # Estado del proyecto
 
+> Pase modular de terreno (2026-10-25): [comparativas S1–S6, pruebas y pendientes artísticos](valle-terrain-kit/README.md). Integrado sin modificar gameplay; quedan repetición de masas grandes, limpieza de cascadas y regresión de rendimiento por resolver. No representa aceptación artística final.
+
+> Balance vigente (2026-10-25): [cajas, bots, corrientes y colisiones](valle-ventoso-2.md#pasos-estrechos-y-corriente-inferior--2026-10-25). Las mediciones previas se conservan como historial.
+
 ## Game Feel 2.0 — intervención del 2026-10-21
 
 Implementada presentación de vuelo, turbo, impactos, corrientes y ambiente,

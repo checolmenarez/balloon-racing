@@ -14,7 +14,11 @@ func check(ok: bool, message: String) -> void:
 func _geometry(main: Node2D) -> void:
 	var track: BalloonTrack = main.track
 	check(track.start.position.x == 240 and track.finish.position.x == 18400, "Unchanged course length")
-	check(track.get_node("ItemBoxes").get_child_count() == 32, "Existing box count preserved")
+	check(track.get_node("ItemBoxes").get_child_count() == 24, "Reduced box count")
+	var boxes_per_sector: Array[int] = [0,0,0,0,0,0]
+	for box in track.get_node("ItemBoxes").get_children():
+		boxes_per_sector[track.get_zone_index(box.position.x)] += 1
+	check(boxes_per_sector == [4,4,4,4,4,4], "Equal supply across all six sectors")
 	for i in 6:
 		check(track.zones.get_child(i).position.x == [240,2700,6000,9700,13400,16800][i], "Sector boundary preserved")
 	var query := PhysicsShapeQueryParameters2D.new()
@@ -22,7 +26,21 @@ func _geometry(main: Node2D) -> void:
 	query.shape = shape
 	query.collision_mask = 2
 	var space := main.get_world_2d().direct_space_state
+	var divider: FlightObstacle = track.get_node("Obstacles/RouteDivider")
+	var lower_rock: FlightObstacle = track.get_node("Obstacles/LowerRouteRock")
+	check(divider.upper_tip_y - 120.0 > lower_rock.lower_tip_y - divider.lower_tip_y,
+		"S4 lower bottleneck is narrower than its upper bottleneck")
+	for wind_name in ["LowerCurrent", "LowerCurrentMiddle", "LowerCurrentExit"]:
+		var lower_wind: Area2D = track.get_node("WindZones/" + wind_name)
+		check(lower_wind.position.y - lower_wind.size.y * 0.5 > divider.lower_tip_y,
+			"S4 fast currents are entirely below the divider")
+	for island_name in ["TechnicalIslandS3", "PrecisionB"]:
+		var island: FlightObstacle = track.get_node("Obstacles/" + island_name)
+		check(island.upper_tip_y - island.ceiling_y < island.ground_y - island.lower_tip_y,
+			"S3/S5 upper crest passage is narrower than lower bypass")
 	for wind in track.get_node("WindZones").get_children():
+		if track.get_zone_index(wind.position.x) in [2,4]:
+			check(wind.size == Vector2(120,24), "Minimal technical current windows")
 		shape.size = wind.size
 		query.transform = Transform2D(0.0, wind.global_position)
 		check(space.intersect_shape(query).is_empty(), "Wind rectangle is outside solid rock: " + wind.name)
@@ -31,12 +49,12 @@ func _geometry(main: Node2D) -> void:
 			var collision: CollisionPolygon2D = obstacle.get_node(side + "Collision")
 			var visual: Polygon2D = obstacle.get_node(side + "Visual")
 			if not collision.disabled:
-				check(visual.visible and visual.polygon == collision.polygon, "Visible silhouette matches collider")
-	# A full balloon with 25 px extra on each side can follow both technical corridors.
-	shape.size = Vector2(Balloon.HALF_WIDTH * 2 + 50, Balloon.TOP_EXTENT + Balloon.BOTTOM_EXTENT + 50)
-	for entry in [Vector2(7500,170),Vector2(8000,325),Vector2(8500,180),Vector2(14600,175),Vector2(15100,325),Vector2(15600,165),Vector2(9750,335)]:
+				check(visual.polygon == collision.polygon, "Visible silhouette matches collider")
+	# A full balloon with 10 px extra on each side can follow both technical corridors.
+	shape.size = Vector2(Balloon.HALF_WIDTH * 2 + 20, Balloon.TOP_EXTENT + Balloon.BOTTOM_EXTENT + 20)
+	for entry in [Vector2(7500,130),Vector2(8000,325),Vector2(8500,140),Vector2(14600,130),Vector2(15100,325),Vector2(15600,140),Vector2(9750,335),Vector2(11750,530),Vector2(11250,220)]:
 		query.transform = Transform2D(0.0, entry + Vector2(0,(Balloon.BOTTOM_EXTENT-Balloon.TOP_EXTENT)*0.5))
-		check(space.intersect_shape(query).is_empty(), "25 px clearance at technical gate: %s" % entry)
+		check(space.intersect_shape(query).is_empty(), "10 px clearance at technical gate: %s" % entry)
 	for interval in [Vector2i(7100,8900),Vector2i(14200,16000)]:
 		for x in range(interval.x,interval.y+1,25):
 			var clear: bool = false
@@ -45,9 +63,9 @@ func _geometry(main: Node2D) -> void:
 				if space.intersect_shape(query).is_empty():
 					clear = true
 					break
-			check(clear,"Upper corridor retains 25 px margins at X %d" % x)
+			check(clear,"Upper corridor retains 10 px margins at X %d" % x)
 			query.transform = Transform2D(0.0,Vector2(x,558+(Balloon.BOTTOM_EXTENT-Balloon.TOP_EXTENT)*0.5))
-			check(space.intersect_shape(query).is_empty(),"Lower bypass retains 25 px margins at X %d" % x)
+			check(space.intersect_shape(query).is_empty(),"Lower bypass retains 10 px margins at X %d" % x)
 	# No fixed height can cross the fast upper corridor: the hanging lip is lower
 	# than the maximum balloon centre allowed by the two adjacent crests.
 	for pair in [["TechnicalIslandS3", "FirstCorridor"], ["PrecisionB", "PrecisionA"]]:

@@ -53,16 +53,18 @@
 <text x="946.2" y="529.96" font-family="Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#526774">2500</text>
 <line x1="1035.2" y1="285" x2="1035.2" y2="509.96000000000004" fill="none" stroke="#e8edf1" stroke-width="1"/>
 <text x="1020.2" y="529.96" font-family="Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#526774">2700</text>
-<polygon points="687.4,509.96000000000004 716.408,460.01 739.2,447.06 761.992,460.01 791.0,509.96000000000004" fill="#647887" stroke="#435966"/>
-<text x="729.2" y="438.06" font-family="Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#435966">470</text>
+<polygon points="798.4,509.96000000000004 827.408,460.01 850.2,447.06 872.992,460.01 902.0,509.96000000000004" fill="#647887" stroke="#435966"/>
+<text x="840.2" y="438.06" font-family="Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#435966">470</text>
 <polygon points="846.5,285.0 869.2919999999999,326.81 887.2,339.76 905.1080000000001,326.81 927.9,285.0" fill="#647887" stroke="#435966"/>
 <text x="877.2" y="357.76" font-family="Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#435966">180</text>
-<rect x="471.32" y="367.88" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
-<rect x="471.32" y="427.08" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
-<rect x="970.8199999999999" y="367.88" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
+<polygon points="243.4,285.0 262.048,326.81 276.7,339.76 291.352,326.81 310.0,285.0" fill="#647887" stroke="#435966"/>
+<polygon points="243.4,509.96000000000004 262.048,467.40999999999997 276.7,454.46000000000004 291.352,467.40999999999997 310.0,509.96000000000004" fill="#647887" stroke="#435966"/>
+<text x="266.7" y="357.76" font-family="Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#435966">180</text>
+<text x="266.7" y="445.46000000000004" font-family="Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#435966">490</text>
+<rect x="397.32" y="375.28" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
+<rect x="582.3199999999999" y="423.38" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
+<rect x="804.3199999999999" y="386.38" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
 <rect x="970.8199999999999" y="427.08" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
-<rect x="471.32" y="467.78" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
-<rect x="970.8199999999999" y="319.78" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
 <line x1="125.0" y1="285" x2="125.0" y2="509.96000000000004" fill="none" stroke="#203442" stroke-width="3"/>
 <text x="137.0" y="428.56" font-family="Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#203442">SALIDA</text>
 <text x="1051.2" y="529.96" font-family="Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#526774">X px</text>
@@ -103,8 +105,14 @@
 <polygon points="1183.2,824.96 1212.2079999999999,745.41 1235.0,732.46 1257.7920000000001,745.41 1286.8,824.96" fill="#647887" stroke="#435966"/>
 <text x="1225.0" y="723.46" font-family="Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#435966">390</text>
 <polygon points="411.75,707.485 421.37,691.76 642.63,691.76 652.25,707.485 642.63,723.21 421.37,723.21" fill="#647887" stroke="#435966"/>
+<polygon points="1053.7,600.0 1072.348,619.61 1087.0,632.56 1101.652,619.61 1120.3,600.0" fill="#647887" stroke="#435966"/>
+<polygon points="1053.7,824.96 1072.348,782.41 1087.0,769.46 1101.652,782.41 1120.3,824.96" fill="#647887" stroke="#435966"/>
+<text x="1077.0" y="650.56" font-family="Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#435966">120</text>
+<text x="1077.0" y="760.46" font-family="Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#435966">490</text>
+<rect x="338.12" y="727.28" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
 <rect x="467.62" y="645.88" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
-<rect x="467.62" y="753.1800000000001" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
+<rect x="985.62" y="727.28" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
+<rect x="1170.62" y="668.08" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
 <rect x="759.55" y="683.99" width="25.9" height="63.64" fill="none" stroke="#9971bb" stroke-dasharray="5 4"/>
 <line x1="772.5" y1="697.31" x2="772.5" y2="730.61" fill="none" stroke="#694687" stroke-width="2"/>
 <ellipse cx="772.5" cy="715.81" rx="12.95" ry="15.17" fill="#9971bb" stroke="#694687"/>
@@ -142,35 +150,26 @@
 <text x="1405.0" y="1159.96" font-family="Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#526774">9500</text>
 <line x1="1494.0" y1="915" x2="1494.0" y2="1139.96" fill="none" stroke="#e8edf1" stroke-width="1"/>
 <text x="1479.0" y="1159.96" font-family="Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#526774">9700</text>
-<rect x="606.0" y="954.96" width="148.0" height="22.2" fill="#d2eaf0" stroke="#82b8c5"/>
-<line x1="639.3" y1="966.06" x2="663.35" y2="966.06" fill="none" stroke="#26849a" stroke-width="1.5"/>
-<polygon points="663.35,966.06 654.84,962.73 654.84,969.39" fill="#26849a" stroke="none"/>
-<line x1="720.7" y1="966.06" x2="744.75" y2="966.06" fill="none" stroke="#26849a" stroke-width="1.5"/>
-<polygon points="744.75,966.06 736.24,962.73 736.24,969.39" fill="#26849a" stroke="none"/>
-<rect x="828.0" y="1006.76" width="74.0" height="25.9" fill="#d2eaf0" stroke="#82b8c5"/>
-<line x1="861.3" y1="1019.71" x2="885.35" y2="1019.71" fill="none" stroke="#26849a" stroke-width="1.5"/>
-<polygon points="885.35,1019.71 876.84,1016.38 876.84,1023.04" fill="#26849a" stroke="none"/>
-<rect x="976.0" y="960.51" width="148.0" height="22.2" fill="#d2eaf0" stroke="#82b8c5"/>
-<line x1="1009.3" y1="971.61" x2="1033.35" y2="971.61" fill="none" stroke="#26849a" stroke-width="1.5"/>
-<polygon points="1033.35,971.61 1024.8400000000001,968.28 1024.8400000000001,974.94" fill="#26849a" stroke="none"/>
-<line x1="1090.6999999999998" y1="971.61" x2="1114.75" y2="971.61" fill="none" stroke="#26849a" stroke-width="1.5"/>
-<polygon points="1114.75,971.61 1106.24,968.28 1106.24,974.94" fill="#26849a" stroke="none"/>
+<rect x="657.8" y="952.37" width="44.4" height="8.879999999999999" fill="#d2eaf0" stroke="#82b8c5"/>
+<rect x="842.8" y="1020.8199999999999" width="44.4" height="8.879999999999999" fill="#d2eaf0" stroke="#82b8c5"/>
+<rect x="1027.8" y="954.22" width="44.4" height="8.879999999999999" fill="#d2eaf0" stroke="#82b8c5"/>
 <polygon points="206.4,915.0 233.33600000000007,971.61 254.5,984.56 275.66399999999993,971.61 302.6,915.0" fill="#647887" stroke="#435966"/>
 <text x="244.5" y="1002.56" font-family="Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#435966">220</text>
 <polygon points="324.8,1139.96 347.5920000000001,1101.11 365.5,1088.16 383.40799999999984,1101.11 406.2,1139.96" fill="#647887" stroke="#435966"/>
 <text x="355.5" y="1079.16" font-family="Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#435966">500</text>
-<polygon points="798.4,915.0 835.696,971.61 865.0,984.56 894.304,971.61 931.6,915.0" fill="#647887" stroke="#435966"/>
-<text x="855.0" y="1002.56" font-family="Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#435966">220</text>
-<polygon points="532.0,1069.66 606.0,1036.36 680.0,995.66 739.2,1012.31 809.5,1062.26 920.5,1062.26 990.8,1017.86 1050.0,1003.06 1124.0,1036.36 1198.0,1069.66 1131.4,1069.66 598.6,1069.66" fill="#647887" stroke="#435966"/>
+<polygon points="798.4,915.0 835.696,979.01 865.0,991.96 894.304,979.01 931.6,915.0" fill="#647887" stroke="#435966"/>
+<text x="855.0" y="1009.96" font-family="Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#435966">240</text>
+<polygon points="532.0,1058.56 606.0,1021.56 680.0,977.16 739.2,997.51 809.5,1051.16 920.5,1051.16 990.8,1003.06 1050.0,980.86 1124.0,1021.56 1198.0,1058.56 1131.4,1058.56 598.6,1058.56" fill="#647887" stroke="#435966"/>
 <polygon points="1494.0,915.0 1420.0,915.0 1471.8,971.61 1494.0,978.6736363636363" fill="#647887" stroke="#435966"/>
 <polygon points="1494.0,1139.96 1420.0,1139.96 1471.8,1078.91 1494.0,1071.8463636363635" fill="#647887" stroke="#435966"/>
+<polygon points="1275.7,915.0 1294.348,956.81 1309.0,969.76 1323.652,956.81 1342.3,915.0" fill="#647887" stroke="#435966"/>
+<polygon points="1275.7,1139.96 1294.348,1097.41 1309.0,1084.46 1323.652,1097.41 1342.3,1139.96" fill="#647887" stroke="#435966"/>
+<text x="1299.0" y="987.76" font-family="Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#435966">180</text>
+<text x="1299.0" y="1075.46" font-family="Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#435966">490</text>
 <rect x="153.12" y="1012.68" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
-<rect x="671.12" y="957.18" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
-<rect x="1318.62" y="997.88" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
+<rect x="671.12" y="947.93" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
+<rect x="1041.12" y="949.78" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
 <rect x="1318.62" y="1057.08" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
-<rect x="153.12" y="1075.58" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
-<rect x="856.12" y="1097.78" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
-<rect x="1318.62" y="953.48" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
 <text x="1510.0" y="1159.96" font-family="Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#526774">X px</text>
 <text x="65" y="1205" font-family="Segoe UI, sans-serif" font-size="23" font-weight="700" fill="#203442">S4  Dos rutas</text>
 <text x="650" y="1205" font-family="Segoe UI, sans-serif" font-size="17" font-weight="400" fill="#526774">X: 9.700–13.400 px  ·  longitud: 3.700 px</text>
@@ -202,51 +201,39 @@
 <text x="1331.0" y="1474.96" font-family="Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#526774">13000</text>
 <line x1="1494.0" y1="1230" x2="1494.0" y2="1454.96" fill="none" stroke="#e8edf1" stroke-width="1"/>
 <text x="1479.0" y="1474.96" font-family="Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#526774">13400</text>
-<rect x="402.5" y="1259.6" width="888.0" height="40.7" fill="#d2eaf0" stroke="#82b8c5"/>
-<line x1="435.8" y1="1279.95" x2="459.85" y2="1279.95" fill="none" stroke="#26849a" stroke-width="1.5"/>
-<polygon points="459.85,1279.95 451.34,1276.62 451.34,1283.28" fill="#26849a" stroke="none"/>
-<line x1="517.2" y1="1279.95" x2="541.25" y2="1279.95" fill="none" stroke="#26849a" stroke-width="1.5"/>
-<polygon points="541.25,1279.95 532.74,1276.62 532.74,1283.28" fill="#26849a" stroke="none"/>
-<line x1="598.6" y1="1279.95" x2="622.65" y2="1279.95" fill="none" stroke="#26849a" stroke-width="1.5"/>
-<polygon points="622.65,1279.95 614.14,1276.62 614.14,1283.28" fill="#26849a" stroke="none"/>
-<line x1="680.0" y1="1279.95" x2="704.05" y2="1279.95" fill="none" stroke="#26849a" stroke-width="1.5"/>
-<polygon points="704.05,1279.95 695.54,1276.62 695.54,1283.28" fill="#26849a" stroke="none"/>
-<line x1="761.4" y1="1279.95" x2="785.45" y2="1279.95" fill="none" stroke="#26849a" stroke-width="1.5"/>
-<polygon points="785.45,1279.95 776.9399999999999,1276.62 776.9399999999999,1283.28" fill="#26849a" stroke="none"/>
-<line x1="842.8" y1="1279.95" x2="866.85" y2="1279.95" fill="none" stroke="#26849a" stroke-width="1.5"/>
-<polygon points="866.85,1279.95 858.34,1276.62 858.34,1283.28" fill="#26849a" stroke="none"/>
-<line x1="924.2" y1="1279.95" x2="948.25" y2="1279.95" fill="none" stroke="#26849a" stroke-width="1.5"/>
-<polygon points="948.25,1279.95 939.74,1276.62 939.74,1283.28" fill="#26849a" stroke="none"/>
-<line x1="1005.6" y1="1279.95" x2="1029.65" y2="1279.95" fill="none" stroke="#26849a" stroke-width="1.5"/>
-<polygon points="1029.65,1279.95 1021.14,1276.62 1021.14,1283.28" fill="#26849a" stroke="none"/>
-<line x1="1087.0" y1="1279.95" x2="1111.05" y2="1279.95" fill="none" stroke="#26849a" stroke-width="1.5"/>
-<polygon points="1111.05,1279.95 1102.54,1276.62 1102.54,1283.28" fill="#26849a" stroke="none"/>
-<line x1="1168.4" y1="1279.95" x2="1192.45" y2="1279.95" fill="none" stroke="#26849a" stroke-width="1.5"/>
-<polygon points="1192.45,1279.95 1183.94,1276.62 1183.94,1283.28" fill="#26849a" stroke="none"/>
-<line x1="1249.8" y1="1279.95" x2="1273.85" y2="1279.95" fill="none" stroke="#26849a" stroke-width="1.5"/>
-<polygon points="1273.85,1279.95 1265.34,1276.62 1265.34,1283.28" fill="#26849a" stroke="none"/>
-<rect x="1364.5" y="1296.785" width="129.5" height="35.15" fill="#d2eaf0" stroke="#82b8c5"/>
-<line x1="1397.8" y1="1314.36" x2="1421.85" y2="1314.36" fill="none" stroke="#26849a" stroke-width="1.5"/>
-<polygon points="1421.85,1314.36 1413.34,1311.03 1413.34,1317.69" fill="#26849a" stroke="none"/>
-<polygon points="495.0,1329.16 527.56,1314.36 1276.44,1314.36 1309.0,1329.16 1276.44,1343.96 527.56,1343.96" fill="#647887" stroke="#435966"/>
-<polygon points="654.1,1230.0 678.9640000000003,1231.11 698.5,1244.06 718.0359999999997,1231.11 742.9,1230.0" fill="#647887" stroke="#435966"/>
-<text x="688.5" y="1262.06" font-family="Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#435966">70</text>
+<rect x="467.25" y="1417.22" width="129.5" height="8.879999999999999" fill="#d2eaf0" stroke="#82b8c5"/>
+<line x1="500.55" y1="1421.66" x2="524.6" y2="1421.66" fill="none" stroke="#26849a" stroke-width="1.5"/>
+<polygon points="524.6,1421.66 516.0899999999999,1418.33 516.0899999999999,1424.99" fill="#26849a" stroke="none"/>
+<rect x="1471.8" y="1309.92" width="22.2" height="8.879999999999999" fill="#d2eaf0" stroke="#82b8c5"/>
+<rect x="800.25" y="1417.22" width="129.5" height="8.879999999999999" fill="#d2eaf0" stroke="#82b8c5"/>
+<line x1="833.55" y1="1421.66" x2="857.6" y2="1421.66" fill="none" stroke="#26849a" stroke-width="1.5"/>
+<polygon points="857.6,1421.66 849.09,1418.33 849.09,1424.99" fill="#26849a" stroke="none"/>
+<rect x="1133.25" y="1417.22" width="129.5" height="8.879999999999999" fill="#d2eaf0" stroke="#82b8c5"/>
+<line x1="1166.55" y1="1421.66" x2="1190.6" y2="1421.66" fill="none" stroke="#26849a" stroke-width="1.5"/>
+<polygon points="1190.6,1421.66 1182.09,1418.33 1182.09,1424.99" fill="#26849a" stroke="none"/>
+<polygon points="495.0,1362.46 527.56,1340.26 1276.44,1340.26 1309.0,1362.46 1276.44,1384.66 527.56,1384.66" fill="#647887" stroke="#435966"/>
+<polygon points="654.1,1230.0 678.9640000000003,1249.61 698.5,1262.56 718.0359999999997,1249.61 742.9,1230.0" fill="#647887" stroke="#435966"/>
+<text x="688.5" y="1280.56" font-family="Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#435966">120</text>
 <polygon points="1020.4,1230.0 1047.3359999999998,1238.51 1068.5,1251.46 1089.6640000000002,1238.51 1116.6,1230.0" fill="#647887" stroke="#435966"/>
 <text x="1058.5" y="1269.46" font-family="Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#435966">90</text>
-<polygon points="835.4,1454.96 862.3359999999997,1445.71 883.5,1432.76 904.6640000000002,1445.71 931.6,1454.96" fill="#647887" stroke="#435966"/>
-<text x="873.5" y="1423.76" font-family="Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#435966">580</text>
+<polygon points="835.4,1454.96 862.3359999999997,1453.11 883.5,1440.16 904.6640000000002,1453.11 931.6,1454.96" fill="#647887" stroke="#435966"/>
+<text x="873.5" y="1431.16" font-family="Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#435966">600</text>
 <polygon points="125.0,1230.0 125.0,1293.6736363636364 143.5,1299.56 184.2,1286.61 236.0,1230.0" fill="#647887" stroke="#435966"/>
 <polygon points="125.0,1454.96 125.0,1386.8463636363635 143.5,1380.96 184.2,1393.91 236.0,1454.96" fill="#647887" stroke="#435966"/>
 <text x="133.5" y="1317.56" font-family="Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#435966">220</text>
 <text x="133.5" y="1371.96" font-family="Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#435966">440</text>
-<rect x="449.12" y="1275.14" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
-<rect x="449.12" y="1390.58" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
-<rect x="1226.12" y="1275.14" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
-<rect x="1226.12" y="1390.58" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
-<rect x="1448.12" y="1320.28" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
-<rect x="449.12" y="1409.08" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
-<rect x="1226.12" y="1409.08" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
-<rect x="1448.12" y="1390.58" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
+<polygon points="350.7,1230.0 369.34799999999984,1242.21 384.0,1255.16 398.65200000000016,1242.21 417.3,1230.0" fill="#647887" stroke="#435966"/>
+<polygon points="350.7,1454.96 369.34799999999984,1453.11 384.0,1440.16 398.65200000000016,1453.11 417.3,1454.96" fill="#647887" stroke="#435966"/>
+<text x="374.0" y="1273.16" font-family="Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#435966">100</text>
+<text x="374.0" y="1431.16" font-family="Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#435966">600</text>
+<polygon points="1386.7,1230.0 1405.348,1242.21 1420.0,1255.16 1434.652,1242.21 1453.3,1230.0" fill="#647887" stroke="#435966"/>
+<polygon points="1386.7,1454.96 1405.348,1423.51 1420.0,1410.56 1434.652,1423.51 1453.3,1454.96" fill="#647887" stroke="#435966"/>
+<text x="1410.0" y="1273.16" font-family="Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#435966">100</text>
+<text x="1410.0" y="1401.56" font-family="Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#435966">520</text>
+<rect x="393.62" y="1272.18" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
+<rect x="560.12" y="1412.78" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
+<rect x="1170.62" y="1275.14" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
+<rect x="1263.12" y="1412.78" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
 <text x="236.0" y="1273.66" font-family="Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#203442">Ruta alta</text>
 <text x="236.0" y="1417.96" font-family="Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#203442">Ruta baja</text>
 <text x="717.0" y="1335.82" font-family="Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#ffffff">DIVISOR</text>
@@ -281,32 +268,23 @@
 <text x="1257.0" y="1789.96" font-family="Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#526774">16500</text>
 <line x1="1383.0" y1="1545" x2="1383.0" y2="1769.96" fill="none" stroke="#e8edf1" stroke-width="1"/>
 <text x="1368.0" y="1789.96" font-family="Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#526774">16800</text>
-<rect x="125.0" y="1611.785" width="129.5" height="35.15" fill="#d2eaf0" stroke="#82b8c5"/>
-<line x1="158.3" y1="1629.36" x2="182.35" y2="1629.36" fill="none" stroke="#26849a" stroke-width="1.5"/>
-<polygon points="182.35,1629.36 173.84,1626.03 173.84,1632.69" fill="#26849a" stroke="none"/>
-<rect x="495.0" y="1586.81" width="148.0" height="22.2" fill="#d2eaf0" stroke="#82b8c5"/>
-<line x1="528.3" y1="1597.91" x2="552.35" y2="1597.91" fill="none" stroke="#26849a" stroke-width="1.5"/>
-<polygon points="552.35,1597.91 543.8399999999999,1594.58 543.8399999999999,1601.24" fill="#26849a" stroke="none"/>
-<line x1="609.7" y1="1597.91" x2="633.75" y2="1597.91" fill="none" stroke="#26849a" stroke-width="1.5"/>
-<polygon points="633.75,1597.91 625.24,1594.58 625.24,1601.24" fill="#26849a" stroke="none"/>
-<rect x="717.0" y="1638.61" width="74.0" height="25.9" fill="#d2eaf0" stroke="#82b8c5"/>
-<line x1="750.3" y1="1651.56" x2="774.35" y2="1651.56" fill="none" stroke="#26849a" stroke-width="1.5"/>
-<polygon points="774.35,1651.56 765.84,1648.23 765.84,1654.89" fill="#26849a" stroke="none"/>
-<rect x="865.0" y="1583.11" width="148.0" height="22.2" fill="#d2eaf0" stroke="#82b8c5"/>
-<line x1="898.3" y1="1594.21" x2="922.35" y2="1594.21" fill="none" stroke="#26849a" stroke-width="1.5"/>
-<polygon points="922.35,1594.21 913.84,1590.88 913.84,1597.54" fill="#26849a" stroke="none"/>
-<line x1="979.7" y1="1594.21" x2="1003.75" y2="1594.21" fill="none" stroke="#26849a" stroke-width="1.5"/>
-<polygon points="1003.75,1594.21 995.24,1590.88 995.24,1597.54" fill="#26849a" stroke="none"/>
-<polygon points="687.4,1545.0 724.6959999999997,1601.61 754.0,1614.56 783.3040000000003,1601.61 820.6,1545.0" fill="#647887" stroke="#435966"/>
-<text x="744.0" y="1632.56" font-family="Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#435966">220</text>
-<polygon points="421.0,1699.66 495.0,1662.66 569.0,1629.36 635.5999999999999,1649.71 698.5,1694.11 809.5,1694.11 872.4,1644.16 939.0,1625.66 1013.0,1664.51 1087.0,1699.66 1020.4,1699.66 487.6,1699.66" fill="#647887" stroke="#435966"/>
+<rect x="125.0" y="1624.92" width="22.2" height="8.879999999999999" fill="#d2eaf0" stroke="#82b8c5"/>
+<rect x="546.8" y="1582.37" width="44.4" height="8.879999999999999" fill="#d2eaf0" stroke="#82b8c5"/>
+<rect x="731.8" y="1650.82" width="44.4" height="8.879999999999999" fill="#d2eaf0" stroke="#82b8c5"/>
+<rect x="916.8" y="1584.22" width="44.4" height="8.879999999999999" fill="#d2eaf0" stroke="#82b8c5"/>
+<polygon points="687.4,1545.0 724.6959999999997,1609.01 754.0,1621.96 783.3040000000003,1609.01 820.6,1545.0" fill="#647887" stroke="#435966"/>
+<text x="744.0" y="1639.96" font-family="Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#435966">240</text>
+<polygon points="421.0,1688.56 495.0,1651.56 569.0,1607.16 628.2,1627.51 698.5,1681.16 809.5,1681.16 879.8,1633.06 939.0,1610.86 1013.0,1651.56 1087.0,1688.56 1020.4,1688.56 487.6,1688.56" fill="#647887" stroke="#435966"/>
 <polygon points="1179.5,1769.96 1210.58,1708.91 1235.0,1695.96 1259.42,1708.91 1290.5,1769.96" fill="#647887" stroke="#435966"/>
 <text x="1225.0" y="1686.96" font-family="Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#435966">440</text>
-<rect x="560.12" y="1589.03" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
-<rect x="745.12" y="1727.78" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
-<rect x="1318.62" y="1638.98" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
-<rect x="1318.62" y="1696.33" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
-<rect x="1318.62" y="1585.33" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
+<polygon points="1183.2,1545.0 1201.848,1583.11 1216.5,1596.06 1231.1519999999994,1583.11 1249.8,1545.0" fill="#647887" stroke="#435966"/>
+<polygon points="1183.2,1769.96 1201.848,1723.71 1216.5,1710.76 1231.1519999999994,1723.71 1249.8,1769.96" fill="#647887" stroke="#435966"/>
+<text x="1206.5" y="1614.06" font-family="Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#435966">170</text>
+<text x="1206.5" y="1701.76" font-family="Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#435966">480</text>
+<rect x="338.12" y="1635.28" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
+<rect x="560.12" y="1577.93" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
+<rect x="930.12" y="1579.78" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
+<rect x="1281.62" y="1642.68" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
 <rect x="186.05" y="1628.99" width="25.9" height="63.64" fill="none" stroke="#9971bb" stroke-dasharray="5 4"/>
 <line x1="199.0" y1="1642.31" x2="199.0" y2="1675.61" fill="none" stroke="#694687" stroke-width="2"/>
 <ellipse cx="199.0" cy="1660.8100000000002" rx="12.95" ry="15.17" fill="#9971bb" stroke="#694687"/>
@@ -342,10 +320,14 @@
 <text x="337.0" y="2013.06" font-family="Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#435966">470</text>
 <polygon points="421.0,2084.96 441.71999999999997,2042.41 458.0,2029.46 474.28,2042.41 495.0,2084.96" fill="#647887" stroke="#435966"/>
 <text x="448.0" y="2020.46" font-family="Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#435966">490</text>
+<polygon points="369.2,1860.0 387.8480000000005,1879.61 402.5,1892.56 417.1519999999995,1879.61 435.8,1860.0" fill="#647887" stroke="#435966"/>
+<polygon points="369.2,2084.96 387.8480000000005,2042.41 402.5,2029.46 417.1519999999995,2042.41 435.8,2084.96" fill="#647887" stroke="#435966"/>
+<text x="392.5" y="1910.56" font-family="Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#435966">120</text>
+<text x="392.5" y="2020.46" font-family="Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#435966">490</text>
 <rect x="116.12" y="1965.08" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
 <rect x="264.12" y="1905.88" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
-<rect x="264.12" y="2009.48" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
-<rect x="116.12" y="2031.68" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
+<rect x="412.12" y="1957.68" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
+<rect x="597.12" y="1924.38" width="17.759999999999998" height="17.759999999999998" fill="#edb253" stroke="#aa7424"/>
 <rect x="537.55" y="1971.74" width="25.9" height="52.54" fill="none" stroke="#9971bb" stroke-dasharray="5 4"/>
 <line x1="550.5" y1="1985.06" x2="550.5" y2="2007.26" fill="none" stroke="#694687" stroke-width="2"/>
 <ellipse cx="550.5" cy="1998.01" rx="12.95" ry="15.17" fill="#9971bb" stroke="#694687"/>
@@ -357,5 +339,5 @@
 <text x="733.0" y="2104.96" font-family="Segoe UI, sans-serif" font-size="13" font-weight="400" fill="#526774">X px</text>
 <text x="65" y="2155" font-family="Segoe UI, sans-serif" font-size="16" font-weight="400" fill="#203442">Escala uniforme en los seis sectores: X e Y conservan la misma proporción. Límites de vuelo: Y = 32–640 px.</text>
 <text x="65" y="2181" font-family="Segoe UI, sans-serif" font-size="15" font-weight="400" fill="#526774">Los números junto a las puntas indican Y. Flappy se simboliza en su centro de oscilación; el recuadro delimita su barrido físico.</text>
-<text x="65" y="2206" font-family="Segoe UI, sans-serif" font-size="14" font-weight="400" fill="#526774">Fuente: Track01.tscn, obstacle.gd y FlyingCreatureObstacle.tscn · estado local del 23 de octubre de 2026. Sin decoración.</text>
+<text x="65" y="2206" font-family="Segoe UI, sans-serif" font-size="14" font-weight="400" fill="#526774">Fuente: Track01.tscn, obstacle.gd y FlyingCreatureObstacle.tscn · estado local del 25 de octubre de 2026. Sin decoración.</text>
 </svg>

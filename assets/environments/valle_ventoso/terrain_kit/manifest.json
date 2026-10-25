@@ -1,0 +1,372 @@
+[
+  {
+    "file": "terrain_lower/lower_left_ramp.png",
+    "size": [
+      87,
+      64
+    ],
+    "purpose": "terrain_lower",
+    "alpha": true,
+    "origin": "cropped from approved-style concept atlas; masks require visual QA"
+  },
+  {
+    "file": "terrain_lower/lower_flat_a.png",
+    "size": [
+      116,
+      67
+    ],
+    "purpose": "terrain_lower",
+    "alpha": true,
+    "origin": "cropped from approved-style concept atlas; masks require visual QA"
+  },
+  {
+    "file": "terrain_lower/lower_flat_b.png",
+    "size": [
+      122,
+      65
+    ],
+    "purpose": "terrain_lower",
+    "alpha": true,
+    "origin": "cropped from approved-style concept atlas; masks require visual QA"
+  },
+  {
+    "file": "terrain_lower/lower_slope_gentle.png",
+    "size": [
+      104,
+      66
+    ],
+    "purpose": "terrain_lower",
+    "alpha": true,
+    "origin": "cropped from approved-style concept atlas; masks require visual QA"
+  },
+  {
+    "file": "terrain_lower/lower_slope_steep.png",
+    "size": [
+      120,
+      71
+    ],
+    "purpose": "terrain_lower",
+    "alpha": true,
+    "origin": "cropped from approved-style concept atlas; masks require visual QA"
+  },
+  {
+    "file": "terrain_lower/lower_right_edge.png",
+    "size": [
+      94,
+      71
+    ],
+    "purpose": "terrain_lower",
+    "alpha": true,
+    "origin": "cropped from approved-style concept atlas; masks require visual QA"
+  },
+  {
+    "file": "terrain_lower/lower_peak_small.png",
+    "size": [
+      96,
+      90
+    ],
+    "purpose": "terrain_lower",
+    "alpha": true,
+    "origin": "cropped from approved-style concept atlas; masks require visual QA"
+  },
+  {
+    "file": "terrain_lower/lower_rock_waterfall.png",
+    "size": [
+      77,
+      110
+    ],
+    "purpose": "terrain_lower",
+    "alpha": true,
+    "origin": "cropped from approved-style concept atlas; masks require visual QA"
+  },
+  {
+    "file": "terrain_upper/upper_left_edge.png",
+    "size": [
+      95,
+      81
+    ],
+    "purpose": "terrain_upper",
+    "alpha": true,
+    "origin": "cropped from approved-style concept atlas; masks require visual QA"
+  },
+  {
+    "file": "terrain_upper/upper_flat_a.png",
+    "size": [
+      111,
+      81
+    ],
+    "purpose": "terrain_upper",
+    "alpha": true,
+    "origin": "cropped from approved-style concept atlas; masks require visual QA"
+  },
+  {
+    "file": "terrain_upper/upper_flat_b.png",
+    "size": [
+      108,
+      82
+    ],
+    "purpose": "terrain_upper",
+    "alpha": true,
+    "origin": "cropped from approved-style concept atlas; masks require visual QA"
+  },
+  {
+    "file": "terrain_upper/upper_point_short.png",
+    "size": [
+      113,
+      83
+    ],
+    "purpose": "terrain_upper",
+    "alpha": true,
+    "origin": "cropped from approved-style concept atlas; masks require visual QA"
+  },
+  {
+    "file": "terrain_upper/upper_point_deep.png",
+    "size": [
+      120,
+      89
+    ],
+    "purpose": "terrain_upper",
+    "alpha": true,
+    "origin": "cropped from approved-style concept atlas; masks require visual QA"
+  },
+  {
+    "file": "terrain_upper/upper_right_edge.png",
+    "size": [
+      100,
+      84
+    ],
+    "purpose": "terrain_upper",
+    "alpha": true,
+    "origin": "cropped from approved-style concept atlas; masks require visual QA"
+  },
+  {
+    "file": "terrain_upper/upper_island_a.png",
+    "size": [
+      113,
+      104
+    ],
+    "purpose": "terrain_upper",
+    "alpha": true,
+    "origin": "cropped from approved-style concept atlas; masks require visual QA"
+  },
+  {
+    "file": "terrain_upper/upper_waterfall.png",
+    "size": [
+      119,
+      114
+    ],
+    "purpose": "terrain_upper",
+    "alpha": true,
+    "origin": "cropped from approved-style concept atlas; masks require visual QA"
+  },
+  {
+    "file": "terrain_upper/upper_stalactites.png",
+    "size": [
+      170,
+      106
+    ],
+    "purpose": "terrain_upper",
+    "alpha": true,
+    "origin": "cropped from approved-style concept atlas; masks require visual QA"
+  },
+  {
+    "file": "islands/island_small.png",
+    "size": [
+      87,
+      39
+    ],
+    "purpose": "islands",
+    "alpha": true,
+    "origin": "cropped from approved-style concept atlas; masks require visual QA"
+  },
+  {
+    "file": "islands/island_waterfall.png",
+    "size": [
+      134,
+      75
+    ],
+    "purpose": "islands",
+    "alpha": true,
+    "origin": "cropped from approved-style concept atlas; masks require visual QA"
+  },
+  {
+    "file": "islands/island_large.png",
+    "size": [
+      141,
+      64
+    ],
+    "purpose": "islands",
+    "alpha": true,
+    "origin": "cropped from approved-style concept atlas; masks require visual QA"
+  },
+  {
+    "file": "islands/island_waterfall_large.png",
+    "size": [
+      178,
+      86
+    ],
+    "purpose": "islands",
+    "alpha": true,
+    "origin": "cropped from approved-style concept atlas; masks require visual QA"
+  },
+  {
+    "file": "islands/island_windmill.png",
+    "size": [
+      127,
+      127
+    ],
+    "purpose": "islands",
+    "alpha": true,
+    "origin": "cropped from approved-style concept atlas; masks require visual QA"
+  },
+  {
+    "file": "islands/island_ruins.png",
+    "size": [
+      147,
+      127
+    ],
+    "purpose": "islands",
+    "alpha": true,
+    "origin": "cropped from approved-style concept atlas; masks require visual QA"
+  },
+  {
+    "file": "props/windmill.png",
+    "size": [
+      110,
+      108
+    ],
+    "purpose": "props",
+    "alpha": true,
+    "origin": "cropped from approved-style concept atlas; masks require visual QA"
+  },
+  {
+    "file": "props/wooden_bridge.png",
+    "size": [
+      136,
+      78
+    ],
+    "purpose": "props",
+    "alpha": true,
+    "origin": "cropped from approved-style concept atlas; masks require visual QA"
+  },
+  {
+    "file": "props/house.png",
+    "size": [
+      90,
+      99
+    ],
+    "purpose": "props",
+    "alpha": true,
+    "origin": "cropped from approved-style concept atlas; masks require visual QA"
+  },
+  {
+    "file": "props/tree_round.png",
+    "size": [
+      109,
+      111
+    ],
+    "purpose": "props",
+    "alpha": true,
+    "origin": "cropped from approved-style concept atlas; masks require visual QA"
+  },
+  {
+    "file": "props/tree_pine.png",
+    "size": [
+      101,
+      112
+    ],
+    "purpose": "props",
+    "alpha": true,
+    "origin": "cropped from approved-style concept atlas; masks require visual QA"
+  },
+  {
+    "file": "props/ruins.png",
+    "size": [
+      134,
+      110
+    ],
+    "purpose": "props",
+    "alpha": true,
+    "origin": "cropped from approved-style concept atlas; masks require visual QA"
+  },
+  {
+    "file": "water/waterfall_straight.png",
+    "size": [
+      95,
+      89
+    ],
+    "purpose": "water",
+    "alpha": true,
+    "origin": "cropped from approved-style concept atlas; masks require visual QA"
+  },
+  {
+    "file": "water/waterfall_curved.png",
+    "size": [
+      93,
+      101
+    ],
+    "purpose": "water",
+    "alpha": true,
+    "origin": "cropped from approved-style concept atlas; masks require visual QA"
+  },
+  {
+    "file": "water/waterfall_double.png",
+    "size": [
+      125,
+      86
+    ],
+    "purpose": "water",
+    "alpha": true,
+    "origin": "cropped from approved-style concept atlas; masks require visual QA"
+  },
+  {
+    "file": "props/bunting.png",
+    "size": [
+      137,
+      77
+    ],
+    "purpose": "props",
+    "alpha": true,
+    "origin": "cropped from approved-style concept atlas; masks require visual QA"
+  },
+  {
+    "file": "props/fence.png",
+    "size": [
+      140,
+      69
+    ],
+    "purpose": "props",
+    "alpha": true,
+    "origin": "cropped from approved-style concept atlas; masks require visual QA"
+  },
+  {
+    "file": "props/signs.png",
+    "size": [
+      118,
+      74
+    ],
+    "purpose": "props",
+    "alpha": true,
+    "origin": "cropped from approved-style concept atlas; masks require visual QA"
+  },
+  {
+    "file": "props/directional_signs.png",
+    "size": [
+      97,
+      71
+    ],
+    "purpose": "props",
+    "alpha": true,
+    "origin": "cropped from approved-style concept atlas; masks require visual QA"
+  },
+  {
+    "file": "water/waterfall_background.png",
+    "size": [
+      61,
+      87
+    ],
+    "purpose": "water",
+    "alpha": true,
+    "origin": "cropped from approved-style concept atlas; masks require visual QA"
+  }
+]

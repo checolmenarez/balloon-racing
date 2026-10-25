@@ -3,6 +3,9 @@ extends Resource
 
 enum Route { LOWER, UPPER }
 
+## Scales anticipation and inverse reaction/error tolerances, never flight speed.
+@export_range(0.5, 2.0, 0.01) var skill_multiplier: float = 1.85
+
 @export var profile_name: String = "Equilibrado"
 @export_range(100.0, 1000.0, 10.0) var look_ahead: float = 600.0
 @export_range(0.02, 1.0, 0.01) var reaction_time: float = 0.18

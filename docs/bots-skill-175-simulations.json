@@ -1,0 +1,261 @@
+{
+	"baseline": "Human holds no keys; compare bots only",
+	"fastest_bot": {
+		"Greta Tuerca": 1,
+		"Lord Pomposo IV": 3,
+		"Timo Chispa": 2
+	},
+	"races": [
+		{
+			"results": [
+				{
+					"collected": 5,
+					"collisions": 5,
+					"items": 4,
+					"name": "Greta Tuerca",
+					"place": 1,
+					"route": "upper",
+					"time": 82.0482570376183
+				},
+				{
+					"collected": 4,
+					"collisions": 8,
+					"items": 3,
+					"name": "Timo Chispa",
+					"place": 2,
+					"route": "lower",
+					"time": 82.6558781743883
+				},
+				{
+					"collected": 1,
+					"collisions": 4,
+					"items": 1,
+					"name": "Lord Pomposo IV",
+					"place": 3,
+					"route": "upper",
+					"time": 82.9624578227634
+				},
+				{
+					"collected": 1,
+					"collisions": 15,
+					"items": 0,
+					"name": "Calaca Bonifacia",
+					"place": 4,
+					"route": "passive human",
+					"time": 86.3793642337027
+				}
+			],
+			"seed": 1
+		},
+		{
+			"results": [
+				{
+					"collected": 7,
+					"collisions": 4,
+					"items": 7,
+					"name": "Lord Pomposo IV",
+					"place": 1,
+					"route": "upper",
+					"time": 82.8623717442744
+				},
+				{
+					"collected": 3,
+					"collisions": 6,
+					"items": 2,
+					"name": "Timo Chispa",
+					"place": 2,
+					"route": "upper",
+					"time": 83.2926744805506
+				},
+				{
+					"collected": 1,
+					"collisions": 7,
+					"items": 0,
+					"name": "Greta Tuerca",
+					"place": 3,
+					"route": "lower",
+					"time": 84.1245604688298
+				},
+				{
+					"collected": 1,
+					"collisions": 15,
+					"items": 0,
+					"name": "Calaca Bonifacia",
+					"place": 4,
+					"route": "passive human",
+					"time": 86.7632214526691
+				}
+			],
+			"seed": 2
+		},
+		{
+			"results": [
+				{
+					"collected": 3,
+					"collisions": 4,
+					"items": 2,
+					"name": "Lord Pomposo IV",
+					"place": 1,
+					"route": "lower",
+					"time": 80.986325697031
+				},
+				{
+					"collected": 7,
+					"collisions": 4,
+					"items": 6,
+					"name": "Timo Chispa",
+					"place": 2,
+					"route": "upper",
+					"time": 82.7048868718724
+				},
+				{
+					"collected": 2,
+					"collisions": 3,
+					"items": 2,
+					"name": "Greta Tuerca",
+					"place": 3,
+					"route": "upper",
+					"time": 83.1924702539479
+				},
+				{
+					"collected": 1,
+					"collisions": 15,
+					"items": 0,
+					"name": "Calaca Bonifacia",
+					"place": 4,
+					"route": "passive human",
+					"time": 86.7632214526691
+				}
+			],
+			"seed": 3
+		},
+		{
+			"results": [
+				{
+					"collected": 6,
+					"collisions": 6,
+					"items": 5,
+					"name": "Timo Chispa",
+					"place": 1,
+					"route": "lower",
+					"time": 81.9407032498634
+				},
+				{
+					"collected": 2,
+					"collisions": 4,
+					"items": 2,
+					"name": "Greta Tuerca",
+					"place": 2,
+					"route": "lower",
+					"time": 82.6936956135643
+				},
+				{
+					"collected": 4,
+					"collisions": 4,
+					"items": 3,
+					"name": "Lord Pomposo IV",
+					"place": 3,
+					"route": "lower",
+					"time": 83.2794175102079
+				},
+				{
+					"collected": 1,
+					"collisions": 15,
+					"items": 0,
+					"name": "Calaca Bonifacia",
+					"place": 4,
+					"route": "passive human",
+					"time": 86.3793642337027
+				}
+			],
+			"seed": 4
+		},
+		{
+			"results": [
+				{
+					"collected": 3,
+					"collisions": 4,
+					"items": 2,
+					"name": "Lord Pomposo IV",
+					"place": 1,
+					"route": "lower",
+					"time": 82.12898241875
+				},
+				{
+					"collected": 2,
+					"collisions": 3,
+					"items": 1,
+					"name": "Greta Tuerca",
+					"place": 2,
+					"route": "lower",
+					"time": 82.3067572367219
+				},
+				{
+					"collected": 6,
+					"collisions": 5,
+					"items": 5,
+					"name": "Timo Chispa",
+					"place": 3,
+					"route": "upper",
+					"time": 82.8737613212539
+				},
+				{
+					"collected": 1,
+					"collisions": 15,
+					"items": 0,
+					"name": "Calaca Bonifacia",
+					"place": 4,
+					"route": "passive human",
+					"time": 86.3793642337027
+				}
+			],
+			"seed": 5
+		},
+		{
+			"results": [
+				{
+					"collected": 2,
+					"collisions": 4,
+					"items": 1,
+					"name": "Timo Chispa",
+					"place": 1,
+					"route": "lower",
+					"time": 81.6438021665745
+				},
+				{
+					"collected": 4,
+					"collisions": 5,
+					"items": 3,
+					"name": "Lord Pomposo IV",
+					"place": 2,
+					"route": "upper",
+					"time": 82.5381015805329
+				},
+				{
+					"collected": 2,
+					"collisions": 5,
+					"items": 1,
+					"name": "Greta Tuerca",
+					"place": 3,
+					"route": "upper",
+					"time": 83.3028058959298
+				},
+				{
+					"collected": 1,
+					"collisions": 15,
+					"items": 0,
+					"name": "Calaca Bonifacia",
+					"place": 4,
+					"route": "passive human",
+					"time": 86.3793642337027
+				}
+			],
+			"seed": 6
+		}
+	],
+	"wins": {
+		"Greta Tuerca": 1,
+		"Lord Pomposo IV": 3,
+		"Timo Chispa": 2
+	}
+}

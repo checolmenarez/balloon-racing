@@ -22,7 +22,7 @@ rocks=[n for n in nodes if n.get('parent')=='Obstacles']
 boxes=[n for n in nodes if n.get('parent')=='ItemBoxes']
 winds=[n for n in nodes if n.get('parent')=='WindZones']
 birds=[n for n in nodes if n.get('parent')=='FlyingObstacles']
-assert (len(zones),len(rocks),len(boxes),len(winds),len(birds))==(6,22,32,8,3)
+assert (len(zones),len(rocks),len(boxes),len(winds),len(birds))==(6,29,24,10,3)
 ops=[]
 def rect(x,y,w,h,fill,stroke='',dash=False):ops.append(dict(t='rect',x=x,y=y,w=w,h=h,fill=fill,stroke=stroke,dash=dash))
 def line(x,y,x2,y2,color,width=1,dash=False):ops.append(dict(t='line',x=x,y=y,x2=x2,y2=y2,stroke=color,width=width,dash=dash))
@@ -121,7 +121,7 @@ for i,z in enumerate(zones):
     text(X+cw+16,y0+ch+20,'X px',13,'#526774')
 text(65,2155,'Escala uniforme en los seis sectores: X e Y conservan la misma proporción. Límites de vuelo: Y = 32–640 px.',16)
 text(65,2181,'Los números junto a las puntas indican Y. Flappy se simboliza en su centro de oscilación; el recuadro delimita su barrido físico.',15,'#526774')
-text(65,2206,'Fuente: Track01.tscn, obstacle.gd y FlyingCreatureObstacle.tscn · estado local del 23 de octubre de 2026. Sin decoración.',14,'#526774')
+text(65,2206,'Fuente: Track01.tscn, obstacle.gd y FlyingCreatureObstacle.tscn · estado local del 25 de octubre de 2026. Sin decoración.',14,'#526774')
 (root/'.godot/map_geometry_ops.json').write_text(json.dumps(dict(width=W,height=H,ops=ops),ensure_ascii=False),encoding='utf-8')
 svg=[f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">', '<title>Valle Ventoso — mapa geométrico por sectores</title>']
 for o in ops:

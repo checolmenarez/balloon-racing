@@ -58,10 +58,11 @@ func _physics_process(delta: float) -> void:
 		var obstacle := collision.get_collider() as PhysicsBody2D
 		if not (obstacle is FlightObstacle or obstacle is FlyingCreatureObstacle) or obstacle in _ignored_obstacles:
 			continue
-		# A struck formation stays passable until we have completely cleared it.
-		# A timer alone could re-enable solidity while still inside a wide rock.
-		add_collision_exception_with(obstacle)
-		_ignored_obstacles.append(obstacle)
+		# Vertical formations allow forward recovery; floating islands stay solid
+		# on every face, including while impact protection is active.
+		if not (obstacle is FlightObstacle and obstacle.kind == FlightObstacle.Kind.ISLAND):
+			add_collision_exception_with(obstacle)
+			_ignored_obstacles.append(obstacle)
 		if obstacle is FlyingCreatureObstacle:
 			obstacle.react_to_impact()
 		if protection_time_left <= 0.0:

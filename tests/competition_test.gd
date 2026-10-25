@@ -51,6 +51,9 @@ func _run() -> void:
 			if main.race_flow.state == RaceFlow.State.RESULTS:
 				break
 		check(main.race_flow.state == RaceFlow.State.RESULTS, "Race reaches results")
+		for racer in main.competitors:
+			if racer.controller is BotController and racer.position.x < main.track.finish.position.x:
+				print("UNFINISHED ", racer.competitor_name, " at ", racer.position, " target=", racer.controller.target_height)
 		check(main.race_flow.records.size() == 4, "All competitors finish before timeout")
 		var rows: Array[Dictionary] = []
 		var fastest_bot: String = ""

@@ -132,11 +132,11 @@ msgid "Sin objetivo"
 msgstr ""
 
 #: M7.2 race and training
-msgid "[A] %s · %s"
+msgid "[Z] %s · %s"
 msgstr ""
 
 #: M7.2 race and training
-msgid "[D] Turbo: %d"
+msgid "[SPACE] Turbo: %d"
 msgstr ""
 
 #: M7.2 race and training
@@ -168,7 +168,7 @@ msgid "Tormenta"
 msgstr ""
 
 #: M7.2 race and training
-msgid "↑ Subir · A Objeto · D Turbo · SPACE Pausa"
+msgid "↑ Subir · Z Objeto · SPACE Turbo · ESC Pausa"
 msgstr ""
 
 #: M7.2 race and training
@@ -196,7 +196,7 @@ msgid "Reiniciar carrera"
 msgstr ""
 
 #: M7.2 race and training
-msgid "SPACE: continuar"
+msgid "ESC: continuar"
 msgstr ""
 
 #: M7.2 race and training
@@ -224,7 +224,7 @@ msgid "Correr"
 msgstr ""
 
 #: M7.2 race and training
-msgid "ACADEMIA DE VUELO · %d/4 · SPACE: pausa"
+msgid "ACADEMIA DE VUELO · %d/4 · ESC: pausa"
 msgstr ""
 
 #: M7.2 race and training
@@ -252,7 +252,7 @@ msgid "Recoge la caja para conseguir un objeto"
 msgstr ""
 
 #: M7.2 race and training
-msgid "Pulsa A para utilizar tu misil"
+msgid "Pulsa Z para utilizar tu misil"
 msgstr ""
 
 #: M7.2 race and training
@@ -264,7 +264,7 @@ msgid "El misil va hacia delante; puedes repetir la etapa"
 msgstr ""
 
 #: M7.2 race and training
-msgid "Pulsa D para activar tu turbo"
+msgid "Pulsa SPACE para activar tu turbo"
 msgstr ""
 
 #: M7.2 race and training

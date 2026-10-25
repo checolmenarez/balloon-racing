@@ -1,5 +1,7 @@
 # Valle Ventoso 2.0 — coordenadas reales
 
+> Balance vigente (2026-10-25): [cajas, bots, corrientes y colisiones](valle-ventoso-2.md#pasos-estrechos-y-corriente-inferior--2026-10-25). Las mediciones previas se conservan como historial.
+
 Generado desde `scenes/Track01.tscn`. Posiciones en px del mundo; Y crece hacia abajo. Se listan nodos nuevos/modificados y los tres Flappy. Las rocas están ancladas en Y=0: sus superficies se indican por separado. Las cajas restantes conservan sus posiciones.
 
 | Nodo | Estado | X, Y | Geometría / parámetros |

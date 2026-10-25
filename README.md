@@ -16,15 +16,23 @@ Godot 4.7.2 Standard y GDScript. Prototipo local: un humano y tres bots.
 
 ### Valle Ventoso 2.0 — blockout experimental
 
+Ajuste del 2026-10-25: 24 cajas, habilidad de bots ×1,85, siete puertas
+superiores/inferiores adicionales, corrientes técnicas de 120×24 px y S4
+dividida en tres impulsos. Las islas horizontales permanecen sólidas al chocar.
+S3/S5 tienen pasos superiores de 160–178 px y alternativas inferiores de 220 px.
+En S4 la corriente recorre la rama inferior estrecha; la superior es más amplia.
+Configuración y pruebas: [balance vigente](docs/valle-ventoso-2.md#pasos-estrechos-y-corriente-inferior--2026-10-25).
+
 Pase visual de Valle Ventoso: roca ilustrada y agua tomadas de la lámina
 `pista1_elements.png` proporcionada por el usuario, vegetación colgante, molinos
 y puentes del kit existente. Los detalles se recortan contra las caras reales
 de los obstáculos, sin nuevos colliders. Se retiran las capas de islas medias
 y primer plano: quedan cuatro capas de parallax, con menor opacidad y nubes
 cercanas por debajo del área de vuelo. Ajuste: `background_opacity` en
-`scripts/world_visual.gd`. No se mueve ni modifica la geometría de Track01.
+`scripts/world_visual.gd`. Ese pase artístico conservó la geometría; el ajuste
+jugable del 2026-10-25 modifica Track01 según lo indicado arriba.
 
-Seis sectores rediseñados, conservando límites, meta, física, turbo y 32 cajas.
+Seis sectores rediseñados, conservando límites, meta, física y turbo; ahora con 24 cajas.
 S2 incorpora una isla con paso superior/inferior; S3 y S5 combinan islas
 irregulares, techo y tres tramos de corriente a 1,20 que requieren dos cambios
 de altura. S4 conserva la única bifurcación y añade un embudo de entrada.
@@ -84,7 +92,7 @@ Referencia consultada: [AnimatableBody2D](https://docs.godotengine.org/en/stable
 `music_home_v2.mp3` acompaña menú, cuenta atrás y podio.
 Al dar GO se elige `music_race_01.mp3` o `music_race_02.mp3`; se mantiene durante
 toda la carrera y se reproduce en bucle. Los WAV anteriores se conservan.
-Los cambios usan un fundido de 0,25 s por lado. SPACE pausa ambos.
+Los cambios usan un fundido de 0,25 s por lado. ESC pausa ambos.
 
 Efectos originales: colisión, turbo y explosión de bomba/misil. Se emiten
 al producirse el evento aceptado; un turbo rechazado o un impacto protegido
@@ -123,9 +131,9 @@ en el puesto del jugador. Otra carrera conserva la selección; Menú principal
 o Escape vuelven al Home. Detalles y pruebas: `docs/menus.md`.
 
 - Flecha arriba (UP): mantener para ascender; soltar para descender con inercia.
-- D: turbo personal. Todos comienzan con **2 cargas**, independientes del inventario.
-- A: usar el objeto equipado. Sólo se almacena uno.
-- SPACE: pausar/reanudar, también durante la cuenta atrás. No pausa en resultados.
+- SPACE: turbo personal. Todos comienzan con **2 cargas**, independientes del inventario.
+- Z: usar el objeto equipado. Sólo se almacena uno.
+- ESC: pausar/reanudar, también durante la cuenta atrás. No pausa en resultados.
   El panel PAUSA permite Continuar, Reiniciar carrera o Volver al menú principal; Enter activa el botón enfocado.
   La pausa congela cuerpos, IA, proyectiles, efectos, cajas y reloj de carrera.
 - F2: progreso, posición, velocidad, cargas, objetos usados, tormentas y viento.
@@ -158,7 +166,7 @@ corredores llegando): catorce suites en total para esta intervención.
 Capturas revisadas con ANGLE; persisten avisos de certificados/ObjectDB del
 entorno. La intensidad y naturalidad requieren revisión humana en movimiento.
 
-Las **32 cajas** se distribuyen en distintas alturas y ambas rutas. Mantienen
+Las **24 cajas** se distribuyen con cuatro por sector y dos por rama en S4. Mantienen
 su sensor de 48×48 px. Una caja reaparece tras **8 s**; quien la recogió debe
 salir del sensor antes de poder recogerla otra vez. Un inventario lleno no
 consume la caja. No hay generación continua de cajas nuevas.
@@ -178,9 +186,10 @@ humanos como bots. No se garantizan objetos concretos por caja.
 
 ## Pista y velocidad
 
-Valle Ventoso conserva 18.160 px, seis zonas y 17 formaciones. Hay cuatro
-corrientes ×1,20: recuperación de S3, rama superior, reunión de rutas y corredor técnico.
-Flechas azules indican sus áreas. La rama baja ofrece una alternativa más segura.
+Valle Ventoso conserva 18.160 px y seis zonas; tiene 29 formaciones y diez
+ventanas de corriente ×1,20: tres en S3, tres en la rama inferior, una en
+la reunión de rutas y tres en el corredor técnico de S5.
+Flechas azules indican sus áreas. En S4 la rama alta ofrece la alternativa amplia.
 
 La intervención experimental 01 añade viento opcional tras FirstCorridor,
 amplía la preparación de entrada a S4 y adelanta obstáculos/cajas de S6 para
@@ -209,7 +218,9 @@ hasta 8 s al resto; los DNF no reciben tiempos inventados. Hay podio y reinicio.
   probabilidades, reaparición de cajas y tope de ayudas de velocidad.
 - resources/default_turbo.tres: cargas iniciales por tipo, espera e intervalos.
 - resources/bot_*.tres: anticipación 430/510/580 px; reacción 0,31/0,27/0,24 s;
-  tolerancia 18/14/12 px; error espacial suave 43/36/32 px. Variación de
+  tolerancia base 18/14/12 px; error espacial base 43/36/32 px.
+  `BotProfile.skill_multiplier` vale 1,85 (+85 % sobre la base original): multiplica anticipación y divide
+  reacción, tolerancia y error. Variación de
   anticipación ±55 px. Probabilidad de rama alta 0,40/0,45/0,55.
 - Track01/WindZones: posición, tamaño y multiplicador de cada corriente.
 - Main/RaceFlow: cuenta atrás y timeout. Main/race_seed positivo: reproducción
@@ -242,7 +253,7 @@ items_test y visibility_test. Las capturas y simulaciones se guardan en
 La actualización de entrada y pausa se verifica en docs/controls-pause.md.
 
 La transitabilidad automatizada no valida comodidad, balance ni diversión.
-Probar manualmente D y A simultáneos con flecha arriba, las dos ramas, cajas
+Probar manualmente SPACE y Z simultáneos con flecha arriba, las dos ramas, cajas
 reaparecidas, Tormenta y adelantamientos. Revisar podio y Otra carrera.
 
 ## Proyecto
@@ -301,7 +312,7 @@ archivos, limitaciones y revisión humana pendiente. Ejecutar además:
 
 La carrera usa los marcos de `assets/ui/hud/`: objeto y cargas a la izquierda,
 reloj y tramo arriba al centro, puesto y cuatro filas ordenadas a la derecha,
-y avance abajo al centro. Pausa se abre con SPACE o el botón inferior izquierdo.
+y avance abajo al centro. Pausa se abre con ESC o el botón inferior izquierdo.
 F2 conserva debug y ayuda; el entrenamiento mantiene su presentación.
 
 Los datos siguen viniendo de RaceFlow, RaceStandings, BalloonTrack y
@@ -427,11 +438,15 @@ entorno y de recursos/ObjectDB al cerrar algunas suites. La primera ejecución
 restringida tampoco podía escribir el perfil de Godot; las comprobaciones
 posteriores usan APPDATA aislado bajo `.godot/game-feel-profile`.
 
-Probar: F5 → ¡CORRER!, mantener/soltar ↑, D tras cinco segundos, chocar,
-entrar/salir de una corriente y pausar con SPACE. Comparar con la opción de
+Probar: F5 → ¡CORRER!, mantener/soltar ↑, SPACE tras cinco segundos, chocar,
+entrar/salir de una corriente y pausar con ESC. Comparar con la opción de
 movimiento reducido. Ejecutar `tests/game_feel_test.gd` como las suites de
 arriba; sin `--headless` guarda capturas de turbo, impacto y Opciones.
 La aceptación del Game Feel corresponde al Game Owner mediante juego humano.
 
 Referencias consultadas: [interpolación independiente de FPS](https://docs.godotengine.org/en/stable/tutorials/math/interpolation.html)
 y [dibujo 2D](https://docs.godotengine.org/en/stable/tutorials/2d/custom_drawing_in_2d.html).
+
+## Terreno modular de Valle Ventoso — 2026-10-25
+
+Integración del terrain kit en los seis sectores, conservando el balance previo. [Capturas antes/después, implementación, pruebas y pendientes](docs/valle-terrain-kit/README.md). La calidad artística final y la optimización de rendimiento siguen pendientes; consultar las limitaciones medidas antes de considerar este pase listo para publicación.

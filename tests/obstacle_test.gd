@@ -141,9 +141,32 @@ func _test_course(mode: int) -> void:
 	await _finish_scene()
 
 
+func _test_solid_island(from_below: bool) -> void:
+	_start_scene()
+	main.get_node("Track01/Obstacles").free()
+	var island: FlightObstacle = load("res://scenes/Obstacle.tscn").instantiate()
+	island.kind = FlightObstacle.Kind.ISLAND
+	island.position.x = 850.0
+	island.width = 1000.0
+	island.upper_tip_y = 280.0
+	island.lower_tip_y = 365.0
+	main.add_child(island)
+	balloon.position = Vector2(650, 460 if from_below else 180)
+	if from_below: Input.action_press("burner")
+	for frame in 120:
+		await _step()
+		_check(not balloon.get_collision_exceptions().has(island), "Island stays solid throughout impact protection")
+		_check(balloon.position.y >= 365 + Balloon.TOP_EXTENT - 1 if from_below else balloon.position.y <= 280 - Balloon.BOTTOM_EXTENT + 1,
+			"Cannot cross island from either horizontal face")
+	_check(balloon.collision_count > 0, "Solid island impact actually exercised")
+	await _finish_scene()
+
+
 func _run() -> void:
 	if not OS.get_cmdline_user_args().is_empty():
 		Engine.physics_ticks_per_second = int(OS.get_cmdline_user_args()[0])
+	await _test_solid_island(false)
+	await _test_solid_island(true)
 	for kind in [FlightObstacle.Kind.LOWER, FlightObstacle.Kind.UPPER, FlightObstacle.Kind.GAP]:
 		await _test_impact(kind)
 	for mode in 3:

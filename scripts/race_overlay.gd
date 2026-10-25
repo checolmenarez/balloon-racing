@@ -48,9 +48,14 @@ func _restart() -> void:
 
 
 func _input(event: InputEvent) -> void:
+	if _results_shown:
+		return # Escape follows the existing results-to-home route.
+	if get_tree().paused and (event.is_action("use_turbo") or event.is_action("use_item")):
+		get_viewport().set_input_as_handled()
+		return
 	if not event.is_action("pause"):
 		return
-	# Handle before GUI ui_accept: SPACE resumes even if Restart has focus.
+	# Consume Escape before GUI navigation, regardless of button focus.
 	get_viewport().set_input_as_handled()
 	if event.is_echo() or not event.is_action_pressed("pause"):
 		return

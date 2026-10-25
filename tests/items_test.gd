@@ -30,6 +30,8 @@ func _start() -> void:
 		racers[index].set_physics_process(false)
 		racers[index].position = Vector2(-1000 - index * 200, 350)
 		racers[index].items.config = combat.config
+	# Let physics register the newly instanced bodies before teleporting into sensors.
+	await _step(0.1)
 
 
 func _step(seconds: float) -> void:
@@ -45,9 +47,9 @@ func _finish() -> void:
 
 
 func _pickup_test() -> void:
-	_start()
+	await _start()
 	combat.config.selection_weights = Vector3(1, 0, 0)
-	racers[0].position = Vector2(1200, 310)
+	racers[0].position = main.track.get_node("ItemBoxes/Box0").global_position
 	await _step(0.1)
 	_check(racers[0].items.equipped == BalloonItems.Kind.ROCKET, "Area box grants weighted item")
 	_check(racers[0].items.collected == 1, "Box consumed once")
@@ -58,11 +60,11 @@ func _pickup_test() -> void:
 	await _step(0.1)
 	_check(not extra.consumed and racers[0].items.collected == 1, "Full inventory leaves box intact")
 	var key := InputEventKey.new()
-	key.physical_keycode = KEY_A
+	key.physical_keycode = KEY_Z
 	key.pressed = true
 	Input.parse_input_event(key)
 	await _step(0.05)
-	_check(racers[0].items.equipped == BalloonItems.Kind.NONE and racers[0].items.used == 1, "A uses and empties inventory")
+	_check(racers[0].items.equipped == BalloonItems.Kind.NONE and racers[0].items.used == 1, "Z uses and empties inventory")
 	racers[0].position.x += 200
 	await _step(0.1)
 	racers[0].position = extra.position
@@ -77,7 +79,7 @@ func _pickup_test() -> void:
 
 
 func _rocket_test() -> void:
-	_start()
+	await _start()
 	racers[0].position = Vector2(300, 350)
 	racers[1].position = Vector2(600, 350)
 	racers[0].items.collect(BalloonItems.Kind.ROCKET)
@@ -88,8 +90,9 @@ func _rocket_test() -> void:
 	_check(is_equal_approx(racers[1]._forward_speed(), 132.0), "Rocket penalty applies to base speed")
 	await _step(0.4)
 	_check(combat.get_child_count() == 0, "Missile visual tail expires")
-	racers[0].position = Vector2(1600, 550)
-	racers[1].position = Vector2(2200, 550)
+	var mountain_x: float = main.track.get_node("Obstacles/GentleMountain").position.x
+	racers[0].position = Vector2(mountain_x - 300, 550)
+	racers[1].position = Vector2(mountain_x + 300, 550)
 	racers[0].items.collect(BalloonItems.Kind.ROCKET)
 	racers[0].items.use_item()
 	await _step(1.0)
@@ -103,7 +106,7 @@ func _rocket_test() -> void:
 
 
 func _bomb_test() -> void:
-	_start()
+	await _start()
 	racers[0].position = Vector2(1000, 220)
 	racers[1].position = Vector2(1000, 540)
 	racers[2].position = Vector2(1350, 540)
@@ -113,7 +116,7 @@ func _bomb_test() -> void:
 	_check(racers[1].items.hits_received == 1 and racers[2].items.hits_received == 0, "Contact explosion respects radius")
 	_check(racers[1].velocity.y > 0.0, "Contact above rival pushes away from the blast")
 	await _finish()
-	_start()
+	await _start()
 	combat.config.bomb_gravity = 0.0
 	combat.config.bomb_fuse = 0.2
 	racers[0].position = Vector2(1000, 350)
@@ -126,7 +129,7 @@ func _bomb_test() -> void:
 
 
 func _boost_test() -> void:
-	_start()
+	await _start()
 	for index in racers.size():
 		racers[index].position = Vector2(20000 + (0 if index == 0 else 70), 150 + index * 140)
 		racers[index].controller = null
@@ -150,7 +153,7 @@ func _boost_test() -> void:
 
 func _bot_test() -> void:
 	for kind in [BalloonItems.Kind.ROCKET, BalloonItems.Kind.BOMB, BalloonItems.Kind.BOOST]:
-		_start()
+		await _start()
 		var bot: Balloon = racers[int(kind)]
 		bot.position = Vector2(20000, 300)
 		racers[0].position = bot.position + (Vector2(250, 0) if kind == BalloonItems.Kind.ROCKET else Vector2(0, 160))
@@ -169,7 +172,7 @@ func _bot_test() -> void:
 
 
 func _race_test() -> void:
-	_start()
+	await _start()
 	main.queue_free()
 	await process_frame
 	main = load("res://scenes/Main.tscn").instantiate()

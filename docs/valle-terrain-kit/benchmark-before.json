@@ -1,0 +1,16 @@
+{
+	"label": "kit-before",
+	"renderer": "ANGLE (Intel, Intel(R) HD Graphics Family (0x00000102) Direct3D11 vs_4_1 ps_4_1, D3D11-8.15.10.2353)",
+	"samples": [
+		{
+			"draw_calls": 137.0,
+			"fps": 34.0376865265222,
+			"mean_ms": 29.3792,
+			"p95_ms": 32.391,
+			"process_ms": 32.232,
+			"reduced": false,
+			"sample": 0
+		}
+	],
+	"size": "1280x720"
+}

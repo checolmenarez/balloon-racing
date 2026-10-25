@@ -19,21 +19,21 @@ script = ExtResource("1")
 [node name="WindZones" type="Node2D" parent="."]
 
 [node name="RecoveryCurrent" parent="WindZones" instance=ExtResource("wind")]
-position = Vector2(7500, 170)
-size = Vector2(400, 60)
+position = Vector2(7500, 145)
+size = Vector2(120, 24)
 speed_multiplier = 1.2
 
-[node name="UpperCurrent" parent="WindZones" instance=ExtResource("wind")]
-position = Vector2(11650, 167)
-size = Vector2(2400, 110)
+[node name="LowerCurrent" parent="WindZones" instance=ExtResource("wind")]
+position = Vector2(10800, 550)
+size = Vector2(350, 24)
 
 [node name="MergeCurrent" parent="WindZones" instance=ExtResource("wind")]
 position = Vector2(13400, 260)
-size = Vector2(700, 95)
+size = Vector2(120, 24)
 
 [node name="CorridorCurrent" parent="WindZones" instance=ExtResource("wind")]
-position = Vector2(14600, 175)
-size = Vector2(400, 60)
+position = Vector2(14600, 145)
+size = Vector2(120, 24)
 speed_multiplier = 1.2
 
 [node name="Start" type="Marker2D" parent="References"]
@@ -46,7 +46,7 @@ position = Vector2(9700, 350)
 position = Vector2(10500, 180)
 
 [node name="LowerRoute" type="Marker2D" parent="References"]
-position = Vector2(10500, 490)
+position = Vector2(10500, 535)
 
 [node name="Merge" type="Marker2D" parent="References"]
 position = Vector2(13200, 350)
@@ -92,7 +92,7 @@ position = Vector2(13600, 340)
 initial_phase_degrees = 120.0
 
 [node name="GentleMountain" parent="Obstacles" instance=ExtResource("2")]
-position = Vector2(1900, 0)
+position = Vector2(2200, 0)
 kind = 0
 width = 280.0
 upper_tip_y = 220.0
@@ -144,21 +144,21 @@ lower_tip_y = 500.0
 position = Vector2(8000, 0)
 kind = 1
 width = 360.0
-upper_tip_y = 220.0
+upper_tip_y = 240.0
 lower_tip_y = 475.0
 
 [node name="RouteDivider" parent="Obstacles" instance=ExtResource("2")]
 position = Vector2(11800, 0)
 kind = 3
 width = 2200.0
-upper_tip_y = 260.0
-lower_tip_y = 340.0
+upper_tip_y = 330.0
+lower_tip_y = 450.0
 
 [node name="UpperRouteRockA" parent="Obstacles" instance=ExtResource("2")]
 position = Vector2(11250, 0)
 kind = 1
 width = 240.0
-upper_tip_y = 70.0
+upper_tip_y = 120.0
 lower_tip_y = 440.0
 
 [node name="UpperRouteRockB" parent="Obstacles" instance=ExtResource("2")]
@@ -173,22 +173,22 @@ position = Vector2(11750, 0)
 kind = 0
 width = 260.0
 upper_tip_y = 220.0
-lower_tip_y = 580.0
+lower_tip_y = 600.0
 
 [node name="PrecisionA" parent="Obstacles" instance=ExtResource("2")]
 position = Vector2(15100, 0)
 kind = 1
 width = 360.0
-upper_tip_y = 220.0
+upper_tip_y = 240.0
 lower_tip_y = 465.0
 
 [node name="PrecisionB" parent="Obstacles" instance=ExtResource("2")]
 position = Vector2(15100, 0)
 kind = 3
 width = 1800.0
-upper_tip_y = 250.0
-lower_tip_y = 450.0
-outline = PackedVector2Array(-900, 450, -700, 350, -500, 260, -320, 315, -150, 435, 150, 435, 320, 300, 500, 250, 700, 355, 900, 450, 720, 450, -720, 450)
+upper_tip_y = 200.0
+lower_tip_y = 420.0
+outline = PackedVector2Array(-900, 420, -700, 320, -500, 200, -340, 255, -150, 400, 150, 400, 340, 270, 500, 210, 700, 320, 900, 420, 720, 420, -720, 420)
 
 [node name="PrecisionC" parent="Obstacles" instance=ExtResource("2")]
 position = Vector2(16400, 0)
@@ -229,7 +229,7 @@ offset_right = 10240.0
 offset_bottom = 112.0
 theme_override_colors/font_color = Color(0.12, 0.24, 0.32, 1)
 theme_override_font_sizes/font_size = 22
-text = "↑ ALTA · precisa"
+text = "↑ ALTA · amplia"
 
 [node name="LowRoute" type="Label" parent="Signs"]
 offset_left = 9980.0
@@ -238,7 +238,7 @@ offset_right = 10240.0
 offset_bottom = 557.0
 theme_override_colors/font_color = Color(0.12, 0.24, 0.32, 1)
 theme_override_font_sizes/font_size = 22
-text = "↓ BAJA · amplia"
+text = "↓ BAJA · rápida y precisa"
 
 [node name="Rejoin" type="Label" parent="Signs"]
 offset_left = 13200.0
@@ -260,103 +260,6 @@ text = "META"
 
 [node name="ItemBoxes" type="Node2D" parent="."]
 
-[node name="Box0" parent="ItemBoxes" instance=ExtResource("boxes")]
-position = Vector2(1200, 280)
-
-[node name="Box1" parent="ItemBoxes" instance=ExtResource("boxes")]
-position = Vector2(1200, 440)
-
-[node name="Box2" parent="ItemBoxes" instance=ExtResource("boxes")]
-position = Vector2(2550, 280)
-
-[node name="Box3" parent="ItemBoxes" instance=ExtResource("boxes")]
-position = Vector2(2550, 440)
-
-[node name="Box4" parent="ItemBoxes" instance=ExtResource("boxes")]
-position = Vector2(3650, 180)
-
-[node name="Box5" parent="ItemBoxes" instance=ExtResource("boxes")]
-position = Vector2(6100, 320)
-
-[node name="Box6" parent="ItemBoxes" instance=ExtResource("boxes")]
-position = Vector2(7500, 170)
-
-[node name="Box7" parent="ItemBoxes" instance=ExtResource("boxes")]
-position = Vector2(9250, 280)
-
-[node name="Box8" parent="ItemBoxes" instance=ExtResource("boxes")]
-position = Vector2(9250, 440)
-
-[node name="Box9" parent="ItemBoxes" instance=ExtResource("boxes")]
-position = Vector2(10600, 178)
-
-[node name="Box10" parent="ItemBoxes" instance=ExtResource("boxes")]
-position = Vector2(10600, 490)
-
-[node name="Box11" parent="ItemBoxes" instance=ExtResource("boxes")]
-position = Vector2(12700, 178)
-
-[node name="Box12" parent="ItemBoxes" instance=ExtResource("boxes")]
-position = Vector2(12700, 490)
-
-[node name="Box13" parent="ItemBoxes" instance=ExtResource("boxes")]
-position = Vector2(13300, 300)
-
-[node name="Box14" parent="ItemBoxes" instance=ExtResource("boxes")]
-position = Vector2(14600, 175)
-
-[node name="Box15" parent="ItemBoxes" instance=ExtResource("boxes")]
-position = Vector2(15100, 550)
-
-[node name="Box16" parent="ItemBoxes" instance=ExtResource("boxes")]
-position = Vector2(16650, 310)
-
-[node name="Box17" parent="ItemBoxes" instance=ExtResource("boxes")]
-position = Vector2(16650, 465)
-
-[node name="Box18" parent="ItemBoxes" instance=ExtResource("boxes")]
-position = Vector2(16800, 340)
-
-[node name="Box19" parent="ItemBoxes" instance=ExtResource("boxes")]
-position = Vector2(17200, 180)
-
-[node name="Box20" parent="ItemBoxes" instance=ExtResource("boxes")]
-position = Vector2(17200, 460)
-
-
-[node name="Box21" parent="ItemBoxes" instance=ExtResource("boxes")]
-position = Vector2(1200, 550)
-
-[node name="Box22" parent="ItemBoxes" instance=ExtResource("boxes")]
-position = Vector2(2550, 150)
-
-[node name="Box23" parent="ItemBoxes" instance=ExtResource("boxes")]
-position = Vector2(3650, 470)
-
-[node name="Box24" parent="ItemBoxes" instance=ExtResource("boxes")]
-position = Vector2(6100, 490)
-
-[node name="Box25" parent="ItemBoxes" instance=ExtResource("boxes")]
-position = Vector2(8000, 550)
-
-[node name="Box26" parent="ItemBoxes" instance=ExtResource("boxes")]
-position = Vector2(9250, 160)
-
-[node name="Box27" parent="ItemBoxes" instance=ExtResource("boxes")]
-position = Vector2(10600, 540)
-
-[node name="Box28" parent="ItemBoxes" instance=ExtResource("boxes")]
-position = Vector2(12700, 540)
-
-[node name="Box29" parent="ItemBoxes" instance=ExtResource("boxes")]
-position = Vector2(13300, 490)
-
-[node name="Box30" parent="ItemBoxes" instance=ExtResource("boxes")]
-position = Vector2(16650, 165)
-
-[node name="Box31" parent="ItemBoxes" instance=ExtResource("boxes")]
-position = Vector2(16800, 520)
-
 [node name="WorldVisual" parent="." instance=ExtResource("world_visual")]
 
 [node name="IntroUpper" parent="Obstacles" instance=ExtResource("2")]
@@ -377,18 +280,18 @@ lower_tip_y = 365.0
 position = Vector2(8000, 0)
 kind = 3
 width = 1800.0
-upper_tip_y = 250.0
-lower_tip_y = 450.0
-outline = PackedVector2Array(-900, 450, -700, 360, -500, 250, -340, 295, -150, 430, 150, 430, 340, 310, 500, 270, 700, 360, 900, 450, 720, 450, -720, 450)
+upper_tip_y = 200.0
+lower_tip_y = 420.0
+outline = PackedVector2Array(-900, 420, -700, 320, -500, 200, -340, 255, -150, 400, 150, 400, 340, 270, 500, 210, 700, 320, 900, 420, 720, 420, -720, 420)
 
 [node name="TechnicalDipS3" parent="WindZones" instance=ExtResource("wind")]
-position = Vector2(8000, 315)
-size = Vector2(200, 70)
+position = Vector2(8000, 330)
+size = Vector2(120, 24)
 speed_multiplier = 1.2
 
 [node name="TechnicalExitS3" parent="WindZones" instance=ExtResource("wind")]
-position = Vector2(8500, 185)
-size = Vector2(400, 60)
+position = Vector2(8500, 150)
+size = Vector2(120, 24)
 speed_multiplier = 1.2
 
 [node name="EntryFunnel" parent="Obstacles" instance=ExtResource("2")]
@@ -399,13 +302,13 @@ upper_tip_y = 220.0
 lower_tip_y = 440.0
 
 [node name="TechnicalDipS5" parent="WindZones" instance=ExtResource("wind")]
-position = Vector2(15100, 320)
-size = Vector2(200, 70)
+position = Vector2(15100, 330)
+size = Vector2(120, 24)
 speed_multiplier = 1.2
 
 [node name="TechnicalExitS5" parent="WindZones" instance=ExtResource("wind")]
-position = Vector2(15600, 165)
-size = Vector2(400, 60)
+position = Vector2(15600, 150)
+size = Vector2(120, 24)
 speed_multiplier = 1.2
 
 [node name="FinalLowerB" parent="Obstacles" instance=ExtResource("2")]
@@ -420,3 +323,133 @@ position = Vector2(17950, 400)
 amplitude = 30.0
 period = 3.6
 initial_phase_degrees = 210.0
+
+[node name="Box0" parent="ItemBoxes" instance=ExtResource("boxes")]
+position = Vector2(1000, 300)
+
+[node name="Box1" parent="ItemBoxes" instance=ExtResource("boxes")]
+position = Vector2(1500, 430)
+
+[node name="Box2" parent="ItemBoxes" instance=ExtResource("boxes")]
+position = Vector2(2100, 330)
+
+[node name="Box3" parent="ItemBoxes" instance=ExtResource("boxes")]
+position = Vector2(2550, 440)
+
+[node name="Box4" parent="ItemBoxes" instance=ExtResource("boxes")]
+position = Vector2(3300, 400)
+
+[node name="Box5" parent="ItemBoxes" instance=ExtResource("boxes")]
+position = Vector2(3650, 180)
+
+[node name="Box6" parent="ItemBoxes" instance=ExtResource("boxes")]
+position = Vector2(5050, 400)
+
+[node name="Box7" parent="ItemBoxes" instance=ExtResource("boxes")]
+position = Vector2(5550, 240)
+
+[node name="Box8" parent="ItemBoxes" instance=ExtResource("boxes")]
+position = Vector2(6100, 320)
+
+[node name="Box9" parent="ItemBoxes" instance=ExtResource("boxes")]
+position = Vector2(7500, 145)
+
+[node name="Box10" parent="ItemBoxes" instance=ExtResource("boxes")]
+position = Vector2(8500, 150)
+
+[node name="Box11" parent="ItemBoxes" instance=ExtResource("boxes")]
+position = Vector2(9250, 440)
+
+[node name="Box12" parent="ItemBoxes" instance=ExtResource("boxes")]
+position = Vector2(10450, 170)
+
+[node name="Box13" parent="ItemBoxes" instance=ExtResource("boxes")]
+position = Vector2(10900, 550)
+
+[node name="Box14" parent="ItemBoxes" instance=ExtResource("boxes")]
+position = Vector2(12550, 178)
+
+[node name="Box15" parent="ItemBoxes" instance=ExtResource("boxes")]
+position = Vector2(12800, 550)
+
+[node name="Box16" parent="ItemBoxes" instance=ExtResource("boxes")]
+position = Vector2(14000, 300)
+
+[node name="Box17" parent="ItemBoxes" instance=ExtResource("boxes")]
+position = Vector2(14600, 145)
+
+[node name="Box18" parent="ItemBoxes" instance=ExtResource("boxes")]
+position = Vector2(15600, 150)
+
+[node name="Box19" parent="ItemBoxes" instance=ExtResource("boxes")]
+position = Vector2(16550, 320)
+
+[node name="Box20" parent="ItemBoxes" instance=ExtResource("boxes")]
+position = Vector2(16800, 340)
+
+[node name="Box21" parent="ItemBoxes" instance=ExtResource("boxes")]
+position = Vector2(17200, 180)
+
+[node name="Box22" parent="ItemBoxes" instance=ExtResource("boxes")]
+position = Vector2(17600, 320)
+
+[node name="Box23" parent="ItemBoxes" instance=ExtResource("boxes")]
+position = Vector2(18100, 230)
+
+
+[node name="LowerCurrentMiddle" parent="WindZones" instance=ExtResource("wind")]
+position = Vector2(11700, 550)
+size = Vector2(350, 24)
+
+[node name="LowerCurrentExit" parent="WindZones" instance=ExtResource("wind")]
+position = Vector2(12600, 550)
+size = Vector2(350, 24)
+
+[node name="IntroGate" parent="Obstacles" instance=ExtResource("2")]
+position = Vector2(650, 0)
+kind = 2
+width = 180.0
+upper_tip_y = 180.0
+lower_tip_y = 490.0
+
+[node name="AlternatingGate" parent="Obstacles" instance=ExtResource("2")]
+position = Vector2(5300, 0)
+kind = 2
+width = 180.0
+upper_tip_y = 120.0
+lower_tip_y = 490.0
+
+[node name="RecoveryGate" parent="Obstacles" instance=ExtResource("2")]
+position = Vector2(9200, 0)
+kind = 2
+width = 180.0
+upper_tip_y = 180.0
+lower_tip_y = 490.0
+
+[node name="ForkGate" parent="Obstacles" instance=ExtResource("2")]
+position = Vector2(10400, 0)
+kind = 2
+width = 180.0
+upper_tip_y = 100.0
+lower_tip_y = 600.0
+
+[node name="MergeGate" parent="Obstacles" instance=ExtResource("2")]
+position = Vector2(13200, 0)
+kind = 2
+width = 180.0
+upper_tip_y = 100.0
+lower_tip_y = 520.0
+
+[node name="ExitGate" parent="Obstacles" instance=ExtResource("2")]
+position = Vector2(16350, 0)
+kind = 2
+width = 180.0
+upper_tip_y = 170.0
+lower_tip_y = 480.0
+
+[node name="FinalGate" parent="Obstacles" instance=ExtResource("2")]
+position = Vector2(17550, 0)
+kind = 2
+width = 180.0
+upper_tip_y = 120.0
+lower_tip_y = 490.0

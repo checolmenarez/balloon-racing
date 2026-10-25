@@ -36,7 +36,7 @@ func _ready() -> void:
 	$Layout/Rows/Hint.text = "Tu corredor: %s   |   Mouse / Flechas / Tab + Enter" % RaceSelection.NAMES[RaceSelection.selected]
 	$Layout/Rows/Buttons/Help.text = "Cómo jugar"
 	$Help/Panel/Rows/Title.text = "Cómo jugar"
-	$Help/Panel/Rows/Instructions.text = "↑  Mantener para subir; soltar para descender.\nA  Usar el objeto equipado.\nD  Activar una carga de turbo personal.\nSPACE  Pausar o continuar la carrera.\nF2  Mostrar u ocultar la depuración.\n\nEsquiva obstáculos, recoge cajas y alcanza la meta.\nTienes dos cargas de turbo; la primera está\ndisponible cinco segundos después de GO."
+	$Help/Panel/Rows/Instructions.text = "↑  Mantener para subir; soltar para descender.\nZ  Usar el objeto equipado.\nSPACE  Activar una carga de turbo personal.\nESC  Pausar o continuar la carrera.\nF2  Mostrar u ocultar la depuración.\n\nEsquiva obstáculos, recoge cajas y alcanza la meta.\nTienes dos cargas de turbo; la primera está\ndisponible cinco segundos después de GO."
 	$Options/Panel/Rows/MusicLabel.text = "Música"
 	$Options/Panel/Rows/EffectsLabel.text = "Efectos de sonido"
 	$Options/Panel/Rows/Title.text = "Opciones"

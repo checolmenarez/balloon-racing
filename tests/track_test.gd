@@ -31,6 +31,7 @@ func _test_course(mode: int) -> void:
 	var s4_enter: float = -1.0
 	var s4_exit: float = -1.0
 	var crossed_divider: bool = false
+	var s4_wind_frames: int = 0
 	var previous_collisions: int = 0
 	_check(track.get_progress(track.start.global_position.x - 500.0) == 0.0, "Progress clamps before start")
 	_check(track.get_progress(track.finish.global_position.x + 500.0) == 1.0, "Progress clamps after finish")
@@ -57,7 +58,9 @@ func _test_course(mode: int) -> void:
 		if balloon.position.x >= track.zones.get_child(4).position.x and s4_exit < 0.0:
 			s4_exit = elapsed
 		var progress: float = track.get_progress(balloon.global_position.x)
-		_check(progress >= previous_progress, "Progress never regresses with default physics")
+		# Solid slopes can push a deliberately crashing balloon slightly backward.
+		if mode < 2:
+			_check(progress >= previous_progress, "Clean route progresses monotonically")
 		previous_progress = progress
 		_check(balloon.position.y >= 32.0 + Balloon.TOP_EXTENT - 0.001 and balloon.position.y <= 640.0 - Balloon.BOTTOM_EXTENT + 0.001, "Vertical limits")
 		_check(absf(balloon.velocity.y) <= 250.01, "Vertical speed limit")
@@ -65,8 +68,10 @@ func _test_course(mode: int) -> void:
 		if zone not in visited:
 			visited.append(zone)
 		if balloon.position.x > 10600.0 and balloon.position.x < 12700.0 and mode < 2:
-			_check(balloon.position.y + Balloon.BOTTOM_EXTENT < 260.0 if mode == 0
-				else balloon.position.y - Balloon.TOP_EXTENT > 340.0, "Chosen route stays on its side of divider")
+			if balloon.items.wind_multiplier() > 1.0:
+				s4_wind_frames += 1
+			_check(balloon.position.y + Balloon.BOTTOM_EXTENT < track.get_node("Obstacles/RouteDivider").upper_tip_y if mode == 0
+				else balloon.position.y - Balloon.TOP_EXTENT > track.get_node("Obstacles/RouteDivider").lower_tip_y, "Chosen route stays on its side of divider")
 		if balloon.get_collision_exceptions().has(track.get_node("Obstacles/RouteDivider")):
 			crossed_divider = true
 		if progress >= 1.0:
@@ -74,13 +79,13 @@ func _test_course(mode: int) -> void:
 	_check(previous_progress == 1.0, "Reached finish, mode %d" % mode)
 	_check(visited == [0, 1, 2, 3, 4, 5], "Traversed all six zones in order")
 	if mode < 2:
+		_check(s4_wind_frames == 0 if mode == 0 else s4_wind_frames > 0,
+			"S4 current rewards only the lower route")
 		_check(balloon.collision_count == 0, "Route %d traversable without collisions" % mode)
 		_check(elapsed >= 75.0 and elapsed <= estimate + 0.1, "Wind-assisted route remains within target duration")
 	else:
 		_check(balloon.collision_count > 0, "Crash flight still reaches finish")
-	if mode == 4:
-		_check(crossed_divider, "Long divider collision exercised")
-		_check(balloon.get_collision_exceptions().is_empty(), "Long divider exception removed after clearance")
+	_check(not crossed_divider, "Horizontal divider never becomes passable")
 	balloon.set_physics_process(false)
 	var key := InputEventKey.new()
 	key.physical_keycode = KEY_F2
@@ -105,7 +110,7 @@ func _test_course(mode: int) -> void:
 func _run() -> void:
 	if not OS.get_cmdline_user_args().is_empty():
 		Engine.physics_ticks_per_second = int(OS.get_cmdline_user_args()[0])
-	for mode in 5:
+	for mode in 4:
 		await _test_course(mode)
 	print("TRACK TEST at %d Hz: %s (%d failures)" % [Engine.physics_ticks_per_second,
 		"PASS" if failures == 0 else "FAIL", failures])

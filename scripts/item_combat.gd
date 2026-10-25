@@ -63,7 +63,11 @@ func launch_storm(source: Balloon) -> bool:
 	return true
 
 
-func _unhandled_key_input(event: InputEvent) -> void:
+func _input(event: InputEvent) -> void:
+	# Space also belongs to ui_accept; reserve its press/release/repeat for turbo
+	# while gameplay is enabled, before a focused HUD button can consume it.
+	if enabled and (event.is_action("use_turbo") or event.is_action("use_item")):
+		get_viewport().set_input_as_handled()
 	if enabled and event.is_action_pressed("use_turbo") and not event.is_echo():
 		for racer in competitors:
 			if racer.controller == null:

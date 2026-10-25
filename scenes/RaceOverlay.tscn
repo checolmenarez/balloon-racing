@@ -126,7 +126,7 @@ theme_override_font_sizes/font_size = 24
 
 [node name="Hint" type="Label" parent="PausePanel/Rows"]
 layout_mode = 2
-text = "SPACE: continuar"
+text = "ESC: continuar"
 horizontal_alignment = 1
 
 [node name="Home" type="Button" parent="PausePanel/Rows"]
