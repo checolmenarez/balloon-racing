@@ -99,6 +99,14 @@ Ejecutado con Godot 4.7.2 Standard y física fija a 60 Hz:
   `.godot/single-player-intro.png`, `single-player-gameplay.png`,
   `single-player-dual-route.png` y `single-player-flappy.png`.
 
+Validación previa a integración del 2026-11-17: se redujo de 0,17 a 0,14 del
+hueco el desplazamiento vertical de la estrella de `narrow_passage`, para
+conservar margen para el cuerpo completo del globo en ambas variantes. La suite
+`single_player_gameplay_test.gd` pasó cinco ejecuciones consecutivas; también
+pasaron las suites de modo individual, carrera, pista, Valle, Home, selección,
+visuales y game feel. Esta evidencia es automatizada y no sustituye el
+playtesting humano indicado abajo.
+
 Avisos ambientales: el sandbox no permite escribir el almacén de certificados,
 logs ni ajustes globales de Godot; la GPU local usa ANGLE. Algunas suites
 mantienen un aviso de dos instancias `ObjectDB` al salir. No se observaron

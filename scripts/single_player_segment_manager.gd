@@ -222,7 +222,7 @@ func _pattern_narrow_passage(segment: Node2D, difficulty: float, start_y: float,
 	if difficulty > 0.55:
 		_add_forcing_obstacle(segment, &"PrecisionC", 1450.0, end_y, end_y < center, 24.0)
 	_add_coin_line(segment, Vector2(610, center), Vector2(1030, center), 4)
-	_maybe_add_star(segment, index, Vector2(850, center + (gap * 0.17 if center < 350.0 else -gap * 0.17)), difficulty)
+	_maybe_add_star(segment, index, Vector2(850, center + (gap * 0.14 if center < 350.0 else -gap * 0.14)), difficulty)
 	return {"end_y": end_y, "route": route, "minimum_gap": gap}
 
 
