@@ -33,10 +33,11 @@ func _ready() -> void:
 	$Layout/Rows/Buttons/Training.disabled = training_scene.is_empty() or not ResourceLoader.exists(training_scene)
 	$Layout/Rows/Buttons/Training.tooltip_text = "Entrenamiento no disponible" if $Layout/Rows/Buttons/Training.disabled else "Practicar vuelo"
 	$Layout/Rows/Buttons/Race.text = "¡CORRER!"
+	$Layout/Rows/Buttons/FreeFlight.text = tr("VUELO LIBRE")
 	$Layout/Rows/Hint.text = "Tu corredor: %s   |   Mouse / Flechas / Tab + Enter" % RaceSelection.NAMES[RaceSelection.selected]
 	$Layout/Rows/Buttons/Help.text = "Cómo jugar"
 	$Help/Panel/Rows/Title.text = "Cómo jugar"
-	$Help/Panel/Rows/Instructions.text = "↑  Mantener para subir; soltar para descender.\nZ  Usar el objeto equipado.\nSPACE  Activar una carga de turbo personal.\nESC  Pausar o continuar la carrera.\nF2  Mostrar u ocultar la depuración.\n\nEsquiva obstáculos, recoge cajas y alcanza la meta.\nTienes dos cargas de turbo; la primera está\ndisponible cinco segundos después de GO."
+	$Help/Panel/Rows/Instructions.text = tr("CARRERA\n↑ Mantén para subir; suelta para descender.\nZ usa el objeto y SPACE activa el turbo.\n\nVUELO LIBRE\nVuela lo más lejos posible. Recoge monedas, esquiva obstáculos\ny busca estrellas mágicas para recuperar vida.\n\nESC pausa. Las instrucciones de Vuelo Libre se muestran al iniciar\ny pueden ocultarse de forma persistente.")
 	$Options/Panel/Rows/MusicLabel.text = "Música"
 	$Options/Panel/Rows/EffectsLabel.text = "Efectos de sonido"
 	$Options/Panel/Rows/Title.text = "Opciones"
@@ -56,17 +57,17 @@ func _ready() -> void:
 		style.content_margin_top = 28
 		style.content_margin_bottom = 28
 		panel.add_theme_stylebox_override("panel", style)
-	var icons: Array[String] = ["race", "race", "training", "help", "settings"]
+	var icons: Array[String] = ["race", "race", "race", "training", "help", "settings"]
 	for index in buttons.get_child_count():
 		var button: Button = buttons.get_child(index)
-		_skin(button, index == 0, icons[index])
+		_skin(button, index < 2, icons[index])
 		button.mouse_entered.connect(_highlight.bind(button, true))
 		button.mouse_exited.connect(_highlight.bind(button, false))
 		button.focus_entered.connect(_highlight.bind(button, true))
 		button.focus_exited.connect(_highlight.bind(button, false))
 	var available: Array[Button] = []
 	for button in buttons.get_children():
-		if not button.disabled:
+		if button.visible and not button.disabled:
 			available.append(button)
 	for index in available.size():
 		var button: Button = available[index]
@@ -75,6 +76,7 @@ func _ready() -> void:
 		button.focus_previous = button.focus_neighbor_top
 		button.focus_next = button.focus_neighbor_bottom
 	$Layout/Rows/Buttons/Race.pressed.connect(_race)
+	$Layout/Rows/Buttons/FreeFlight.pressed.connect(_free_flight)
 	$Layout/Rows/Buttons/Selection.pressed.connect(_selection)
 	$Layout/Rows/Buttons/Training.pressed.connect(_training)
 	$Layout/Rows/Buttons/Help.pressed.connect(_open_panel.bind($Help, $Layout/Rows/Buttons/Help))
@@ -192,13 +194,23 @@ func _race() -> void:
 	if _leaving:
 		return
 	_leaving = true
+	RaceSelection.launch_mode = &"race"
 	get_tree().change_scene_to_file("res://scenes/Main.tscn")
+
+
+func _free_flight() -> void:
+	if _leaving:
+		return
+	_leaving = true
+	RaceSelection.launch_mode = &"free_flight"
+	get_tree().change_scene_to_file("res://scenes/CharacterSelect.tscn")
 
 
 func _selection() -> void:
 	if _leaving:
 		return
 	_leaving = true
+	RaceSelection.launch_mode = &"race"
 	get_tree().change_scene_to_file("res://scenes/CharacterSelect.tscn")
 
 

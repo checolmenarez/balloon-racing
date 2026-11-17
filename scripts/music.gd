@@ -119,7 +119,12 @@ func _looped(source: AudioStream) -> AudioStream:
 	return copy
 
 
-func play_effect(effect: String, world_position: Vector2) -> void:
+func register_effect(effect: String, audio: AudioStream) -> void:
+	if not effect.is_empty() and audio != null:
+		_effects[effect] = audio
+
+
+func play_effect(effect: String, world_position: Vector2, pitch_scale: float = 1.0) -> void:
 	if get_tree().paused or not _effects.has(effect):
 		return
 	# World-space voices attenuate distant bots and survive projectile deletion.
@@ -129,6 +134,7 @@ func play_effect(effect: String, world_position: Vector2) -> void:
 	voice.global_position = world_position
 	voice.volume_db = effects_volume_db
 	voice.max_distance = effects_distance
+	voice.pitch_scale = clampf(pitch_scale, 0.75, 1.35)
 	voice.stream = _effects[effect]
 	voice.play()
 	effect_played.emit(effect)

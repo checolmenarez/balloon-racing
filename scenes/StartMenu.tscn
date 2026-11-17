@@ -231,6 +231,12 @@ custom_minimum_size = Vector2(460, 86)
 
 text = "¡CORRER!"
 
+[node name="FreeFlight" type="Button" parent="Layout/Rows/Buttons"]
+theme_type_variation = &"ArcadePrimary"
+layout_mode = 2
+custom_minimum_size = Vector2(460, 76)
+text = "VUELO LIBRE"
+
 [node name="Selection" type="Button" parent="Layout/Rows/Buttons"]
 layout_mode = 2
 custom_minimum_size = Vector2(460, 64)
@@ -238,6 +244,7 @@ text = "Selección de personaje"
 
 [node name="Training" type="Button" parent="Layout/Rows/Buttons"]
 
+visible = false
 layout_mode = 2
 
 custom_minimum_size = Vector2(460, 64)

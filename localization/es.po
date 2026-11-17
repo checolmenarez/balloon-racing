@@ -157,3 +157,58 @@ msgstr "Sin cargas"
 #: HUD V1
 msgid "Pausa"
 msgstr "Pausa"
+
+#: M8 Single Player
+msgid "VUELO LIBRE"
+msgstr "VUELO LIBRE"
+
+msgid "Comenzar vuelo"
+msgstr "Comenzar vuelo"
+
+msgid "Comenzar carrera"
+msgstr "Comenzar carrera"
+
+msgid "¡Vuela lo más lejos posible!"
+msgstr "¡Vuela lo más lejos posible!"
+
+msgid "Recoge monedas, esquiva obstáculos y supera tu récord."
+msgstr "Recoge monedas, esquiva obstáculos y supera tu récord."
+
+msgid "↑ Mantén el quemador para subir. Suéltalo para descender con inercia.\n🟡 Las monedas aumentan tu contador.\n💥 Los golpes reducen tu vida y dan protección breve.\n★ Las estrellas mágicas recuperan parte de tu vida.\nESC abre la pausa."
+msgstr "↑ Mantén el quemador para subir. Suéltalo para descender con inercia.\n🟡 Las monedas aumentan tu contador.\n💥 Los golpes reducen tu vida y dan protección breve.\n★ Las estrellas mágicas recuperan parte de tu vida.\nESC abre la pausa."
+
+msgid "JUGAR"
+msgstr "JUGAR"
+
+msgid "NO VOLVER A MOSTRAR"
+msgstr "NO VOLVER A MOSTRAR"
+
+msgid "MONEDAS  %d"
+msgstr "MONEDAS  %d"
+
+msgid "DISTANCIA  %s"
+msgstr "DISTANCIA  %s"
+
+msgid "RÉCORD  %s"
+msgstr "RÉCORD  %s"
+
+msgid "¡NUEVO RÉCORD!"
+msgstr "¡NUEVO RÉCORD!"
+
+msgid "¡FIN DEL VUELO!"
+msgstr "¡FIN DEL VUELO!"
+
+msgid "Tiempo: %s\nDistancia: %s\nMonedas: %d\nMejor distancia: %s"
+msgstr "Tiempo: %s\nDistancia: %s\nMonedas: %d\nMejor distancia: %s"
+
+msgid "VOLVER A INTENTAR"
+msgstr "VOLVER A INTENTAR"
+
+msgid "MENÚ PRINCIPAL"
+msgstr "MENÚ PRINCIPAL"
+
+msgid "Reiniciar vuelo"
+msgstr "Reiniciar vuelo"
+
+msgid "CARRERA\n↑ Mantén para subir; suelta para descender.\nZ usa el objeto y SPACE activa el turbo.\n\nVUELO LIBRE\nVuela lo más lejos posible. Recoge monedas, esquiva obstáculos\ny busca estrellas mágicas para recuperar vida.\n\nESC pausa. Las instrucciones de Vuelo Libre se muestran al iniciar\ny pueden ocultarse de forma persistente."
+msgstr "CARRERA\n↑ Mantén para subir; suelta para descender.\nZ usa el objeto y SPACE activa el turbo.\n\nVUELO LIBRE\nVuela lo más lejos posible. Recoge monedas, esquiva obstáculos\ny busca estrellas mágicas para recuperar vida.\n\nESC pausa. Las instrucciones de Vuelo Libre se muestran al iniciar\ny pueden ocultarse de forma persistente."

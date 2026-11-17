@@ -13,6 +13,38 @@ Registro mantenido en GitHub mediante este archivo. Las fechas exactas de decisi
 | D-007 | 2026-10-17 | Sustitución de restricciones históricas incompatibles con el MVP | Game Owner / Studio Operations | Aprobada |
 | D-008 | 2026-10-18 | M7.2: presentación y UX sin cambio competitivo | Game Owner / Engineering | Aprobada |
 | D-009 | 2026-10-18 | HUD V1 incremental con assets suministrados | Game Owner / Engineering | Aprobada |
+| D-010 | 2026-11-09 | M8: modalidad Single Player / Vuelo Libre | Game Owner / Product | Autorizada para implementación y revisión humana |
+| D-011 | 2026-11-10 | M8.1: rediseño de gameplay de Vuelo Libre | Game Owner / Product | Autorizada para implementación y revisión humana |
+
+## D-011 — M8.1: rediseño de gameplay de Vuelo Libre
+
+- **Fecha:** 2026-11-10.
+- **Origen:** observaciones y solicitud explícita del Game Owner en M8.1.
+- **Alcance autorizado:** sustituir la generación repetitiva de Vuelo Libre por
+  seis a ocho patrones diseñados, reutilizar Valle Ventoso 2.0, redistribuir
+  monedas/estrellas, ajustar Flappy por instancia y hacer perceptible la curva
+  de dificultad y velocidad.
+- **Restricciones:** conservar Carrera, personaje, vida, guardado, monedas
+  acumuladas, Game Over, Home y controles; sin progresión, armas, tienda,
+  personajes ni jefes nuevos.
+- **Implementación y evidencia:**
+  `docs/milestone-8.1-gameplay-redesign.md`.
+- **Estado de aprobación:** implementación técnica disponible para evaluación;
+  diversión, justicia percibida y balance final requieren playtesting humano.
+
+## D-010 — M8: Single Player / Vuelo Libre
+
+- **Fecha:** 2026-11-09.
+- **Origen:** solicitud explícita del Game Owner incluida en el encargo M8.
+- **Alcance autorizado:** modo individual de supervivencia con personaje
+  existente, física vertical compartida, recorrido extensible, monedas,
+  estrellas, vida, velocidad progresiva, récord local, HUD y resultados.
+- **Exclusiones:** bots, ranking, cajas, armas, Tormenta, tienda, backend,
+  servicios online, personajes/mundos nuevos y cambios de balance en Carrera.
+- **Implementación y evidencia:** `docs/milestone-8-single-player.md`.
+- **Estado de aprobación:** la implementación técnica está disponible para
+  revisión; diversión, balance y aceptación final siguen pendientes de
+  playtesting humano y no se registran retrospectivamente como aprobados.
 
 ## D-008 — M7.2: presentación y UX sin cambio competitivo
 

@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/single_player_gate.gd" id="1"]
+
+[node name="SinglePlayerGate" type="StaticBody2D"]
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("1")
+
+[node name="UpperShape" type="CollisionShape2D" parent="."]
+
+[node name="LowerShape" type="CollisionShape2D" parent="."]
+

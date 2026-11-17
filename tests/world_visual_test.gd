@@ -78,17 +78,24 @@ func _run() -> void:
 			check(mask.get_meta("collision_outline") == collision.polygon, "Visual contour derives from unchanged collider")
 			check(mask.polygon.size() > collision.polygon.size(), "Every formation gets a more detailed visual outline")
 			for point in mask.polygon:
+				if point.y < 32.0:
+					check(side == "Upper" and is_equal_approx(point.y, -96.0), "Only ceiling artwork extends outside the non-flyable top band")
+					continue
 				var nearest: float = INF
 				for i in collision.polygon.size():
 					nearest = minf(nearest, point.distance_to(Geometry2D.get_closest_point_to_segment(point, collision.polygon[i], collision.polygon[(i + 1) % collision.polygon.size()])))
-				var deck_recess: bool = obstacle.name == &"RouteDivider" and point.x > 80.0 and point.x < 210.0 and point.y > 330.0 and point.y < 350.0
-				check(nearest <= (16.01 if deck_recess else 8.01), "Contour stays close to collider; only the supported deck spans a 16 px recess")
-			check(mask.clip_children == CanvasItem.CLIP_CHILDREN_ONLY, "Mask itself does not draw a coloured polygon")
+				check(nearest <= (36.01 if obstacle.name == &"RouteDivider" else 22.01), "Carving stays inside the physical envelope and below balloon-sized openings")
+				# Godot's boundary predicate has float tolerance on long horizontal edges.
+				check(nearest < 0.05 or Geometry2D.is_point_in_polygon(point, collision.polygon), "Visual carving stays inside %s at %s (distance %.3f)" % [mask.name, point, nearest])
+			check(not Geometry2D.triangulate_polygon(mask.polygon).is_empty(), "Every visual contour triangulates without crossed edges")
 			check(not obstacle.get_node(side + "Visual").visible, "Old polygon presentation hidden")
-			check(mask.get_child_count() > 0, "Every formation receives modular sprites")
-			for part: Sprite2D in mask.get_children():
-				check(part.texture.resource_path.begins_with(kit_root), "Terrain uses only the supplied kit")
-				check(is_equal_approx(part.scale.x, part.scale.y) and part.scale.x <= 2.0, "No stretched or extreme sprite scales")
+			check(mask.clip_children == CanvasItem.CLIP_CHILDREN_DISABLED and mask.self_modulate.a == 0.0, "Baked artwork needs no runtime clipping pass or coloured polygon")
+			check(mask.get_child_count() == 1, "One cached composition per formation")
+			var part := mask.get_node("BakedComposition") as Sprite2D
+			check(part != null and part.texture != null, "Desktop-density cache exists for every formation")
+			if part != null:
+				check(part.texture.resource_path.begins_with("res://assets/environments/valle_ventoso/art_pass_v1/baked/"), "Cache is packaged inside the project")
+				check(is_equal_approx(part.scale.x, part.scale.y) and is_equal_approx(part.scale.x, 1.0/1.5), "Cached art is downsampled uniformly, never enlarged")
 	var layers: Array[Node] = world.get_node("ParallaxBackground").get_children()
 	check(layers.size() == 4, "Four layers: crowded mid/near islands removed")
 	var speeds: Array[float] = []

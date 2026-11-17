@@ -98,6 +98,7 @@ func _ready() -> void:
 	_buttons[initial].grab_focus()
 	$Center/Rows/Play.pressed.connect(_play)
 	$Center/Rows/Back.pressed.connect(_back)
+	$Center/Rows/Play.text = tr("Comenzar vuelo") if RaceSelection.launch_mode == &"free_flight" else tr("Comenzar carrera")
 	if not reduce_motion:
 		_pulse = create_tween().set_loops()
 		_pulse.tween_interval(3.0)
@@ -267,7 +268,7 @@ func _play() -> void:
 		return
 	_starting = true
 	$Center/Rows/Play.disabled = true
-	get_tree().change_scene_to_file("res://scenes/Main.tscn")
+	get_tree().change_scene_to_file(RaceSelection.scene_for_launch_mode())
 
 
 func _resize_layout() -> void:

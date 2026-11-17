@@ -37,7 +37,9 @@ func joy(code: JoyButton) -> void:
 
 
 func _run() -> void:
+	root.size = Vector2i(1280, 720)
 	root.get_node("RaceSelection").selected = 99
+	root.get_node("RaceSelection").launch_mode = &"race"
 	change_scene_to_file("res://scenes/CharacterSelect.tscn")
 	await settle()
 	var menu: Control = current_scene

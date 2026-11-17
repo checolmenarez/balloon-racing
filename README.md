@@ -1,4 +1,23 @@
-# Balloon Racing — M7.2: presentación y UX
+# Balloon Racing — M8.1: Gameplay de Vuelo Libre
+
+El Home ofrece ahora **CARRERA** y **VUELO LIBRE**. Vuelo Libre reutiliza el
+selector de personajes y la física vertical, sin bots ni sistemas competitivos:
+ocho patrones diseñados con geometría y arte de Valle Ventoso 2.0, monedas que
+guían rutas o premian riesgo, estrellas estratégicas, Flappy por instancia,
+vida, velocidad progresiva, récord local, pausa y Game Over. Parámetros en
+`resources/default_single_player.tres`.
+
+Implementación vigente, pruebas reales, límites y guía de playtesting:
+[M8.1 — Rediseño de gameplay](docs/milestone-8.1-gameplay-redesign.md). El
+[informe M8](docs/milestone-8-single-player.md) queda como historial. La
+validación humana de diversión, justicia y rendimiento prolongado sigue pendiente.
+
+```powershell
+& $godot --headless --path . --fixed-fps 60 --script res://tests/single_player_test.gd
+& $godot --headless --path . --fixed-fps 60 --script res://tests/single_player_gameplay_test.gd
+```
+
+## Estado competitivo previo — M7.2
 
 Home V2.1: personajes +30 %, logo +25 %, flotación subpíxel y Theme global
 Fredoka/Lilita One. Music usa los nuevos MP3 de Home y carreras, con fade-in

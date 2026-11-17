@@ -157,3 +157,58 @@ msgstr "No charges"
 #: HUD V1
 msgid "Pausa"
 msgstr "Pause"
+
+#: M8 Single Player
+msgid "VUELO LIBRE"
+msgstr "FREE FLIGHT"
+
+msgid "Comenzar vuelo"
+msgstr "Start flight"
+
+msgid "Comenzar carrera"
+msgstr "Start race"
+
+msgid "¡Vuela lo más lejos posible!"
+msgstr "Fly as far as you can!"
+
+msgid "Recoge monedas, esquiva obstáculos y supera tu récord."
+msgstr "Collect coins, dodge obstacles, and beat your record."
+
+msgid "↑ Mantén el quemador para subir. Suéltalo para descender con inercia.\n🟡 Las monedas aumentan tu contador.\n💥 Los golpes reducen tu vida y dan protección breve.\n★ Las estrellas mágicas recuperan parte de tu vida.\nESC abre la pausa."
+msgstr "↑ Hold the burner to rise. Release it to descend with momentum.\n🟡 Coins increase your counter.\n💥 Hits reduce health and grant brief protection.\n★ Magic Stars restore some health.\nESC opens pause."
+
+msgid "JUGAR"
+msgstr "PLAY"
+
+msgid "NO VOLVER A MOSTRAR"
+msgstr "DON'T SHOW AGAIN"
+
+msgid "MONEDAS  %d"
+msgstr "COINS  %d"
+
+msgid "DISTANCIA  %s"
+msgstr "DISTANCE  %s"
+
+msgid "RÉCORD  %s"
+msgstr "BEST  %s"
+
+msgid "¡NUEVO RÉCORD!"
+msgstr "NEW RECORD!"
+
+msgid "¡FIN DEL VUELO!"
+msgstr "FLIGHT OVER!"
+
+msgid "Tiempo: %s\nDistancia: %s\nMonedas: %d\nMejor distancia: %s"
+msgstr "Time: %s\nDistance: %s\nCoins: %d\nBest distance: %s"
+
+msgid "VOLVER A INTENTAR"
+msgstr "TRY AGAIN"
+
+msgid "MENÚ PRINCIPAL"
+msgstr "MAIN MENU"
+
+msgid "Reiniciar vuelo"
+msgstr "Restart flight"
+
+msgid "CARRERA\n↑ Mantén para subir; suelta para descender.\nZ usa el objeto y SPACE activa el turbo.\n\nVUELO LIBRE\nVuela lo más lejos posible. Recoge monedas, esquiva obstáculos\ny busca estrellas mágicas para recuperar vida.\n\nESC pausa. Las instrucciones de Vuelo Libre se muestran al iniciar\ny pueden ocultarse de forma persistente."
+msgstr "RACE\n↑ Hold to rise; release to descend.\nZ uses your item and SPACE activates turbo.\n\nFREE FLIGHT\nFly as far as possible. Collect coins, dodge obstacles,\nand seek Magic Stars to restore health.\n\nESC pauses. Free Flight instructions appear on first launch\nand can be hidden persistently."

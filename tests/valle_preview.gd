@@ -8,6 +8,7 @@ func _run() -> void:
 		quit(1)
 		return
 	root.size = Vector2i(1280,720)
+	if "desktop" in OS.get_cmdline_user_args(): root.size = Vector2i(1920,1080)
 	var deliver: bool = "kit" in OS.get_cmdline_user_args()
 	var reduced: bool = "reduced" in OS.get_cmdline_user_args()
 	var before: bool = "before" in OS.get_cmdline_user_args()
@@ -16,6 +17,8 @@ func _run() -> void:
 	GameFeel._reduced = reduced
 	var output: String = "res://docs/valle-terrain-kit" if deliver else "res://.godot"
 	if before: output += "/before"
+	for arg in OS.get_cmdline_user_args():
+		if arg.begins_with("output="): output = arg.trim_prefix("output=")
 	DirAccess.make_dir_recursive_absolute(output)
 	var main: Node2D = load("res://scenes/Main.tscn").instantiate()
 	if before:
@@ -33,8 +36,10 @@ func _run() -> void:
 	shape.size = Vector2(Balloon.HALF_WIDTH * 2, Balloon.TOP_EXTENT + Balloon.BOTTOM_EXTENT)
 	query.shape = shape
 	query.collision_mask = 2
-	for i in 6:
-		var x: float = [1800,3650,7800,11600,14900,17650][i]
+	var locations: Array = [1800,3650,7800,11600,14900,17650]
+	if "critical" in OS.get_cmdline_user_args(): locations = [2800,6250]
+	for i in locations.size():
+		var x: float = locations[i]
 		for index in 4:
 			var racer_x: float = x - index * 100
 			var desired: float = [180.0, 535.0, 300.0, 460.0][index]
@@ -50,7 +55,9 @@ func _run() -> void:
 			await process_frame
 		await RenderingServer.frame_post_draw
 		var suffix: String = "-reduced" if reduced else ""
-		root.get_texture().get_image().save_png(output + "/valle-preview-s%d%s.png" % [i+1, suffix])
+		if "desktop" in OS.get_cmdline_user_args(): suffix += "-desktop"
+		var prefix: String = "critical" if "critical" in OS.get_cmdline_user_args() else "s"
+		root.get_texture().get_image().save_png(output + "/valle-preview-%s%d%s.png" % [prefix, i+1, suffix])
 	main.queue_free()
 	await process_frame
 	quit()

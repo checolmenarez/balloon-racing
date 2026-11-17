@@ -1,5 +1,18 @@
 # Estado del proyecto
 
+> M8.1 Vuelo Libre (2026-11-10): generador rediseñado con ocho patrones
+> transitables, geometría/arte reutilizados de Valle Ventoso 2.0, coleccionables
+> de decisión, Flappy por instancia y curva corporal medida 224,4→268,4→341,0
+> px/s. Suites específicas y regresiones de Carrera/Home/selección PASS; cuatro
+> capturas ANGLE inspeccionadas. Diversión y balance humano pendientes. Ver
+> [informe M8.1](milestone-8.1-gameplay-redesign.md).
+
+> M8 Vuelo Libre (2026-11-09): modo individual jugable desde Home, sin bots ni
+> combate competitivo, con recorrido modular, monedas/estrellas, vida, velocidad
+> progresiva, HUD, resultados y persistencia local. Suite específica y diez
+> regresiones PASS; render ANGLE revisado. Playtesting humano y rendimiento visual
+> prolongado pendientes. Ver [informe M8](milestone-8-single-player.md).
+
 > Pase modular de terreno (2026-10-25): [comparativas S1–S6, pruebas y pendientes artísticos](valle-terrain-kit/README.md). Integrado sin modificar gameplay; quedan repetición de masas grandes, limpieza de cascadas y regresión de rendimiento por resolver. No representa aceptación artística final.
 
 > Balance vigente (2026-10-25): [cajas, bots, corrientes y colisiones](valle-ventoso-2.md#pasos-estrechos-y-corriente-inferior--2026-10-25). Las mediciones previas se conservan como historial.
